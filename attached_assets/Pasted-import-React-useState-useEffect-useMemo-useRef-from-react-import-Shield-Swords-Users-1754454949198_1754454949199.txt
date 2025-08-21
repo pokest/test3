@@ -1,0 +1,865 @@
+import React, { useState, useEffect, useMemo, useRef } from 'react';
+import { Shield, Swords, Users, LogIn, LogOut, UserPlus, PlusCircle, Trash2, Copy, Check, RefreshCw, ArrowRightLeft, X, Save, Upload, Download, Share2, Search, Send, Sparkles, MessageSquare, UserCheck, UserX, AtSign, ChevronsDown, ChevronsUp } from 'lucide-react';
+
+// --- Firebase Setup ---
+import { initializeApp } from "firebase/app";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "firebase/auth";
+import { getFirestore, doc, setDoc, getDoc, collection, query, where, getDocs, addDoc, serverTimestamp, onSnapshot, orderBy, updateDoc, deleteDoc } from "firebase/firestore";
+
+// ▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyA0TYTl5w6Kivul5HZ1cbbNpnRvGJh3QSI",
+  authDomain: "pokebattle-d7bdc.firebaseapp.com",
+  projectId: "pokebattle-d7bdc",
+  storageBucket: "pokebattle-d7bdc.appspot.com",
+  messagingSenderId: "703270847640",
+  appId: "1:703270847640:web:ce3a935f4dc914d6677ced",
+  measurementId: "G-SCN1D018R4"
+};
+// ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
+
+let app;
+let auth;
+let db;
+
+// firebaseConfigがプレースホルダーでない場合のみFirebaseを初期化
+if (firebaseConfig.apiKey && firebaseConfig.apiKey !== "AIzaSyXXXXXXXXXXXXXXXXXXXXXXX") {
+    app = initializeApp(firebaseConfig);
+    auth = getAuth(app);
+    db = getFirestore(app);
+}
+
+
+// --- データセット ---
+const MOVE_DATA = { "なし": { power: 0, type: "ノーマル", category: "Status" }, "10まんボルト": { power: 90, type: "でんき", category: "Special" }, "れいとうビーム": { power: 90, type: "こおり", category: "Special" }, "かえんほうしゃ": { power: 90, type: "ほのお", category: "Special" }, "シャドーボール": { power: 80, type: "ゴースト", category: "Special" }, "インファイト": { power: 120, type: "かくとう", category: "Physical" }, "じしん": { power: 100, type: "じめん", category: "Physical" }, "しんそく": { power: 80, type: "ノーマル", category: "Physical" }, "ゴールドラッシュ": { power: 120, type: "はがね", category: "Special" }, "ツタこんぼう": { power: 100, type: "くさ", category: "Physical" }, "すいりゅうれんだ": { power: 25, type: "みず", category: "Physical" }, "ブラッドムーン": { power: 140, type: "ノーマル", category: "Special" }, "テラバースト": { power: 80, type: "ノーマル", category: "Special" }, };
+const POKEMON_DATA = { "カイリュー": { types: ["ドラゴン", "ひこう"], stats: { H: 91, A: 134, B: 95, C: 100, D: 100, S: 80 }, abilities: ["せいしんりょく", "マルチスケイル"], sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/149.png", learnset: ["しんそく", "げきりん", "じしん", "アイアンヘッド", "りゅうのまい", "つるぎのまい", "かえんほうしゃ", "10まんボルト", "れいとうビーム"] }, "ハバタクカミ": { types: ["ゴースト", "フェアリー"], stats: { H: 55, A: 55, B: 55, C: 135, D: 135, S: 135 }, abilities: ["こだいかっせい"], sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/987.png", learnset: ["ムーンフォース", "シャドーボール", "サイコキネシス", "10まんボルト", "エナジーボール", "わるだくみ"] }, "サーフゴー": { types: ["はがね", "ゴースト"], stats: { H: 87, A: 60, B: 95, C: 133, D: 91, S: 84 }, abilities: ["おうごんのからだ"], sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/999.png", learnset: ["ゴールドラッシュ", "シャドーボール", "サイコキネシス", "10まんボルト", "わるだくみ"] }, "パオジアン": { types: ["あく", "こおり"], stats: { H: 80, A: 120, B: 80, C: 90, D: 65, S: 135 }, abilities: ["わざわいのつるぎ"], sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/1002.png", learnset: ["つららおとし", "かみくだく", "しんそく", "つるぎのまい"] }, "オーガポン(かまど)": { types: ["くさ", "ほのお"], stats: { H: 80, A: 120, B: 84, C: 60, D: 96, S: 110 }, abilities: ["かたやぶり"], sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1017-wellspring-mask.png", learnset: ["ツタこんぼう", "ウッドハンマー", "じゃれつく", "インファイト", "つるぎのまい"] }, "ウーラオス(れんげき)": { types: ["かくとう", "みず"], stats: { H: 100, A: 130, B: 100, C: 63, D: 60, S: 97 }, abilities: ["ふかしのこぶし"], sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/892-rapid-strike.png", learnset: ["すいりゅうれんだ", "インファイト", "アクアブレイク", "かみくだく", "つるぎのまい"] }, "ガチグマ(アカツキ)": { types: ["ノーマル", "じめん"], stats: { H: 113, A: 70, B: 120, C: 135, D: 65, S: 52 }, abilities: ["しんだんのめ"], sprite: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/901-bloodmoon.png", learnset: ["ブラッドムーン", "だいちのちから", "ムーンフォース", "わるだくみ"] }, };
+const POKEMON_NAMES = Object.keys(POKEMON_DATA);
+const NATURE_DATA = { "がんばりや":{}, "さみしがり":{inc:'A',dec:'B'}, "いじっぱり":{inc:'A',dec:'C'}, "やんちゃ":{inc:'A',dec:'D'}, "ゆうかん":{inc:'A',dec:'S'}, "ずぶとい":{inc:'B',dec:'A'}, "わんぱく":{inc:'B',dec:'C'}, "のうてんき":{inc:'B',dec:'D'}, "のんき":{inc:'B',dec:'S'}, "ひかえめ":{inc:'C',dec:'A'}, "おっとり":{inc:'C',dec:'B'}, "うっかりや":{inc:'C',dec:'D'}, "れいせい":{inc:'C',dec:'S'}, "おだやか":{inc:'D',dec:'A'}, "おとなしい":{inc:'D',dec:'B'}, "しんちょう":{inc:'D',dec:'C'}, "なまいき":{inc:'D',dec:'S'}, "おくびょう":{inc:'S',dec:'A'}, "せっかち":{inc:'S',dec:'B'}, "ようき":{inc:'S',dec:'C'}, "むじゃき":{inc:'S',dec:'D'}, };
+const NATURE_NAMES = Object.keys(NATURE_DATA);
+const ALL_TYPES = ["ノーマル", "ほのお", "みず", "でんき", "くさ", "こおり", "かくとう", "どく", "じめん", "ひこう", "エスパー", "むし", "いわ", "ゴースト", "ドラゴン", "あく", "はがね", "フェアリー"];
+const ITEMS = ["なし", "いのちのたま", "こだわりスカーフ", "こだわりハチマキ", "こだわりメガネ", "きあいのタスキ", "とつげきチョッキ", "たべのこし", "しんかのきせき", "クリアチャーム"];
+const TYPE_CHART = { "ノーマル": { "いわ": 0.5, "ゴースト": 0, "はがね": 0.5 }, "ほのお": { "ほのお": 0.5, "みず": 0.5, "くさ": 2, "こおり": 2, "むし": 2, "いわ": 0.5, "ドラゴン": 0.5, "はがね": 2 }, "みず": { "ほのお": 2, "みず": 0.5, "くさ": 0.5, "じめん": 2, "いわ": 2, "ドラゴン": 0.5 }, "でんき": { "みず": 2, "でんき": 0.5, "くさ": 0.5, "じめん": 0, "ひこう": 2, "ドラゴン": 0.5 }, "くさ": { "ほのお": 0.5, "みず": 2, "くさ": 0.5, "どく": 0.5, "じめん": 2, "ひこう": 0.5, "むし": 0.5, "いわ": 2, "ドラゴン": 0.5, "はがね": 0.5 }, "こおり": { "ほのお": 0.5, "みず": 0.5, "くさ": 2, "こおり": 0.5, "じめん": 2, "ひこう": 2, "ドラゴン": 2, "はがね": 0.5 }, "かくとう": { "ノーマル": 2, "こおり": 2, "どく": 0.5, "ひこう": 0.5, "エスパー": 0.5, "むし": 0.5, "いわ": 2, "ゴースト": 0, "あく": 2, "はがね": 2, "フェアリー": 0.5 }, "どく": { "くさ": 2, "どく": 0.5, "じめん": 0.5, "いわ": 0.5, "ゴースト": 0.5, "はがね": 0, "フェアリー": 2 }, "じめん": { "ほのお": 2, "でんき": 2, "くさ": 0.5, "どく": 2, "ひこう": 0, "むし": 0.5, "いわ": 2, "はがね": 2 }, "ひこう": { "でんき": 0.5, "くさ": 2, "かくとう": 2, "むし": 2, "いわ": 0.5, "はがね": 0.5 }, "エスパー": { "かくとう": 2, "どく": 2, "エスパー": 0.5, "あく": 0, "はがね": 0.5 }, "むし": { "ほのお": 0.5, "くさ": 2, "かくとう": 0.5, "どく": 0.5, "ひこう": 0.5, "エスパー": 2, "ゴースト": 0.5, "あく": 2, "はがね": 0.5, "フェアリー": 0.5 }, "いわ": { "ほのお": 2, "こおり": 2, "かくとう": 0.5, "じめん": 0.5, "ひこう": 2, "むし": 2, "はがね": 0.5 }, "ゴースト": { "ノーマル": 0, "エスパー": 2, "ゴースト": 2, "あく": 0.5 }, "ドラゴン": { "ドラゴン": 2, "はがね": 0.5, "フェアリー": 0 }, "あく": { "かくとう": 0.5, "エスパー": 2, "ゴースト": 2, "あく": 0.5, "フェアリー": 0.5 }, "はがね": { "ほのお": 0.5, "みず": 0.5, "でんき": 0.5, "こおり": 2, "いわ": 2, "はがね": 0.5, "フェアリー": 2 }, "フェアリー": { "ほのお": 0.5, "かくとう": 2, "どく": 0.5, "ドラゴン": 2, "あく": 2, "はがね": 0.5 }, };
+
+// --- Helper Functions ---
+const createDefaultPokemonState = (name = "カイリュー") => { const data = POKEMON_DATA[name]; return { id: self.crypto.randomUUID(), name, level: 50, item: "なし", ability: data.abilities[0], teraType: "なし", nature: "がんばりや", ivs: { H: 31, A: 31, B: 31, C: 31, D: 31, S: 31 }, evs: { H: 0, A: 0, B: 0, C: 0, D: 0, S: 0 }, moves: data.learnset.slice(0, 4), boosts: { A: 0, B: 0, C: 0, D: 0, S: 0 }, }; };
+const calculateStat = (base, iv, ev, level, natureMod) => Math.floor(Math.floor((2 * base + iv + Math.floor(ev / 4)) * level / 100 + 5) * natureMod);
+const calculateHP = (base, iv, ev, level) => base === 1 ? 1 : Math.floor((2 * base + iv + Math.floor(ev / 4)) * level / 100) + level + 10;
+
+// --- Auth Component ---
+const AuthComponent = () => {
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const [isSignUp, setIsSignUp] = useState(true);
+    const [error, setError] = useState('');
+    const [loading, setLoading] = useState(false);
+    const DUMMY_DOMAIN = "@pokeapp.local";
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setError('');
+        setLoading(true);
+
+        if (!/^[a-zA-Z0-9_]{3,15}$/.test(username)) {
+            setError("ユーザー名は3〜15文字の半角英数字とアンダースコア(_)のみ使用できます。");
+            setLoading(false);
+            return;
+        }
+
+        const fakeEmail = `${username.toLowerCase()}${DUMMY_DOMAIN}`;
+
+        try {
+            if (isSignUp) {
+                const usernameRef = doc(db, "usernames", username.toLowerCase());
+                const usernameDoc = await getDoc(usernameRef);
+                if (usernameDoc.exists()) {
+                    throw new Error("このユーザー名は既に使用されています。");
+                }
+                const userCredential = await createUserWithEmailAndPassword(auth, fakeEmail, password);
+                const user = userCredential.user;
+                await setDoc(doc(db, "users", user.uid), { username: username });
+                await setDoc(usernameRef, { uid: user.uid });
+            } else {
+                await signInWithEmailAndPassword(auth, fakeEmail, password);
+            }
+        } catch (err) {
+            if (err.code === 'auth/email-already-in-use' || err.message === "このユーザー名は既に使用されています。") {
+                setError("このユーザー名は既に使用されています。");
+            } else if (err.code === 'auth/user-not-found' || err.code === 'auth/wrong-password' || err.code === 'auth/invalid-credential') {
+                setError("ユーザー名またはパスワードが間違っています。");
+            } else if (err.code === 'auth/weak-password') {
+                setError("パスワードは6文字以上で設定してください。");
+            } else {
+                setError("エラーが発生しました。しばらくしてから再度お試しください。");
+                console.error("Firebase Auth Error:", err);
+            }
+        } finally {
+            setLoading(false);
+        }
+    };
+
+    return (
+        <div className="p-4 md:p-6 max-w-md mx-auto">
+            <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
+                <h2 className="text-2xl font-bold text-center mb-6">{isSignUp ? 'ユーザー登録' : 'ログイン'}</h2>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                    <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="ユーザー名 (半角英数字と_のみ)" required className="w-full bg-gray-700 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="パスワード (6文字以上)" required className="w-full bg-gray-700 text-white p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    <button type="submit" disabled={loading} className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition-colors flex items-center justify-center gap-2 disabled:bg-gray-500">
+                        {loading ? '処理中...' : (isSignUp ? <><UserPlus size={20} />登録する</> : <><LogIn size={20} />ログインする</>)}
+                    </button>
+                    {error && <p className="text-red-400 text-sm text-center">{error}</p>}
+                </form>
+                <button onClick={() => setIsSignUp(!isSignUp)} className="w-full mt-4 text-sm text-gray-400 hover:text-white">
+                    {isSignUp ? '既にアカウントをお持ちですか？ログイン' : 'アカウントをお持ちでないですか？新規登録'}
+                </button>
+            </div>
+        </div>
+    );
+};
+
+
+// --- Chat Components ---
+const ChatLayout = ({ user, teams, setTeams, setActiveTab }) => {
+    const [friends, setFriends] = useState([]);
+    const [requests, setRequests] = useState([]);
+    const [activeChat, setActiveChat] = useState(null);
+    const [isUserSearchOpen, setIsUserSearchOpen] = useState(false);
+
+    useEffect(() => {
+        if (!user) return;
+        const q = query(collection(db, "friendships"), where("users", "array-contains", user.uid));
+        const unsubscribe = onSnapshot(q, (snapshot) => {
+            const currentFriends = [];
+            const currentRequests = [];
+            snapshot.forEach(doc => {
+                const data = doc.data();
+                const friendId = data.users.find(id => id !== user.uid);
+                if (data.status === "accepted") {
+                    currentFriends.push({ id: doc.id, friendId });
+                } else if (data.status === "pending" && data.requestedBy !== user.uid) {
+                    currentRequests.push({ id: doc.id, requesterId: friendId });
+                }
+            });
+            const fetchUsernames = async () => {
+                const friendPromises = currentFriends.map(async f => {
+                    const userDoc = await getDoc(doc(db, "users", f.friendId));
+                    return { ...f, username: userDoc.data()?.username || '不明' };
+                });
+                 const requestPromises = currentRequests.map(async r => {
+                    const userDoc = await getDoc(doc(db, "users", r.requesterId));
+                    return { ...r, username: userDoc.data()?.username || '不明' };
+                });
+                setFriends(await Promise.all(friendPromises));
+                setRequests(await Promise.all(requestPromises));
+            };
+            fetchUsernames();
+        });
+        return () => unsubscribe();
+    }, [user]);
+
+    const handleAcceptRequest = async (requestId) => {
+        await updateDoc(doc(db, "friendships", requestId), { status: "accepted" });
+    };
+
+    const handleDeclineRequest = async (requestId) => {
+        await deleteDoc(doc(db, "friendships", requestId));
+    };
+
+    const startChat = async (friendId, friendUsername) => {
+        const sortedUsers = [user.uid, friendId].sort();
+        const q = query(collection(db, "chats"), where("users", "==", sortedUsers));
+        const querySnapshot = await getDocs(q);
+        if (!querySnapshot.empty) {
+            const chatDoc = querySnapshot.docs[0];
+            setActiveChat({ id: chatDoc.id, name: friendUsername });
+        } else {
+            const newChatRef = await addDoc(collection(db, "chats"), {
+                users: sortedUsers,
+                type: "dm"
+            });
+            setActiveChat({ id: newChatRef.id, name: friendUsername });
+        }
+    };
+
+    return (
+        <div className="flex h-full">
+            {isUserSearchOpen && <UserSearchModal user={user} onClose={() => setIsUserSearchOpen(false)} />}
+            <div className="w-64 bg-gray-800 flex flex-col p-3">
+                <button onClick={() => setIsUserSearchOpen(true)} className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg mb-4">フレンドを追加</button>
+                <div className="flex-grow overflow-y-auto">
+                    <h3 className="text-gray-400 text-sm font-bold mb-2">ダイレクトメッセージ</h3>
+                    {friends.map(friend => (
+                        <div key={friend.id} onClick={() => startChat(friend.friendId, friend.username)} className={`p-2 rounded-md cursor-pointer hover:bg-gray-700 ${activeChat?.name === friend.username ? 'bg-gray-900' : ''}`}>
+                            {friend.username}
+                        </div>
+                    ))}
+                    {requests.length > 0 && (
+                        <div className="mt-4">
+                            <h3 className="text-yellow-400 text-sm font-bold mb-2">保留中のリクエスト</h3>
+                            {requests.map(req => (
+                                <div key={req.id} className="p-2 rounded-md bg-gray-700/50 mb-2">
+                                    <p className="text-sm">{req.username}</p>
+                                    <div className="flex gap-2 mt-1">
+                                        <button onClick={() => handleAcceptRequest(req.id)} className="bg-green-600 hover:bg-green-700 p-1 rounded-full"><UserCheck size={16}/></button>
+                                        <button onClick={() => handleDeclineRequest(req.id)} className="bg-red-600 hover:bg-red-700 p-1 rounded-full"><UserX size={16}/></button>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    )}
+                </div>
+                 <div className="mt-auto p-2 bg-gray-900 rounded-md flex items-center">
+                    <span className="font-bold">{user.displayName}</span>
+                </div>
+            </div>
+            <div className="flex-1 bg-gray-700 flex flex-col">
+                {activeChat ? (
+                    <ChatWindow chat={activeChat} user={user} teams={teams} setTeams={setTeams} setActiveTab={setActiveTab} />
+                ) : (
+                    <div className="flex items-center justify-center h-full text-gray-400">
+                        <p>チャットを開始するフレンドを選択してください。</p>
+                    </div>
+                )}
+            </div>
+        </div>
+    );
+};
+const ChatWindow = ({ chat, user, teams, setTeams, setActiveTab }) => {
+    const [messages, setMessages] = useState([]);
+    const [newMessage, setNewMessage] = useState("");
+    const messagesEndRef = useRef(null);
+
+    useEffect(() => {
+        const q = query(collection(db, "chats", chat.id, "messages"), orderBy("timestamp", "asc"));
+        const unsubscribe = onSnapshot(q, (snapshot) => {
+            setMessages(snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })));
+        });
+        return () => unsubscribe();
+    }, [chat.id]);
+
+    useEffect(() => {
+        messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    }, [messages]);
+
+    const handleSendMessage = async (e) => {
+        e.preventDefault();
+        if (newMessage.trim() === "") return;
+        await addDoc(collection(db, "chats", chat.id, "messages"), {
+            text: newMessage,
+            senderId: user.uid,
+            senderName: user.displayName,
+            timestamp: serverTimestamp(),
+            type: "text"
+        });
+        setNewMessage("");
+    };
+    
+    const handleShareTeam = async (team) => {
+        const teamCode = btoa(JSON.stringify(team));
+        await addDoc(collection(db, "chats", chat.id, "messages"), {
+            text: `${user.displayName}がチーム「${team.name}」を共有しました。`,
+            senderId: user.uid,
+            senderName: user.displayName,
+            timestamp: serverTimestamp(),
+            type: "team_share",
+            teamData: teamCode
+        });
+    };
+
+    const handleImportTeam = (teamCode) => {
+        try {
+            const decoded = atob(teamCode);
+            const parsedTeam = JSON.parse(decoded);
+            const emptyTeamIndex = teams.findIndex(t => t.pokemons.length === 0);
+            if(emptyTeamIndex !== -1) {
+                const newTeams = [...teams];
+                newTeams[emptyTeamIndex] = parsedTeam;
+                setTeams(newTeams);
+                alert(`チーム「${parsedTeam.name}」をチーム${emptyTeamIndex + 1}にインポートしました。`);
+                setActiveTab('builder');
+            } else {
+                alert("空のチームスロットがありません。");
+            }
+        } catch (e) {
+            alert("チームのインポートに失敗しました。");
+        }
+    };
+
+    return (
+        <div className="flex flex-col h-full">
+            <header className="p-4 border-b border-gray-800 shadow-md">
+                <h2 className="text-xl font-bold"><AtSign size={20} className="inline-block -mt-1 mr-2"/>{chat.name}</h2>
+            </header>
+            <main className="flex-grow p-4 overflow-y-auto">
+                {messages.map(msg => (
+                    <div key={msg.id} className={`flex mb-4 ${msg.senderId === user.uid ? 'justify-end' : ''}`}>
+                        <div className={msg.senderId === user.uid ? 'text-right' : ''}>
+                            <span className="text-sm text-gray-400">{msg.senderName}</span>
+                            {msg.type === 'team_share' ? (
+                                <div className="mt-1 p-3 rounded-lg bg-indigo-800 max-w-sm">
+                                    <p>{msg.text}</p>
+                                    <button onClick={() => handleImportTeam(msg.teamData)} className="mt-2 bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-1 px-3 rounded text-sm">チームをインポート</button>
+                                </div>
+                            ) : (
+                                <div className={`mt-1 p-3 rounded-lg max-w-md ${msg.senderId === user.uid ? 'bg-blue-600 text-white' : 'bg-gray-800'}`}>
+                                    {msg.text}
+                                </div>
+                            )}
+                        </div>
+                    </div>
+                ))}
+                <div ref={messagesEndRef} />
+            </main>
+            <footer className="p-4">
+                <form onSubmit={handleSendMessage} className="flex items-center gap-2">
+                    <ShareTeamButton teams={teams} onShare={handleShareTeam} />
+                    <input type="text" value={newMessage} onChange={e => setNewMessage(e.target.value)} placeholder={`${chat.name}へのメッセージ`} className="flex-grow bg-gray-800 text-white p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                    <button type="submit" className="bg-blue-600 hover:bg-blue-700 text-white font-bold p-2 rounded-lg"><Send/></button>
+                </form>
+            </footer>
+        </div>
+    );
+};
+const ShareTeamButton = ({ teams, onShare }) => {
+    const [isOpen, setIsOpen] = useState(false);
+    return (
+        <div className="relative">
+            <button onClick={() => setIsOpen(!isOpen)} className="bg-gray-600 hover:bg-gray-500 text-white p-2 rounded-lg"><Share2/></button>
+            {isOpen && (
+                <div className="absolute bottom-full mb-2 w-48 bg-gray-900 rounded-lg shadow-lg p-2">
+                    <p className="text-xs text-gray-400 mb-1">共有するチームを選択</p>
+                    {teams.map(team => (
+                        <button key={team.id} onClick={() => { onShare(team); setIsOpen(false); }} className="w-full text-left p-2 rounded hover:bg-gray-700 text-sm">
+                            {team.name}
+                        </button>
+                    ))}
+                </div>
+            )}
+        </div>
+    );
+};
+const UserSearchModal = ({ user, onClose }) => {
+    const [searchTerm, setSearchTerm] = useState("");
+    const [results, setResults] = useState([]);
+    const [status, setStatus] = useState("");
+
+    const handleSearch = async (e) => {
+        e.preventDefault();
+        if (searchTerm.trim() === "") return;
+        setStatus("検索中...");
+        const q = query(collection(db, "users"), where("username", "==", searchTerm));
+        const querySnapshot = await getDocs(q);
+        if (querySnapshot.empty) {
+            setStatus("ユーザーが見つかりませんでした。");
+            setResults([]);
+        } else {
+            setResults(querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })));
+            setStatus("");
+        }
+    };
+
+    const handleSendRequest = async (targetId) => {
+        const q1 = query(collection(db, "friendships"), where("users", "==", [user.uid, targetId].sort()));
+        const existing = await getDocs(q1);
+        if(!existing.empty) {
+            alert("既にフレンドか、リクエストを送信済みです。");
+            return;
+        }
+
+        await addDoc(collection(db, "friendships"), {
+            users: [user.uid, targetId].sort(),
+            status: "pending",
+            requestedBy: user.uid,
+            createdAt: serverTimestamp()
+        });
+        alert("フレンドリクエストを送信しました。");
+    };
+
+    return (
+        <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4">
+            <div className="bg-gray-800 rounded-lg p-4 w-full max-w-md flex flex-col gap-4">
+                 <div className="flex justify-between items-center"><h3 className="text-xl font-bold">フレンドを追加</h3><button onClick={onClose} className="bg-red-600 hover:bg-red-700 p-2 rounded"><X size={20}/></button></div>
+                 <form onSubmit={handleSearch} className="flex gap-2">
+                    <input type="text" value={searchTerm} onChange={e => setSearchTerm(e.target.value)} placeholder="ユーザー名で検索" className="flex-grow bg-gray-700 p-2 rounded" />
+                    <button type="submit" className="bg-blue-600 hover:bg-blue-700 p-2 rounded"><Search/></button>
+                 </form>
+                 <div>
+                    {status && <p className="text-gray-400">{status}</p>}
+                    {results.map(res => (
+                        <div key={res.id} className="flex items-center justify-between p-2 bg-gray-700 rounded">
+                            <span>{res.username}</span>
+                            {res.id !== user.uid && <button onClick={() => handleSendRequest(res.id)} className="bg-green-600 hover:bg-green-700 text-sm py-1 px-2 rounded">申請</button>}
+                        </div>
+                    ))}
+                 </div>
+            </div>
+        </div>
+    );
+};
+
+// --- Damage Calculator Components ---
+const DamageCalculator = ({ attacker, setAttacker, defender, setDefender }) => {
+    const [field, setField] = useState({ weather: "なし", terrain: "なし", isCritical: false, isTerastallized: false, defender: { reflect: false, lightScreen: false, auroraVeil: false, stealthRock: false, spikes: 0 } });
+    const [selectedMove1, setSelectedMove1] = useState(attacker.moves[0]);
+    const [selectedMove2, setSelectedMove2] = useState("なし");
+    const [result, setResult] = useState(null);
+    const [isPokemonSelectorOpen, setIsPokemonSelectorOpen] = useState(false);
+    const [selectorTarget, setSelectorTarget] = useState('attacker');
+
+    const move1Category = MOVE_DATA[selectedMove1]?.category;
+
+    useEffect(() => {
+        const attackerLearnset = POKEMON_DATA[attacker.name].learnset;
+        if (!attackerLearnset.includes(selectedMove1)) { setSelectedMove1(attackerLearnset[0]); }
+        if (selectedMove2 !== "なし" && !attackerLearnset.includes(selectedMove2)) { setSelectedMove2("なし"); }
+    }, [attacker, selectedMove1, selectedMove2]);
+
+    const calculateDamageForMove = (moveName, currentAttacker, currentDefender, currentField) => {
+        const moveData = MOVE_DATA[moveName];
+        if (!moveData || moveData.power === 0) return { damages: Array(16).fill(0), minDamage: 0, maxDamage: 0 };
+        
+        const attackerData = POKEMON_DATA[currentAttacker.name];
+        const getStat = (pokemon, stat) => { const base = POKEMON_DATA[pokemon.name].stats[stat]; const natureInfo = NATURE_DATA[pokemon.nature]; let natureMod = 1.0; if (natureInfo?.inc === stat) natureMod = 1.1; if (natureInfo?.dec === stat) natureMod = 0.9; return stat === 'H' ? calculateHP(base, pokemon.ivs.H, pokemon.evs.H, pokemon.level) : calculateStat(base, pokemon.ivs[stat], pokemon.evs[stat], pokemon.level, natureMod); };
+        
+        let moveType = moveData.type; let currentMoveCategory = moveData.category;
+        if (moveName === "テラバースト" && currentField.isTerastallized) { moveType = currentAttacker.teraType; currentMoveCategory = getStat(currentAttacker, 'A') > getStat(currentAttacker, 'C') ? "Physical" : "Special"; }
+        
+        const attackStatName = currentMoveCategory === "Physical" ? 'A' : 'C'; const defenseStatName = currentMoveCategory === "Physical" ? 'B' : 'D';
+        let attackRank = currentAttacker.boosts[attackStatName]; let defenseRank = currentDefender.boosts[defenseStatName];
+        if (currentField.isCritical) { attackRank = Math.max(0, attackRank); defenseRank = Math.min(0, defenseRank); }
+        const getBoostMultiplier = (rank) => rank >= 0 ? (2 + rank) / 2 : 2 / (2 - rank);
+        let attackValue = Math.floor(getStat(currentAttacker, attackStatName) * getBoostMultiplier(attackRank));
+        let defenseValue = Math.floor(getStat(currentDefender, defenseStatName) * getBoostMultiplier(defenseRank));
+        
+        let power = moveData.power;
+        if (currentField.terrain === "エレキ" && moveData.type === "でんき") power = Math.floor(power * 1.3);
+        if (currentField.terrain === "グラス" && moveData.type === "くさ") power = Math.floor(power * 1.3);
+        
+        let baseDamage = Math.floor(Math.floor(Math.floor(currentAttacker.level * 2 / 5 + 2) * power * attackValue / defenseValue) / 50) + 2;
+        
+        let weatherMod = 1; if ((currentField.weather === "はれ" && moveType === "ほのお") || (currentField.weather === "あめ" && moveType === "みず")) weatherMod = 1.5; if ((currentField.weather === "はれ" && moveType === "みず") || (currentField.weather === "あめ" && moveType === "ほのお")) weatherMod = 0.5; baseDamage = Math.floor(baseDamage * weatherMod);
+        if (currentField.isCritical) baseDamage = Math.floor(baseDamage * 1.5);
+        
+        let stabMod = 1.0;
+        if (currentField.isTerastallized) {
+            const teraType = moveName === "テラバースト" && currentAttacker.teraType !== 'なし' ? currentAttacker.teraType : moveType;
+            if (currentAttacker.teraType === teraType) { stabMod = attackerData.types.includes(teraType) ? 2.0 : 1.5; }
+            else if (attackerData.types.includes(moveType)) { stabMod = 1.5; }
+        } else if (attackerData.types.includes(moveType)) { stabMod = 1.5; }
+        baseDamage = Math.floor(baseDamage * stabMod);
+        
+        let typeMod = 1; const defenderTypes = currentDefender.teraType !== "なし" ? [currentDefender.teraType] : POKEMON_DATA[currentDefender.name].types; if (TYPE_CHART[moveType]) { defenderTypes.forEach(defType => { typeMod *= TYPE_CHART[moveType][defType] ?? 1; }); } baseDamage = Math.floor(baseDamage * typeMod);
+        
+        if (currentAttacker.status === "やけど" && currentMoveCategory === "Physical" && currentAttacker.ability !== "こんじょう") baseDamage = Math.floor(baseDamage * 0.5);
+        if (currentDefender.ability === "マルチスケイル" && getStat(currentDefender, 'H') === POKEMON_DATA[currentDefender.name].stats.H) baseDamage = Math.floor(baseDamage * 0.5);
+        
+        let screenMod = 1;
+        if (currentField.defender.auroraVeil) screenMod = 0.5;
+        else if (currentField.defender.reflect && currentMoveCategory === "Physical") screenMod = 0.5;
+        else if (currentField.defender.lightScreen && currentMoveCategory === "Special") screenMod = 0.5;
+        baseDamage = Math.floor(baseDamage * screenMod);
+
+        const damages = Array.from({ length: 16 }, (_, i) => Math.max(1, Math.floor(baseDamage * (85 + i) / 100)));
+        return { damages, minDamage: Math.min(...damages), maxDamage: Math.max(...damages) };
+    };
+
+    const getKoChanceText = (damages, defenderHP) => {
+        const koCount = damages.filter(d => d >= defenderHP).length;
+        if (koCount === 16) return "確定1発";
+        if (koCount > 0) return `乱数1発 (${((koCount / 16) * 100).toFixed(1)}%)`;
+        
+        const minDamage = Math.min(...damages);
+        if (minDamage === 0) return "効果なし";
+        for (let i = 2; i <= 10; i++) {
+            if (minDamage * i >= defenderHP) return `確定${i}発`;
+        }
+        return "確定11発以上";
+    };
+
+    const handleCalculate = () => {
+        const defenderHP = calculateHP(POKEMON_DATA[defender.name].stats.H, defender.ivs.H, defender.evs.H, defender.level);
+        
+        const result1 = calculateDamageForMove(selectedMove1, attacker, defender, field);
+        
+        if (selectedMove2 === "なし") {
+            setResult({
+                minDamage: result1.minDamage, maxDamage: result1.maxDamage,
+                minPercentage: parseFloat(((result1.minDamage / defenderHP) * 100).toFixed(1)),
+                maxPercentage: parseFloat(((result1.maxDamage / defenderHP) * 100).toFixed(1)),
+                koChance: getKoChanceText(result1.damages, defenderHP),
+                defenderHP
+            });
+        } else {
+            const result2 = calculateDamageForMove(selectedMove2, attacker, defender, field);
+            const totalMin = result1.minDamage + result2.minDamage;
+            const totalMax = result1.maxDamage + result2.maxDamage;
+
+            let comboKoCount = 0;
+            for (const d1 of result1.damages) {
+                for (const d2 of result2.damages) {
+                    if (d1 + d2 >= defenderHP) {
+                        comboKoCount++;
+                    }
+                }
+            }
+            let koChanceText = "";
+            if (comboKoCount === 256) koChanceText = "確定コンボ";
+            else if (comboKoCount > 0) koChanceText = `乱数コンボ (${((comboKoCount / 256) * 100).toFixed(1)}%)`;
+            else koChanceText = `確定3発以上`;
+
+            setResult({
+                minDamage: totalMin, maxDamage: totalMax,
+                minPercentage: parseFloat(((totalMin / defenderHP) * 100).toFixed(1)),
+                maxPercentage: parseFloat(((totalMax / defenderHP) * 100).toFixed(1)),
+                koChance: koChanceText,
+                defenderHP
+            });
+        }
+    };
+
+    const handleSwap = () => { const temp = attacker; setAttacker(defender); setDefender(temp); };
+    const openPokemonSelector = (target) => { setSelectorTarget(target); setIsPokemonSelectorOpen(true); };
+    const handlePokemonSelect = (pokemonName) => { const newPokemon = createDefaultPokemonState(pokemonName); if (selectorTarget === 'attacker') setAttacker(newPokemon); else setDefender(newPokemon); setIsPokemonSelectorOpen(false); };
+
+    return (
+        <div className="p-4 md:p-6 space-y-4">
+            {isPokemonSelectorOpen && <PokemonSelectorModal onSelect={handlePokemonSelect} onClose={() => setIsPokemonSelectorOpen(false)} />}
+            <div className="grid md:grid-cols-2 gap-4 items-start relative">
+                <button onClick={handleSwap} className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 p-2 bg-gray-600 hover:bg-gray-500 rounded-full text-white" title="入れ替え"><ArrowRightLeft size={20} /></button>
+                <div><h3 className="text-lg font-bold mb-2 text-cyan-400">攻撃側</h3><CalculatorPokemonEditor pokemon={attacker} setPokemon={setAttacker} role="attacker" moveCategory={move1Category} onOpenSelector={() => openPokemonSelector('attacker')} /></div>
+                <div><h3 className="text-lg font-bold mb-2 text-red-400">防御側</h3><CalculatorPokemonEditor pokemon={defender} setPokemon={setDefender} role="defender" moveCategory={move1Category} onOpenSelector={() => openPokemonSelector('defender')} /></div>
+            </div>
+            
+            <FieldEffects field={field} setField={setField} attacker={attacker} selectedMove1={selectedMove1} setSelectedMove1={setSelectedMove1} selectedMove2={selectedMove2} setSelectedMove2={setSelectedMove2} handleCalculate={handleCalculate} />
+
+            {result && (<div className="bg-gray-800 p-4 rounded-lg space-y-3">
+                <h4 className="font-bold text-xl text-yellow-400 text-center">計算結果</h4>
+                <div className="text-center">
+                    <p className="text-2xl font-mono tracking-wider">{result.minDamage} 〜 {result.maxDamage}</p>
+                    <p className="text-lg text-green-400 font-semibold">{result.minPercentage}% 〜 {result.maxPercentage}%</p>
+                    <p className="text-sm text-gray-400">{result.koChance}</p>
+                </div>
+                <div className="w-full bg-gray-700 rounded-full h-5 relative overflow-hidden">
+                    <div className="absolute top-0 left-0 h-full bg-yellow-500" style={{ width: `${Math.min(result.maxPercentage, 100)}%` }}></div>
+                    <div className="absolute top-0 left-0 h-full bg-red-600" style={{ width: `${Math.min(result.minPercentage, 100)}%` }}></div>
+                    <div className="absolute top-0 left-0 h-full w-full flex items-center justify-center">
+                        <span className="text-white font-bold text-xs drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">ダメージ範囲</span>
+                    </div>
+                </div>
+            </div>)}
+        </div>
+    );
+};
+const CalculatorPokemonEditor = ({ pokemon, setPokemon, role, moveCategory, onOpenSelector }) => {
+    const data = POKEMON_DATA[pokemon.name];
+    const statLetters = role === 'attacker' ? (moveCategory === "Physical" ? ["A"] : ["C"]) : (moveCategory === "Physical" ? ["H", "B"] : ["H", "D"]);
+    const handleEvChange = (stat, value) => { const numValue = parseInt(value) || 0; const newEvs = { ...pokemon.evs, [stat]: numValue }; if (Object.values(newEvs).reduce((a, b) => a + b, 0) <= 510) { setPokemon({ ...pokemon, evs: newEvs }); } };
+    const handleBoostChange = (stat, value) => { const newBoosts = {...pokemon.boosts, [stat]: Math.max(-6, Math.min(6, pokemon.boosts[stat] + value))}; setPokemon({...pokemon, boosts: newBoosts}); };
+    const handleNatureChange = (value) => setPokemon({...pokemon, nature: value});
+    
+    const StatDisplay = ({ stat }) => {
+        const base = data.stats[stat];
+        const iv = pokemon.ivs[stat];
+        const ev = pokemon.evs[stat];
+        const level = pokemon.level;
+        const natureInfo = NATURE_DATA[pokemon.nature];
+        let natureMod = 1.0;
+        if (natureInfo?.inc === stat) natureMod = 1.1;
+        if (natureInfo?.dec === stat) natureMod = 0.9;
+        const statValue = stat === 'H' ? calculateHP(base, iv, ev, level) : calculateStat(base, iv, ev, level, natureMod);
+
+        return (
+            <div className="space-y-1">
+                <div className="flex items-center gap-2">
+                    <label className="w-5 font-bold text-sm">{stat}</label>
+                    <span className="w-12 text-center font-mono text-lg text-yellow-300">{statValue}</span>
+                    <input type="range" min="0" max="252" step="4" value={ev} onChange={(e) => handleEvChange(stat, e.target.value)} className="w-full h-2 bg-gray-600 rounded-lg" />
+                    <input type="number" min="0" max="252" step="4" value={ev} onChange={(e) => handleEvChange(stat, e.target.value)} className="bg-gray-900 w-16 p-1 rounded text-center" />
+                </div>
+                <div className="flex items-center gap-2 pl-7">
+                    <span className="text-xs text-gray-400 ml-auto">能力ランク:</span>
+                    <div className="flex items-center gap-1 bg-gray-900/50 rounded-full p-0.5">
+                        <button onClick={() => handleBoostChange(stat, -1)} className="text-red-400 hover:bg-red-900 rounded-full"><ChevronsDown size={14}/></button>
+                        <span className={`font-bold w-5 text-center ${pokemon.boosts[stat] > 0 ? 'text-green-400' : pokemon.boosts[stat] < 0 ? 'text-red-400' : ''}`}>{pokemon.boosts[stat] > 0 ? '+' : ''}{pokemon.boosts[stat]}</span>
+                        <button onClick={() => handleBoostChange(stat, 1)} className="text-green-400 hover:bg-green-900 rounded-full"><ChevronsUp size={14}/></button>
+                    </div>
+                </div>
+            </div>
+        );
+    };
+
+    return (
+        <div className="bg-gray-800 p-4 rounded-lg space-y-3">
+            <div className="flex items-center space-x-4">
+                <img src={data.sprite} alt={pokemon.name} className="w-16 h-16 bg-gray-700 rounded-full pixelated" />
+                <div><button onClick={onOpenSelector} className="text-xl font-bold hover:text-yellow-400">{pokemon.name}</button><div className="text-sm text-gray-400">タイプ: {data.types.join(' / ')}</div></div>
+            </div>
+            <div className="grid grid-cols-2 gap-2 text-sm">
+                <select value={pokemon.item} onChange={e => setPokemon({...pokemon, item: e.target.value})} className="bg-gray-700 text-white p-2 rounded">{ITEMS.map(i => <option key={i} value={i}>{i}</option>)}</select>
+                <select value={pokemon.ability} onChange={e => setPokemon({...pokemon, ability: e.target.value})} className="bg-gray-700 text-white p-2 rounded">{data.abilities.map(a => <option key={a} value={a}>{a}</option>)}</select>
+                <select value={pokemon.nature} onChange={e => handleNatureChange(e.target.value)} className="bg-gray-700 text-white p-2 rounded col-span-2">{NATURE_NAMES.map(n => <option key={n} value={n}>{n}</option>)}</select>
+            </div>
+            <div className="space-y-3 pt-2">
+                <p className="text-xs text-gray-400">主要ステータス</p>
+                {statLetters.map(stat => <StatDisplay key={stat} stat={stat} />)}
+            </div>
+        </div>
+    );
+};
+const FieldEffects = ({ field, setField, attacker, selectedMove1, setSelectedMove1, selectedMove2, setSelectedMove2, handleCalculate }) => {
+    const handleFieldChange = (key, value) => setField(prev => ({...prev, [key]: value}));
+    const handleDefenderFieldChange = (key, value) => setField(prev => ({...prev, defender: {...prev.defender, [key]: value}}));
+    
+    return (
+        <div className="bg-gray-800 p-4 rounded-lg space-y-4">
+            <div className="flex flex-wrap items-center gap-2">
+                <button onClick={() => handleFieldChange('isTerastallized', !field.isTerastallized)} className={`p-2 rounded-lg text-sm flex items-center justify-center gap-2 ${field.isTerastallized ? 'bg-purple-600 text-white ring-2 ring-purple-300' : 'bg-gray-700'}`}><Sparkles size={16}/> テラスタル</button>
+                <select value={selectedMove1} onChange={e => setSelectedMove1(e.target.value)} className="bg-gray-700 text-white p-2 rounded text-sm flex-grow">
+                    {POKEMON_DATA[attacker.name].learnset.map(m => <option key={m} value={m}>{m}</option>)}
+                </select>
+                <span className="text-lg font-bold">+</span>
+                <select value={selectedMove2} onChange={e => setSelectedMove2(e.target.value)} className="bg-gray-700 text-white p-2 rounded text-sm flex-grow">
+                     <option value="なし">連続技なし</option>
+                    {POKEMON_DATA[attacker.name].learnset.map(m => <option key={m} value={m}>{m}</option>)}
+                </select>
+                <label className="flex items-center gap-2 bg-gray-700 p-2 rounded cursor-pointer text-sm"><input type="checkbox" checked={field.isCritical} onChange={e => handleFieldChange('isCritical', e.target.checked)} className="w-4 h-4 text-blue-600"/>急所</label>
+            </div>
+            <div className="border-t border-gray-700 pt-3">
+                <p className="text-sm text-gray-400 mb-2">フィールド効果</p>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2">
+                    <select value={field.weather} onChange={e => handleFieldChange('weather', e.target.value)} className="bg-gray-700 text-white p-2 rounded text-sm"><option value="なし">天候なし</option><option value="はれ">はれ</option><option value="あめ">あめ</option></select>
+                    <select value={field.terrain} onChange={e => handleFieldChange('terrain', e.target.value)} className="bg-gray-700 text-white p-2 rounded text-sm"><option value="なし">フィールドなし</option><option value="エレキ">エレキ</option><option value="グラス">グラス</option><option value="サイコ">サイコ</option><option value="ミスト">ミスト</option></select>
+                    <label className="flex items-center gap-2 bg-gray-700 p-2 rounded cursor-pointer text-sm"><input type="checkbox" checked={field.defender.reflect} onChange={e => handleDefenderFieldChange('reflect', e.target.checked)} className="w-4 h-4"/>リフレクター</label>
+                    <label className="flex items-center gap-2 bg-gray-700 p-2 rounded cursor-pointer text-sm"><input type="checkbox" checked={field.defender.lightScreen} onChange={e => handleDefenderFieldChange('lightScreen', e.target.checked)} className="w-4 h-4"/>ひかりのかべ</label>
+                    <label className="flex items-center gap-2 bg-gray-700 p-2 rounded cursor-pointer text-sm"><input type="checkbox" checked={field.defender.auroraVeil} onChange={e => handleDefenderFieldChange('auroraVeil', e.target.checked)} className="w-4 h-4"/>オーロラベール</label>
+                    <label className="flex items-center gap-2 bg-gray-700 p-2 rounded cursor-pointer text-sm"><input type="checkbox" checked={field.defender.stealthRock} onChange={e => handleDefenderFieldChange('stealthRock', e.target.checked)} className="w-4 h-4"/>ステルスロック</label>
+                    <select value={field.defender.spikes} onChange={e => handleDefenderFieldChange('spikes', parseInt(e.target.value))} className="bg-gray-700 text-white p-2 rounded text-sm"><option value="0">まきびし: 0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
+                </div>
+            </div>
+            <div className="text-center mt-4"><button onClick={handleCalculate} className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg flex items-center gap-2 mx-auto"><RefreshCw size={20} /> 計算する</button></div>
+        </div>
+    );
+};
+
+// --- Team Builder Components ---
+const TeamBuilder = ({ teams, setTeams, activeTeamIndex, setActiveTeamIndex, setAttacker, setDefender, setActiveTab }) => {
+    const activeTeam = teams[activeTeamIndex];
+    const [selectedPokemonId, setSelectedPokemonId] = useState(activeTeam.pokemons[0]?.id || null);
+    const [isPokemonSelectorOpen, setIsPokemonSelectorOpen] = useState(false);
+    const [isImportExportOpen, setIsImportExportOpen] = useState(false);
+    
+    const selectedPokemon = activeTeam.pokemons.find(p => p.id === selectedPokemonId);
+    const selectedPokemonIndex = activeTeam.pokemons.findIndex(p => p.id === selectedPokemonId);
+
+    const updateTeam = (updatedTeam) => {
+        const newTeams = [...teams];
+        newTeams[activeTeamIndex] = updatedTeam;
+        setTeams(newTeams);
+    };
+
+    const updatePokemon = (updatedPokemon) => {
+        const updatedPokemons = activeTeam.pokemons.map(p => p.id === updatedPokemon.id ? updatedPokemon : p);
+        updateTeam({ ...activeTeam, pokemons: updatedPokemons });
+    };
+
+    const addPokemon = () => { if (activeTeam.pokemons.length < 6) { const newPokemon = createDefaultPokemonState(); updateTeam({ ...activeTeam, pokemons: [...activeTeam.pokemons, newPokemon] }); setSelectedPokemonId(newPokemon.id); } };
+    const removePokemon = (id) => { const newPokemons = activeTeam.pokemons.filter(p => p.id !== id); updateTeam({ ...activeTeam, pokemons: newPokemons }); if (selectedPokemonId === id) { setSelectedPokemonId(newPokemons[0]?.id || null); } };
+    const handlePokemonSelect = (pokemonName) => { const newPokemon = createDefaultPokemonState(pokemonName); const newPokemons = [...activeTeam.pokemons]; newPokemons[selectedPokemonIndex] = newPokemon; updateTeam({ ...activeTeam, pokemons: newPokemons }); setSelectedPokemonId(newPokemon.id); setIsPokemonSelectorOpen(false); };
+    const sendToCalculator = (side) => { if (!selectedPokemon) return; if (side === 'attacker') setAttacker(selectedPokemon); else setDefender(selectedPokemon); setActiveTab('calculator'); };
+    const handleTeamNameChange = (e) => updateTeam({ ...activeTeam, name: e.target.value });
+
+    return (
+        <div className="p-4 md:p-6 flex flex-col md:flex-row gap-4 h-full">
+            {isPokemonSelectorOpen && <PokemonSelectorModal onSelect={handlePokemonSelect} onClose={() => setIsPokemonSelectorOpen(false)} />}
+            {isImportExportOpen && <ImportExportModal team={activeTeam} setTeam={(team) => updateTeam(team)} onClose={() => setIsImportExportOpen(false)} />}
+            
+            <div className="w-full md:w-1/3 flex flex-col gap-2">
+                <div className="bg-gray-800 p-3 rounded-lg">
+                    <input type="text" value={activeTeam.name} onChange={handleTeamNameChange} className="w-full bg-gray-700 text-white p-2 rounded mb-2" placeholder="チーム名"/>
+                    <div className="flex gap-2">
+                        {teams.map((team, index) => (
+                            <button key={team.id} onClick={() => setActiveTeamIndex(index)} className={`flex-1 py-2 rounded text-sm ${activeTeamIndex === index ? 'bg-blue-600 text-white' : 'bg-gray-700 hover:bg-gray-600'}`}>
+                                {index + 1}
+                            </button>
+                        ))}
+                    </div>
+                </div>
+                 <div className="bg-gray-800 p-3 rounded-lg flex-grow">
+                    <h3 className="text-lg font-bold mb-2">チームメンバー</h3>
+                    <div className="space-y-2">
+                        {activeTeam.pokemons.map((p) => (
+                            <div key={p.id} onClick={() => setSelectedPokemonId(p.id)} className={`flex items-center p-2 rounded-lg cursor-pointer ${selectedPokemonId === p.id ? 'bg-blue-900/50 ring-2 ring-blue-400' : 'bg-gray-700 hover:bg-gray-600'}`}>
+                                <img src={POKEMON_DATA[p.name]?.sprite} alt={p.name} className="w-10 h-10 bg-gray-600 rounded-full mr-3 pixelated" /><div className="flex-grow"><span className="font-semibold">{p.name}</span><p className="text-xs text-gray-400">{p.item}</p></div><button onClick={(e) => { e.stopPropagation(); removePokemon(p.id); }} className="ml-auto text-gray-400 hover:text-white"><Trash2 size={18} /></button>
+                            </div>
+                        ))}
+                        {activeTeam.pokemons.length < 6 && (<button onClick={addPokemon} className="w-full mt-2 border-2 border-dashed border-gray-600 hover:bg-gray-700 text-gray-400 font-bold py-2 px-4 rounded-lg flex items-center justify-center gap-2"><PlusCircle size={20} /> ポケモンを追加</button>)}
+                    </div>
+                </div>
+                <div className="bg-gray-800 p-3 rounded-lg"><button onClick={() => setIsImportExportOpen(true)} className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center gap-2"><Upload size={18}/> インポート / エクスポート</button></div>
+            </div>
+
+            <div className="w-full md:w-2/3">
+                <FullPokemonEditor pokemon={selectedPokemon} updatePokemon={updatePokemon} onOpenSelector={() => setIsPokemonSelectorOpen(true)} sendToCalculator={sendToCalculator} />
+            </div>
+        </div>
+    );
+};
+const FullPokemonEditor = ({ pokemon, updatePokemon, onOpenSelector, sendToCalculator }) => {
+    if (!pokemon) return <div className="flex items-center justify-center h-full text-gray-500 bg-gray-800 rounded-lg"><p>ポケモンを選択または追加してください。</p></div>;
+
+    const data = POKEMON_DATA[pokemon.name];
+    const statLetters = ["H", "A", "B", "C", "D", "S"];
+    const handleEvChange = (stat, value) => { const numValue = parseInt(value) || 0; const newEvs = { ...pokemon.evs, [stat]: numValue }; if (Object.values(newEvs).reduce((a, b) => a + b, 0) <= 510) { updatePokemon({ ...pokemon, evs: newEvs }); } };
+    const handleChange = (field, value) => updatePokemon({ ...pokemon, [field]: value });
+    const handleMoveChange = (index, value) => { const newMoves = [...pokemon.moves]; newMoves[index] = value; updatePokemon({ ...pokemon, moves: newMoves }); };
+    
+    const StatDisplay = ({ stat }) => {
+        const base = data.stats[stat];
+        const iv = pokemon.ivs[stat];
+        const ev = pokemon.evs[stat];
+        const level = pokemon.level;
+        const natureInfo = NATURE_DATA[pokemon.nature];
+        let natureMod = 1.0;
+        if (natureInfo?.inc === stat) natureMod = 1.1;
+        if (natureInfo?.dec === stat) natureMod = 0.9;
+        const statValue = stat === 'H' ? calculateHP(base, iv, ev, level) : calculateStat(base, iv, ev, level, natureMod);
+
+        return (
+            <div className="flex items-center gap-2">
+                <label className="w-5 font-bold text-sm">{stat}</label>
+                <span className="w-12 text-center font-mono text-lg text-yellow-300">{statValue}</span>
+                <input type="range" min="0" max="252" step="4" value={ev} onChange={(e) => handleEvChange(stat, e.target.value)} className="w-full h-2 bg-gray-600 rounded-lg" />
+                <input type="number" min="0" max="252" step="4" value={ev} onChange={(e) => handleEvChange(stat, e.target.value)} className="bg-gray-900 w-16 p-1 rounded text-center" />
+            </div>
+        );
+    };
+
+    return (
+        <div className="bg-gray-800 p-4 rounded-lg space-y-4 h-full">
+            <div className="flex items-start justify-between">
+                <div className="flex items-center space-x-4">
+                    <img src={data.sprite} alt={pokemon.name} className="w-24 h-24 bg-gray-700 rounded-full pixelated" />
+                    <div><button onClick={onOpenSelector} className="text-2xl font-bold hover:text-yellow-400">{pokemon.name}</button><div className="text-sm text-gray-400">タイプ: {data.types.join(' / ')}</div></div>
+                </div>
+                <div className="flex flex-col gap-2"><button onClick={() => sendToCalculator('attacker')} className="bg-cyan-600 hover:bg-cyan-700 text-white text-sm py-1 px-3 rounded-lg flex items-center gap-2"><Send size={14}/> 攻撃側にセット</button><button onClick={() => sendToCalculator('defender')} className="bg-red-600 hover:bg-red-700 text-white text-sm py-1 px-3 rounded-lg flex items-center gap-2"><Send size={14}/> 防御側にセット</button></div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div><label className="block text-sm text-gray-400">持ち物</label><select value={pokemon.item} onChange={e => handleChange('item', e.target.value)} className="mt-1 bg-gray-700 text-white p-2 rounded w-full">{ITEMS.map(i => <option key={i} value={i}>{i}</option>)}</select></div>
+                <div><label className="block text-sm text-gray-400">特性</label><select value={pokemon.ability} onChange={e => handleChange('ability', e.target.value)} className="mt-1 bg-gray-700 text-white p-2 rounded w-full">{data.abilities.map(a => <option key={a} value={a}>{a}</option>)}</select></div>
+                <div><label className="block text-sm text-gray-400">性格</label><select value={pokemon.nature} onChange={e => handleChange('nature', e.target.value)} className="mt-1 bg-gray-700 text-white p-2 rounded w-full">{NATURE_NAMES.map(n => <option key={n} value={n}>{n}</option>)}</select></div>
+                <div><label className="block text-sm text-gray-400">テラスタイプ</label><select value={pokemon.teraType} onChange={e => handleChange('teraType', e.target.value)} className="mt-1 bg-gray-700 text-white p-2 rounded w-full"><option value="なし">なし</option>{ALL_TYPES.map(t => <option key={t} value={t}>{t}</option>)}</select></div>
+            </div>
+            <div>
+                <label className="block text-sm text-gray-400">技</label>
+                <div className="grid grid-cols-2 gap-2 mt-1">
+                    {pokemon.moves.map((move, i) => (<select key={i} value={move} onChange={e => handleMoveChange(i, e.target.value)} className="bg-gray-700 text-white p-2 rounded">{data.learnset.map(m => <option key={m} value={m}>{m}</option>)}</select>))}
+                </div>
+            </div>
+            <div>
+                <label className="block text-sm text-gray-400">努力値 (合計: {Object.values(pokemon.evs).reduce((a,b)=>a+b,0)} / 510)</label>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-2 mt-1">
+                    {statLetters.map(stat => <StatDisplay key={stat} stat={stat} />)}
+                </div>
+            </div>
+        </div>
+    );
+};
+const PokemonSelectorModal = ({ onSelect, onClose }) => { const [searchTerm, setSearchTerm] = useState(""); const [sortKey, setSortKey] = useState("name"); const [sortOrder, setSortOrder] = useState("asc"); const filteredAndSortedPokemon = useMemo(() => { let pokemon = POKEMON_NAMES.filter(name => name.toLowerCase().includes(searchTerm.toLowerCase())); pokemon.sort((a, b) => { let valA, valB; if (sortKey === 'name') { valA = a; valB = b; } else { valA = POKEMON_DATA[a].stats[sortKey]; valB = POKEMON_DATA[b].stats[sortKey]; } if (valA < valB) return sortOrder === 'asc' ? -1 : 1; if (valA > valB) return sortOrder === 'asc' ? 1 : -1; return 0; }); return pokemon; }, [searchTerm, sortKey, sortOrder]); const handleSort = (key) => { if (key === sortKey) { setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc'); } else { setSortKey(key); setSortOrder(key === 'name' ? 'asc' : 'desc'); } }; const SortButton = ({ akey, label }) => ( <button onClick={() => handleSort(akey)} className={`px-2 py-1 rounded text-xs ${sortKey === akey ? 'bg-blue-600' : 'bg-gray-600 hover:bg-gray-500'}`}>{label} {sortKey === akey && (sortOrder === 'asc' ? '▲' : '▼')}</button> ); return <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4"><div className="bg-gray-800 rounded-lg p-4 w-full max-w-3xl h-full max-h-[90vh] flex flex-col"><h3 className="text-xl font-bold mb-4">ポケモンを選択</h3><div className="flex gap-2 mb-2"><div className="relative flex-grow"><Search size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" /><input type="text" placeholder="ポケモン名で検索..." value={searchTerm} onChange={e => setSearchTerm(e.target.value)} className="w-full bg-gray-700 text-white p-2 pl-10 rounded" /></div><button onClick={onClose} className="bg-red-600 hover:bg-red-700 p-2 rounded"><X size={20}/></button></div><div className="flex flex-wrap gap-1 mb-2"><SortButton akey="name" label="名前" /><SortButton akey="H" label="H" /><SortButton akey="A" label="A" /><SortButton akey="B" label="B" /><SortButton akey="C" label="C" /><SortButton akey="D" label="D" /><SortButton akey="S" label="S" /></div><div className="flex-grow overflow-y-auto pr-2"><div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">{filteredAndSortedPokemon.map(name => (<div key={name} onClick={() => onSelect(name)} className="bg-gray-700 p-2 rounded-lg text-center cursor-pointer hover:bg-blue-900/70 hover:ring-2 ring-blue-400"><img src={POKEMON_DATA[name].sprite} alt={name} className="w-16 h-16 mx-auto pixelated" /><span className="text-sm font-semibold">{name}</span></div>))}</div></div></div></div>; };
+const ImportExportModal = ({ team, setTeam, onClose }) => { const [text, setText] = useState(""); const [isCopied, setIsCopied] = useState(false); const exportToCode = () => { try { const code = btoa(JSON.stringify(team)); setText(code); } catch (e) { setText("エラー"); } }; const handleImport = () => { try { const decoded = atob(text); const parsedTeam = JSON.parse(decoded); if (parsedTeam && parsedTeam.pokemons) { setTeam(parsedTeam); onClose(); } } catch (e) { alert("無効なチームコードです。"); } }; const copyToClipboard = () => { navigator.clipboard.writeText(text).then(() => { setIsCopied(true); setTimeout(() => setIsCopied(false), 2000); }); }; return <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50 p-4"><div className="bg-gray-800 rounded-lg p-4 w-full max-w-lg flex flex-col gap-4"><div className="flex justify-between items-center"><h3 className="text-xl font-bold">インポート / エクスポート</h3><button onClick={onClose} className="bg-red-600 hover:bg-red-700 p-2 rounded"><X size={20}/></button></div><textarea value={text} onChange={e => setText(e.target.value)} className="w-full h-48 bg-gray-900 text-white p-2 rounded" placeholder="ここにチームコードをペーストしてください。"></textarea><div className="flex gap-2"><button onClick={handleImport} className="flex-grow bg-blue-600 hover:bg-blue-700 p-2 rounded flex items-center justify-center gap-2"><Upload size={18}/> インポート</button><button onClick={copyToClipboard} className="flex-grow bg-gray-600 hover:bg-gray-500 p-2 rounded flex items-center justify-center gap-2">{isCopied ? <><Check size={18}/>コピー完了</> : <><Copy size={18}/>コピー</>}</button></div><div className="flex gap-2"><button onClick={exportToCode} className="flex-grow bg-purple-600 hover:bg-purple-700 p-2 rounded flex items-center justify-center gap-2"><Share2 size={18}/> チームコード生成</button></div></div></div>; };
+
+// --- Main App Component ---
+export default function App() {
+    const [activeTab, setActiveTab] = useState('builder');
+    const [user, setUser] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [configError, setConfigError] = useState(false);
+    const [teams, setTeams] = useState(Array(5).fill(null).map((_, i) => ({ id: self.crypto.randomUUID(), name: `チーム ${i + 1}`, pokemons: [] })));
+    const [activeTeamIndex, setActiveTeamIndex] = useState(0);
+    const [attacker, setAttacker] = useState(() => createDefaultPokemonState("カイリュー"));
+    const [defender, setDefender] = useState(() => createDefaultPokemonState("ハバタクカミ"));
+
+    useEffect(() => {
+        if (!auth) {
+            setConfigError(true);
+            setLoading(false);
+            return;
+        }
+
+        const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
+            if (currentUser) {
+                const userDocRef = doc(db, "users", currentUser.uid);
+                const userDoc = await getDoc(userDocRef);
+                if (userDoc.exists()) {
+                    currentUser.displayName = userDoc.data().username;
+                    setTeams(userDoc.data().teams || Array(5).fill(null).map((_, i) => ({ id: self.crypto.randomUUID(), name: `チーム ${i + 1}`, pokemons: [] })));
+                } else {
+                    const username = currentUser.email.split('@')[0];
+                    await setDoc(userDocRef, { username });
+                    currentUser.displayName = username;
+                    setTeams(Array(5).fill(null).map((_, i) => ({ id: self.crypto.randomUUID(), name: `チーム ${i + 1}`, pokemons: [] })));
+                }
+            }
+            setUser(currentUser);
+            setLoading(false);
+        });
+        return () => unsubscribe();
+    }, []);
+
+    useEffect(() => {
+        if (!loading && user) {
+            const userDocRef = doc(db, "users", user.uid);
+            setDoc(userDocRef, { teams }, { merge: true });
+        }
+    }, [teams, user, loading]);
+    
+    const handleLogout = async () => { await signOut(auth); };
+
+    const NavButton = ({ tabName, icon, children }) => ( <button onClick={() => setActiveTab(tabName)} className={`flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-colors ${activeTab === tabName ? 'bg-blue-600 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white'}`}>{icon}<span className="hidden md:inline">{children}</span></button> );
+
+    if (loading) {
+        return <div className="bg-gray-900 text-white min-h-screen flex items-center justify-center">読み込み中...</div>;
+    }
+    
+    if (configError) {
+        return (
+            <div className="bg-gray-900 text-white min-h-screen flex items-center justify-center p-4">
+                <div className="bg-red-800 border border-red-500 p-8 rounded-lg text-center">
+                    <h2 className="text-2xl font-bold mb-4">設定エラー</h2>
+                    <p>Firebaseの接続設定が完了していません。</p>
+                    <p className="mt-2">App.jsxファイルを開き、<code className="bg-gray-900 px-2 py-1 rounded">firebaseConfig</code>のプレースホルダーをご自身のFirebaseプロジェクトの情報に置き換えてください。</p>
+                </div>
+            </div>
+        );
+    }
+
+    return (
+        <div className="dark">
+            <style>{`.pixelated { image-rendering: pixelated; }`}</style>
+            <div className="bg-gray-900 text-white h-screen flex flex-col font-sans">
+                {!user ? (
+                    <AuthComponent />
+                ) : (
+                    <div className="flex flex-col flex-grow min-h-0">
+                        <header className="bg-gray-800/80 backdrop-blur-sm shadow-md z-20">
+                            <nav className="container mx-auto px-4 py-2 flex justify-between items-center">
+                                <div className="flex items-center gap-2"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png" alt="Pokeball" className="w-8 h-8"/><h1 className="text-xl font-bold text-white">ポケモン対戦ツール</h1></div>
+                                <div className="flex items-center gap-2 sm:gap-4">
+                                    <NavButton tabName="chat" icon={<MessageSquare size={20} />}>チャット</NavButton>
+                                    <NavButton tabName="builder" icon={<Users size={20} />}>チームビルダー</NavButton>
+                                    <NavButton tabName="calculator" icon={<Swords size={20} />}>ダメージ計算</NavButton>
+                                    <button onClick={handleLogout} className="flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"><LogOut size={20} /><span className="hidden md:inline">ログアウト</span></button>
+                                </div>
+                            </nav>
+                        </header>
+                        <main className="flex-grow min-h-0">
+                            {activeTab === 'chat' && <ChatLayout user={user} teams={teams} setTeams={setTeams} setActiveTab={setActiveTab} />}
+                            {activeTab === 'builder' && <TeamBuilder teams={teams} setTeams={setTeams} activeTeamIndex={activeTeamIndex} setActiveTeamIndex={setActiveTeamIndex} setAttacker={setAttacker} setDefender={setDefender} setActiveTab={setActiveTab} user={user} />}
+                            {activeTab === 'calculator' && <DamageCalculator attacker={attacker} setAttacker={setAttacker} defender={defender} setDefender={setDefender} />}
+                        </main>
+                    </div>
+                )}
+            </div>
+        </div>
+    );
+}

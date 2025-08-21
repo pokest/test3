@@ -1,0 +1,6666 @@
+{
+  "agility": {
+    "name_en": "agility",
+    "name_ja": "こうそくいどう",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "力を　ぬいて　体を　軽くして 高速で　動く。 自分の　素早さを　ぐーんと　あげる。"
+  },
+  "thunder": {
+    "name_en": "thunder",
+    "name_ja": "かみなり",
+    "power": 110,
+    "type": "electric",
+    "class": "special",
+    "desc_ja": "激しい　雷を 相手に　落として　攻撃する。 まひ状態に　することが　ある。"
+  },
+  "snore": {
+    "name_en": "snore",
+    "name_ja": "いびき",
+    "power": 50,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": "自分が　寝ているときに 雑音を　だして　攻撃する。 相手を　ひるませることが　ある。"
+  },
+  "sand-attack": {
+    "name_en": "sand-attack",
+    "name_ja": "すなかけ",
+    "power": null,
+    "type": "ground",
+    "class": "status",
+    "desc_ja": "相手の　顔に　砂を　かけて 命中率を　さげる。 "
+  },
+  "leech-life": {
+    "name_en": "leech-life",
+    "name_ja": "きゅうけつ",
+    "power": 80,
+    "type": "bug",
+    "class": "physical",
+    "desc_ja": "血を　吸い取って　相手を 攻撃する。与えた　ダメージの 半分の　ＨＰを　回復できる。"
+  },
+  "gear-grind": {
+    "name_en": "gear-grind",
+    "name_ja": "ギアソーサー",
+    "power": 50,
+    "type": "steel",
+    "class": "physical",
+    "desc_ja": "鋼鉄の　ギアを　相手に 投げつけて　攻撃する。 ２回連続で　ダメージを　与える。"
+  },
+  "water-spout": {
+    "name_en": "water-spout",
+    "name_ja": "しおふき",
+    "power": 150,
+    "type": "water",
+    "class": "special",
+    "desc_ja": "潮を　吹きつけて　攻撃する。 自分の　ＨＰが　少ないほど 技の　威力は　さがる。"
+  },
+  "hydro-cannon": {
+    "name_en": "hydro-cannon",
+    "name_ja": "ハイドロカノン",
+    "power": 150,
+    "type": "water",
+    "class": "special",
+    "desc_ja": "水の　大砲を 相手に　発射して　攻撃する。 次の　ターンは　動けなくなる。"
+  },
+  "volt-tackle": {
+    "name_en": "volt-tackle",
+    "name_ja": "ボルテッカー",
+    "power": 120,
+    "type": "electric",
+    "class": "physical",
+    "desc_ja": "電気を　まとって　突進する。 自分も　かなり　ダメージを　受ける。 まひ状態に　することが　ある。"
+  },
+  "fairy-lock": {
+    "name_en": "fairy-lock",
+    "name_ja": "フェアリーロック",
+    "power": null,
+    "type": "fairy",
+    "class": "status",
+    "desc_ja": "ロックを　かけることによって 次のターン　すべての ポケモンを　逃げられなくする。"
+  },
+  "baby-doll-eyes": {
+    "name_en": "baby-doll-eyes",
+    "name_ja": "つぶらなひとみ",
+    "power": null,
+    "type": "fairy",
+    "class": "status",
+    "desc_ja": "つぶらなひとみで　相手を　みつめて 攻撃を　さげる。 必ず　先制攻撃　できる。"
+  },
+  "snipe-shot": {
+    "name_en": "snipe-shot",
+    "name_ja": "ねらいうち",
+    "power": 80,
+    "type": "water",
+    "class": "special",
+    "desc_ja": "相手の　技を　引き受ける 特性や　技の　影響を　無視して 選んだ　相手を　攻撃　できる。"
+  },
+  "sleep-powder": {
+    "name_en": "sleep-powder",
+    "name_ja": "ねむりごな",
+    "power": null,
+    "type": "grass",
+    "class": "status",
+    "desc_ja": "眠くなる　粉を たくさん　ふりまいて 相手を　眠り状態に　する。"
+  },
+  "brutal-swing": {
+    "name_en": "brutal-swing",
+    "name_ja": "ぶんまわす",
+    "power": 60,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "自分の　体を ぶんまわして　相手に ダメージを　与える。"
+  },
+  "synthesis": {
+    "name_en": "synthesis",
+    "name_ja": "こうごうせい",
+    "power": null,
+    "type": "grass",
+    "class": "status",
+    "desc_ja": "自分の　ＨＰを　回復する。 天気に　よって 回復の　量が　変化する。"
+  },
+  "struggle-bug": {
+    "name_en": "struggle-bug",
+    "name_ja": "むしのていこう",
+    "power": 50,
+    "type": "bug",
+    "class": "special",
+    "desc_ja": "抵抗して　相手を　攻撃する。 相手の　特攻を　さげる。 "
+  },
+  "morning-sun": {
+    "name_en": "morning-sun",
+    "name_ja": "あさのひざし",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "自分の　ＨＰを　回復する。 天気に　よって 回復の　量が　変化する。"
+  },
+  "spikes": {
+    "name_en": "spikes",
+    "name_ja": "まきびし",
+    "power": null,
+    "type": "ground",
+    "class": "status",
+    "desc_ja": "相手の　足下に　まきびしを しかける。交代で　でてきた　相手の ポケモンに　ダメージを　与える。"
+  },
+  "gigaton-hammer": {
+    "name_en": "gigaton-hammer",
+    "name_ja": "デカハンマー",
+    "power": 160,
+    "type": "steel",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "trailblaze": {
+    "name_en": "trailblaze",
+    "name_ja": "くさわけ",
+    "power": 50,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "guillotine": {
+    "name_en": "guillotine",
+    "name_ja": "ハサミギロチン",
+    "power": null,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "大きな　ハサミで 相手を　切り裂いて　攻撃する。 当たれば　一撃で　ひんしに　する。"
+  },
+  "steamroller": {
+    "name_en": "steamroller",
+    "name_ja": "ハードローラー",
+    "power": 65,
+    "type": "bug",
+    "class": "physical",
+    "desc_ja": "まるめた　体で　回転して 相手を　おしつぶす。 相手を　ひるませることが　ある。"
+  },
+  "splishy-splash": {
+    "name_en": "splishy-splash",
+    "name_ja": "ざぶざぶサーフ",
+    "power": 90,
+    "type": "water",
+    "class": "special",
+    "desc_ja": "大きな　波に　電気を　あびせ 相手に　ぶつけて　攻撃する。 まひ状態に　することが　ある。"
+  },
+  "spirit-break": {
+    "name_en": "spirit-break",
+    "name_ja": "ソウルクラッシュ",
+    "power": 75,
+    "type": "fairy",
+    "class": "physical",
+    "desc_ja": "食らうと　くじけるほどの 勢いで　攻撃。 相手の　特攻を　下げる。"
+  },
+  "syrup-bomb": {
+    "name_en": "syrup-bomb",
+    "name_ja": "みずあめボム",
+    "power": 60,
+    "type": "grass",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "payback": {
+    "name_en": "payback",
+    "name_ja": "しっぺがえし",
+    "power": 50,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "ためこんで　攻撃する。 相手より　あとに　攻撃できると 技の　威力は　２倍に　なる。"
+  },
+  "lunge": {
+    "name_en": "lunge",
+    "name_ja": "とびかかる",
+    "power": 80,
+    "type": "bug",
+    "class": "physical",
+    "desc_ja": "全力で　相手に 飛びかかって　攻撃。 相手の　攻撃を　さげる。"
+  },
+  "psystrike": {
+    "name_en": "psystrike",
+    "name_ja": "サイコブレイク",
+    "power": 100,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "不思議な　念波を　実体化して 相手を　攻撃する。 物理的な　ダメージを　与える。"
+  },
+  "aeroblast": {
+    "name_en": "aeroblast",
+    "name_ja": "エアロブラスト",
+    "power": 100,
+    "type": "flying",
+    "class": "special",
+    "desc_ja": "空気の　渦を 発射して　攻撃する。 急所に　当たりやすい。"
+  },
+  "ice-ball": {
+    "name_en": "ice-ball",
+    "name_ja": "アイスボール",
+    "power": 30,
+    "type": "ice",
+    "class": "physical",
+    "desc_ja": "５ターンの　間　相手を　攻撃する。 技が　当たるたび　威力が　あがる。"
+  },
+  "parting-shot": {
+    "name_en": "parting-shot",
+    "name_ja": "すてゼリフ",
+    "power": null,
+    "type": "dark",
+    "class": "status",
+    "desc_ja": "すてゼリフで　相手を　いかくし 攻撃と　特攻を　さげたのち 控えの　ポケモンと　入れ替わる。"
+  },
+  "swift": {
+    "name_en": "swift",
+    "name_ja": "スピードスター",
+    "power": 60,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": "星型の　光を　発射して 相手を　攻撃する。 攻撃は　必ず　命中する。"
+  },
+  "magic-coat": {
+    "name_en": "magic-coat",
+    "name_ja": "マジックコート",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "状態異常に　なる　技や やどりぎのタネ　などを だされたとき　相手に　跳ね返す。"
+  },
+  "iron-head": {
+    "name_en": "iron-head",
+    "name_ja": "アイアンヘッド",
+    "power": 80,
+    "type": "steel",
+    "class": "physical",
+    "desc_ja": "鋼の　ような 硬い　頭で　攻撃する。 相手を　ひるませることが　ある。"
+  },
+  "supersonic": {
+    "name_en": "supersonic",
+    "name_ja": "ちょうおんぱ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "特殊な　音波を 体から　発して 相手を　混乱させる。"
+  },
+  "sacred-fire": {
+    "name_en": "sacred-fire",
+    "name_ja": "せいなるほのお",
+    "power": 100,
+    "type": "fire",
+    "class": "physical",
+    "desc_ja": "神秘の　炎で 相手を　焼きつくして　攻撃する。 やけど状態に　することが　ある。"
+  },
+  "clangorous-soul": {
+    "name_en": "clangorous-soul",
+    "name_ja": "ソウルビート",
+    "power": null,
+    "type": "dragon",
+    "class": "status",
+    "desc_ja": "自分の　ＨＰを　少し　削って すべての　能力を　上げる。"
+  },
+  "esper-wing": {
+    "name_en": "esper-wing",
+    "name_ja": "オーラウイング",
+    "power": 80,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "precipice-blades": {
+    "name_en": "precipice-blades",
+    "name_ja": "だんがいのつるぎ",
+    "power": 120,
+    "type": "ground",
+    "class": "physical",
+    "desc_ja": "大地の　力を　刃に　変えて 相手を　攻撃する。"
+  },
+  "megahorn": {
+    "name_en": "megahorn",
+    "name_ja": "メガホーン",
+    "power": 120,
+    "type": "bug",
+    "class": "physical",
+    "desc_ja": "硬くて　りっぱな　つので　おもいっきり 相手を　突き刺して　攻撃する。 "
+  },
+  "giga-drain": {
+    "name_en": "giga-drain",
+    "name_ja": "ギガドレイン",
+    "power": 75,
+    "type": "grass",
+    "class": "special",
+    "desc_ja": "養分を　吸い取り　攻撃する。 与えた　ダメージの 半分の　ＨＰを　回復できる。"
+  },
+  "crush-grip": {
+    "name_en": "crush-grip",
+    "name_ja": "にぎりつぶす",
+    "power": null,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "すさまじい　力で　相手を　にぎりつぶす。 相手の　ＨＰが　残っているほど 威力が　あがる。"
+  },
+  "charge": {
+    "name_en": "charge",
+    "name_ja": "じゅうでん",
+    "power": null,
+    "type": "electric",
+    "class": "status",
+    "desc_ja": "次の　ターンに　だす　でんきタイプの 技の　威力を　あげる。 自分の　特防も　あがる。"
+  },
+  "scale-shot": {
+    "name_en": "scale-shot",
+    "name_ja": "スケイルショット",
+    "power": 25,
+    "type": "dragon",
+    "class": "physical",
+    "desc_ja": "ウロコを　撃ちだして　攻撃する。 ２ー５回の　間　連続で　だす。 素早さが　あがるが　防御が　さがる。"
+  },
+  "confuse-ray": {
+    "name_en": "confuse-ray",
+    "name_ja": "あやしいひかり",
+    "power": null,
+    "type": "ghost",
+    "class": "status",
+    "desc_ja": "怪しい　光を 相手に　みせて　まどわせる。 相手を　混乱させる。"
+  },
+  "shadow-ball": {
+    "name_en": "shadow-ball",
+    "name_ja": "シャドーボール",
+    "power": 80,
+    "type": "ghost",
+    "class": "special",
+    "desc_ja": "黒い影の　塊を　投げつけて 攻撃する。相手の　特防を さげることが　ある。"
+  },
+  "mirror-shot": {
+    "name_en": "mirror-shot",
+    "name_ja": "ミラーショット",
+    "power": 65,
+    "type": "steel",
+    "class": "special",
+    "desc_ja": "磨きあげられた　体から せん光の　力を　相手に　放つ。 命中率を　さげることが　ある。"
+  },
+  "flash": {
+    "name_en": "flash",
+    "name_ja": "フラッシュ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "まぶしい　光で　相手の 命中率を　さげる。 "
+  },
+  "aqua-jet": {
+    "name_en": "aqua-jet",
+    "name_ja": "アクアジェット",
+    "power": 40,
+    "type": "water",
+    "class": "physical",
+    "desc_ja": "目にも　留まらぬ　ものすごい　速さで 相手に　つっこむ。 必ず　先制攻撃　できる。"
+  },
+  "extrasensory": {
+    "name_en": "extrasensory",
+    "name_ja": "じんつうりき",
+    "power": 80,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "みえない　不思議な　力を 送って　攻撃する。 相手を　ひるませることが　ある。"
+  },
+  "poltergeist": {
+    "name_en": "poltergeist",
+    "name_ja": "ポルターガイスト",
+    "power": 110,
+    "type": "ghost",
+    "class": "physical",
+    "desc_ja": "相手の　持ち物を　あやつって　攻撃。 相手が　道具を　持っていない　場合は 失敗する。"
+  },
+  "bone-club": {
+    "name_en": "bone-club",
+    "name_ja": "ホネこんぼう",
+    "power": 65,
+    "type": "ground",
+    "class": "physical",
+    "desc_ja": "手に　持った　ホネで 相手を　なぐりつけて　攻撃する。 相手を　ひるませることが　ある。"
+  },
+  "brick-break": {
+    "name_en": "brick-break",
+    "name_ja": "かわらわり",
+    "power": 75,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "手刀を　勢いよく　振りおろして 相手を　攻撃する。ひかりのかべや リフレクターも　破壊できる。"
+  },
+  "silver-wind": {
+    "name_en": "silver-wind",
+    "name_ja": "ぎんいろのかぜ",
+    "power": 60,
+    "type": "bug",
+    "class": "special",
+    "desc_ja": "風に　りんぷんを　のせて　相手を 攻撃する。自分の　すべての 能力が　あがることが　ある。"
+  },
+  "flail": {
+    "name_en": "flail",
+    "name_ja": "じたばた",
+    "power": null,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "じたばた　暴れて　攻撃する。 自分の　ＨＰが　少ないほど 技の　威力は　あがる。"
+  },
+  "spicy-extract": {
+    "name_en": "spicy-extract",
+    "name_ja": "ハバネロエキス",
+    "power": 0,
+    "type": "grass",
+    "class": "status",
+    "desc_ja": ""
+  },
+  "power-gem": {
+    "name_en": "power-gem",
+    "name_ja": "パワージェム",
+    "power": 80,
+    "type": "rock",
+    "class": "special",
+    "desc_ja": "宝石のように　きらめく　光を 発射して　相手を　攻撃する。 "
+  },
+  "psychic-noise": {
+    "name_en": "psychic-noise",
+    "name_ja": "サイコノイズ",
+    "power": 75,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "dragon-breath": {
+    "name_en": "dragon-breath",
+    "name_ja": "りゅうのいぶき",
+    "power": 60,
+    "type": "dragon",
+    "class": "special",
+    "desc_ja": "ものすごい　息を 相手に　吹きつけて　攻撃する。 まひ状態に　することが　ある。"
+  },
+  "grav-apple": {
+    "name_en": "grav-apple",
+    "name_ja": "Ｇのちから",
+    "power": 80,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": "高いところから　りんごを　落として ダメージを　与える。 相手の　防御を　下げる。"
+  },
+  "hyperspace-fury": {
+    "name_en": "hyperspace-fury",
+    "name_ja": "いじげんラッシュ",
+    "power": 100,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "たくさんの　腕を　つかって　まもるや  きりを　無視した　連続攻撃 自分の　防御が　さがる。"
+  },
+  "guard-split": {
+    "name_en": "guard-split",
+    "name_ja": "ガードシェア",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "超能力で　自分と　相手の 防御と　特防を　たして 半分に　わける。"
+  },
+  "uproar": {
+    "name_en": "uproar",
+    "name_ja": "さわぐ",
+    "power": 90,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": "３ターンの　あいだ 騒いで　相手を　攻撃する。 そのあいだは　だれも　眠れなくなる。"
+  },
+  "leaf-storm": {
+    "name_en": "leaf-storm",
+    "name_ja": "リーフストーム",
+    "power": 130,
+    "type": "grass",
+    "class": "special",
+    "desc_ja": "とがった　はっぱで　相手に　あらしを おこす。使うと　反動で 自分の　特攻が　がくっと　さがる。"
+  },
+  "lunar-dance": {
+    "name_en": "lunar-dance",
+    "name_ja": "みかづきのまい",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "自分は　ひんしに　なるが 控えから　でてくる　ポケモンの すべての　状態を　回復する。"
+  },
+  "dragon-darts": {
+    "name_en": "dragon-darts",
+    "name_ja": "ドラゴンアロー",
+    "power": 50,
+    "type": "dragon",
+    "class": "physical",
+    "desc_ja": "ドラメシヤで　２回　攻撃。 相手が　２匹　いるときは それぞれに　１回ずつ　攻撃する。"
+  },
+  "silk-trap": {
+    "name_en": "silk-trap",
+    "name_ja": "スレッドトラップ",
+    "power": 0,
+    "type": "bug",
+    "class": "status",
+    "desc_ja": ""
+  },
+  "parabolic-charge": {
+    "name_en": "parabolic-charge",
+    "name_ja": "パラボラチャージ",
+    "power": 65,
+    "type": "electric",
+    "class": "special",
+    "desc_ja": "周りにいる　ポケモン　全員に ダメージ。与えた　ダメージの 半分を　自分が　回復する。"
+  },
+  "bind": {
+    "name_en": "bind",
+    "name_ja": "しめつける",
+    "power": 15,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "長い　体や　つるなどを　使い ４ー５ターンの　あいだ 相手を　締めつけて　攻撃する。"
+  },
+  "throat-chop": {
+    "name_en": "throat-chop",
+    "name_ja": "じごくづき",
+    "power": 80,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "この　技を　受けた　相手は 地獄の　苦しみから　２ターンの間 音の　技を　出すことが　できなくなる。"
+  },
+  "feint-attack": {
+    "name_en": "feint-attack",
+    "name_ja": "だましうち",
+    "power": 60,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "さりげなく　相手に　ちかづき 油断した　すきを　みて　なぐりつける。 攻撃は　必ず　命中する。"
+  },
+  "tackle": {
+    "name_en": "tackle",
+    "name_ja": "たいあたり",
+    "power": 40,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "相手に　むかって　全身で ぶつかっていき　攻撃する。 "
+  },
+  "shadow-punch": {
+    "name_en": "shadow-punch",
+    "name_ja": "シャドーパンチ",
+    "power": 60,
+    "type": "ghost",
+    "class": "physical",
+    "desc_ja": "影に　まぎれて　パンチを　くりだす。 攻撃は　必ず　命中する。 "
+  },
+  "searing-shot": {
+    "name_en": "searing-shot",
+    "name_ja": "かえんだん",
+    "power": 100,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "真っ赤な　炎で　自分の 周りに　いるものを　攻撃する。 やけど状態に　することが　ある。"
+  },
+  "focus-energy": {
+    "name_en": "focus-energy",
+    "name_ja": "きあいだめ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "深く　息を　吸い　気合を　こめる。 自分の　攻撃が 急所に　当たりやすくなる。"
+  },
+  "heal-block": {
+    "name_en": "heal-block",
+    "name_ja": "かいふくふうじ",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "５ターンの　あいだ　技や 特性や　持っている　道具によって ＨＰを　回復　できなくする。"
+  },
+  "stun-spore": {
+    "name_en": "stun-spore",
+    "name_ja": "しびれごな",
+    "power": null,
+    "type": "grass",
+    "class": "status",
+    "desc_ja": "しびれる　粉を たくさん　ふりまいて 相手を　まひ状態に　する。"
+  },
+  "bubble": {
+    "name_en": "bubble",
+    "name_ja": "あわ",
+    "power": 40,
+    "type": "water",
+    "class": "special",
+    "desc_ja": "無数の　泡を　相手に　吹きかけて 攻撃する。相手の　素早さを さげることが　ある。"
+  },
+  "electrify": {
+    "name_en": "electrify",
+    "name_ja": "そうでん",
+    "power": null,
+    "type": "electric",
+    "class": "status",
+    "desc_ja": "相手が　技を　だす前に そうでん　すると　そのターン 相手の　技は　でんきタイプになる。"
+  },
+  "psyblade": {
+    "name_en": "psyblade",
+    "name_ja": "サイコブレイド ",
+    "power": 80,
+    "type": "psychic",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "round": {
+    "name_en": "round",
+    "name_ja": "りんしょう",
+    "power": 60,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": "歌で　相手を　攻撃する。 みんなで　輪唱すると　続けて だすことが　でき　威力も　あがる。"
+  },
+  "take-down": {
+    "name_en": "take-down",
+    "name_ja": "とっしん",
+    "power": 90,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "すごい　勢いで 相手に　ぶつかって　攻撃する。 自分も　少し　ダメージを　受ける。"
+  },
+  "steam-eruption": {
+    "name_en": "steam-eruption",
+    "name_ja": "スチームバースト",
+    "power": 110,
+    "type": "water",
+    "class": "special",
+    "desc_ja": "ものすごく　熱い　蒸気を 相手に　浴びせる。 相手は　やけどする　ことがある。"
+  },
+  "sunny-day": {
+    "name_en": "sunny-day",
+    "name_ja": "にほんばれ",
+    "power": null,
+    "type": "fire",
+    "class": "status",
+    "desc_ja": "５ターンの　あいだ　日差しを 強くして　ほのおタイプの 技の　威力を　あげる。"
+  },
+  "bug-bite": {
+    "name_en": "bug-bite",
+    "name_ja": "むしくい",
+    "power": 60,
+    "type": "bug",
+    "class": "physical",
+    "desc_ja": "かみついて　攻撃する。 相手が　きのみを　持っているとき 食べて　きのみの　効果を　受けられる。"
+  },
+  "dragon-rage": {
+    "name_en": "dragon-rage",
+    "name_ja": "りゅうのいかり",
+    "power": null,
+    "type": "dragon",
+    "class": "special",
+    "desc_ja": "怒りの　衝撃波を 相手に　ぶつけて　攻撃する。 ４０の　ダメージを　決まって　与える。"
+  },
+  "aqua-tail": {
+    "name_en": "aqua-tail",
+    "name_ja": "アクアテール",
+    "power": 90,
+    "type": "water",
+    "class": "physical",
+    "desc_ja": "激しく　あれくるう　荒波の　ように 大きな　しっぽを　ふって 相手を　攻撃する。"
+  },
+  "light-screen": {
+    "name_en": "light-screen",
+    "name_ja": "ひかりのかべ",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "５ターンの　あいだ　不思議な　かべで 相手から　受ける　特殊攻撃の ダメージを　弱める。"
+  },
+  "signal-beam": {
+    "name_en": "signal-beam",
+    "name_ja": "シグナルビーム",
+    "power": 75,
+    "type": "bug",
+    "class": "special",
+    "desc_ja": "不思議な　光を 発射して　攻撃する。 相手を　混乱させることが　ある。"
+  },
+  "sacred-sword": {
+    "name_en": "sacred-sword",
+    "name_ja": "せいなるつるぎ",
+    "power": 90,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "長い　つので　切りつけ　攻撃する。 相手の　能力変化に 関係なく　ダメージを　与える。"
+  },
+  "acid-spray": {
+    "name_en": "acid-spray",
+    "name_ja": "アシッドボム",
+    "power": 40,
+    "type": "poison",
+    "class": "special",
+    "desc_ja": "相手を　とかす　液体を 吐きだして　攻撃する。 相手の　特防を　がくっと　さげる。"
+  },
+  "barrier": {
+    "name_en": "barrier",
+    "name_ja": "バリアー",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "頑丈な　壁を　つくって 自分の　防御を　ぐーんと　あげる。 "
+  },
+  "bubble-beam": {
+    "name_en": "bubble-beam",
+    "name_ja": "バブルこうせん",
+    "power": 65,
+    "type": "water",
+    "class": "special",
+    "desc_ja": "泡を　勢いよく 相手に　発射して　攻撃する。 素早さを　さげる　ことが　ある。"
+  },
+  "aqua-ring": {
+    "name_en": "aqua-ring",
+    "name_ja": "アクアリング",
+    "power": null,
+    "type": "water",
+    "class": "status",
+    "desc_ja": "自分の　体の　周りを 水で　つくった　ベールで　おおう。 毎ターン　ＨＰを　回復する。"
+  },
+  "eternabeam": {
+    "name_en": "eternabeam",
+    "name_ja": "ムゲンダイビーム",
+    "power": 160,
+    "type": "dragon",
+    "class": "special",
+    "desc_ja": "本来の　姿と　なった ムゲンダイナ　最大の　攻撃。 次の　ターンは　動けなくなる。"
+  },
+  "aromatic-mist": {
+    "name_en": "aromatic-mist",
+    "name_ja": "アロマミスト",
+    "power": null,
+    "type": "fairy",
+    "class": "status",
+    "desc_ja": "不思議な　アロマの　香りによって 味方の　特防を　あげる。 "
+  },
+  "healing-wish": {
+    "name_en": "healing-wish",
+    "name_ja": "いやしのねがい",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "自分は　ひんしに　なるが 控えから　でてくる　ポケモンの 状態異常と　ＨＰを　回復する。"
+  },
+  "thunderbolt": {
+    "name_en": "thunderbolt",
+    "name_ja": "１０まんボルト",
+    "power": 90,
+    "type": "electric",
+    "class": "special",
+    "desc_ja": "強い　電撃を 相手に　浴びせて　攻撃する。 まひ状態に　することが　ある。"
+  },
+  "icicle-spear": {
+    "name_en": "icicle-spear",
+    "name_ja": "つららばり",
+    "power": 25,
+    "type": "ice",
+    "class": "physical",
+    "desc_ja": "鋭い　氷柱を 相手に　発射して　攻撃する。 ２ー５回の　あいだ　連続で　だす。"
+  },
+  "sweet-kiss": {
+    "name_en": "sweet-kiss",
+    "name_ja": "てんしのキッス",
+    "power": null,
+    "type": "fairy",
+    "class": "status",
+    "desc_ja": "天使のように　かわいく　キスして 相手を　混乱させる。 "
+  },
+  "spiky-shield": {
+    "name_en": "spiky-shield",
+    "name_ja": "ニードルガード",
+    "power": null,
+    "type": "grass",
+    "class": "status",
+    "desc_ja": "相手の　攻撃を　防ぐと 同時に　触れた　相手の 体力を　削って　しまう。"
+  },
+  "transform": {
+    "name_en": "transform",
+    "name_ja": "へんしん",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "相手の　ポケモンに　変身することで 相手と　まったく 同じ　技が　使える。"
+  },
+  "force-palm": {
+    "name_en": "force-palm",
+    "name_ja": "はっけい",
+    "power": 60,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "相手の　体に 衝撃波を　当てて　攻撃する。 まひ状態に　することが　ある。"
+  },
+  "techno-blast": {
+    "name_en": "techno-blast",
+    "name_ja": "テクノバスター",
+    "power": 120,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": "光弾を　相手に　放出する。 自分の　持つ カセットにより　タイプが　変わる。"
+  },
+  "psychic-terrain": {
+    "name_en": "psychic-terrain",
+    "name_ja": "サイコフィールド",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "５ターンの間　地面にいると 先制技を　受けない。 エスパータイプの　威力が　あがる。"
+  },
+  "floaty-fall": {
+    "name_en": "floaty-fall",
+    "name_ja": "ふわふわフォール",
+    "power": 90,
+    "type": "flying",
+    "class": "physical",
+    "desc_ja": "ふんわりと　浮かび　あがり 一気に　急降下して　攻撃。 相手を　ひるませることが　ある。"
+  },
+  "triple-arrows": {
+    "name_en": "triple-arrows",
+    "name_ja": "３ぼんのや",
+    "power": 90,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "noble-roar": {
+    "name_en": "noble-roar",
+    "name_ja": "おたけび",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "おたけびを　あげて 相手を　威嚇し　相手の 攻撃と　特攻を　さげる。"
+  },
+  "take-heart": {
+    "name_en": "take-heart",
+    "name_ja": "ブレイブチャージ",
+    "power": 0,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": ""
+  },
+  "bitter-blade": {
+    "name_en": "bitter-blade",
+    "name_ja": "むねんのつるぎ",
+    "power": 90,
+    "type": "fire",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "bulldoze": {
+    "name_en": "bulldoze",
+    "name_ja": "じならし",
+    "power": 60,
+    "type": "ground",
+    "class": "physical",
+    "desc_ja": "地面を　踏みならして　自分の 周りに　いるものを　攻撃する。 相手の　素早さを　さげる。"
+  },
+  "dragon-ascent": {
+    "name_en": "dragon-ascent",
+    "name_ja": "ガリョウテンセイ",
+    "power": 120,
+    "type": "flying",
+    "class": "physical",
+    "desc_ja": "大空から　急速落下　して 相手を　攻撃する。 自分の　防御と　特防が　さがる。"
+  },
+  "power-split": {
+    "name_en": "power-split",
+    "name_ja": "パワーシェア",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "超能力で　自分と　相手の 攻撃と　特攻を　たして 半分に　わける。"
+  },
+  "tail-whip": {
+    "name_en": "tail-whip",
+    "name_ja": "しっぽをふる",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "しっぽを　左右に　かわいく　ふって 油断を　誘う。 相手の　防御を　さげる。"
+  },
+  "fire-pledge": {
+    "name_en": "fire-pledge",
+    "name_ja": "ほのおのちかい",
+    "power": 80,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "炎の柱で　攻撃する。 くさと　組みあわせると　威力が あがって　周りが　火の海に　なる。"
+  },
+  "shock-wave": {
+    "name_en": "shock-wave",
+    "name_ja": "でんげきは",
+    "power": 60,
+    "type": "electric",
+    "class": "special",
+    "desc_ja": "電撃を　素早く 相手に　浴びせる。 攻撃は　必ず　命中する。"
+  },
+  "self-destruct": {
+    "name_en": "self-destruct",
+    "name_ja": "じばく",
+    "power": 200,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "爆発を　おこして　自分の 周りに　いるものを　攻撃する。 使ったあとに　ひんしに　なる。"
+  },
+  "razor-wind": {
+    "name_en": "razor-wind",
+    "name_ja": "かまいたち",
+    "power": 80,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": "風の　刃を　つくり ２ターン目に　相手を　攻撃する。 急所に　当たりやすい。"
+  },
+  "role-play": {
+    "name_en": "role-play",
+    "name_ja": "なりきり",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "相手に　なりきって　自分も　相手と 同じ　特性に　変化する。 "
+  },
+  "salt-cure": {
+    "name_en": "salt-cure",
+    "name_ja": "しおづけ",
+    "power": 40,
+    "type": "rock",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "helping-hand": {
+    "name_en": "helping-hand",
+    "name_ja": "てだすけ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "仲間を　助ける。 てだすけ　された　ポケモンの　技の 威力は　いつもより　大きくなる。"
+  },
+  "facade": {
+    "name_en": "facade",
+    "name_ja": "からげんき",
+    "power": 70,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "自分が　毒　まひ　やけど 状態のとき　相手に　くりだすと 技の　威力が　２倍に　なる。"
+  },
+  "magnitude": {
+    "name_en": "magnitude",
+    "name_ja": "マグニチュード",
+    "power": null,
+    "type": "ground",
+    "class": "physical",
+    "desc_ja": "地面を　揺らして　自分の 周りに　いるものを　攻撃する。 技の　威力は　いろいろ　変わる。"
+  },
+  "sludge-bomb": {
+    "name_en": "sludge-bomb",
+    "name_ja": "ヘドロばくだん",
+    "power": 90,
+    "type": "poison",
+    "class": "special",
+    "desc_ja": "汚い　ヘドロを 相手に　投げつけて　攻撃する。 毒状態に　することが　ある。"
+  },
+  "venoshock": {
+    "name_en": "venoshock",
+    "name_ja": "ベノムショック",
+    "power": 65,
+    "type": "poison",
+    "class": "special",
+    "desc_ja": "特殊な　毒液を　浴びせかける。 毒状態の　相手には 威力が　２倍に　なる。"
+  },
+  "rain-dance": {
+    "name_en": "rain-dance",
+    "name_ja": "あまごい",
+    "power": null,
+    "type": "water",
+    "class": "status",
+    "desc_ja": "５ターンの　あいだ　雨を　降らせて みずタイプの 技の　威力を　あげる。"
+  },
+  "water-shuriken": {
+    "name_en": "water-shuriken",
+    "name_ja": "みずしゅりけん",
+    "power": 15,
+    "type": "water",
+    "class": "special",
+    "desc_ja": "粘液で　できた　手裏剣を ２ー５回の　あいだ　連続で　だす。 必ず　先制攻撃　できる。"
+  },
+  "infernal-parade": {
+    "name_en": "infernal-parade",
+    "name_ja": "ひゃっきやこう",
+    "power": 60,
+    "type": "ghost",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "bleakwind-storm": {
+    "name_en": "bleakwind-storm",
+    "name_ja": "こがらしあらし",
+    "power": 100,
+    "type": "flying",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "power-whip": {
+    "name_en": "power-whip",
+    "name_ja": "パワーウィップ",
+    "power": 120,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": "ツタや　触手を　激しく　ふるって 相手を　たたきつけ　攻撃する。 "
+  },
+  "jungle-healing": {
+    "name_en": "jungle-healing",
+    "name_ja": "ジャングルヒール",
+    "power": null,
+    "type": "grass",
+    "class": "status",
+    "desc_ja": "ジャングルと　一体化して 自分と　場にいる　味方の ＨＰと　状態を　回復する。"
+  },
+  "psycho-cut": {
+    "name_en": "psycho-cut",
+    "name_ja": "サイコカッター",
+    "power": 70,
+    "type": "psychic",
+    "class": "physical",
+    "desc_ja": "実体化させた 心の　刃で　相手を　切り裂く。 急所に　当たりやすい。"
+  },
+  "stomping-tantrum": {
+    "name_en": "stomping-tantrum",
+    "name_ja": "じだんだ",
+    "power": 75,
+    "type": "ground",
+    "class": "physical",
+    "desc_ja": "悔しさを　バネにして　攻撃する。 前の　ターンに　技を　外していると 威力が　倍に　なる。"
+  },
+  "drill-run": {
+    "name_en": "drill-run",
+    "name_ja": "ドリルライナー",
+    "power": 80,
+    "type": "ground",
+    "class": "physical",
+    "desc_ja": "ドリルのように　体を　回転しながら 相手に　体当たりする。 急所に　当たりやすい。"
+  },
+  "acrobatics": {
+    "name_en": "acrobatics",
+    "name_ja": "アクロバット",
+    "power": 55,
+    "type": "flying",
+    "class": "physical",
+    "desc_ja": "軽やかに　相手を　攻撃する。 自分が　道具を　持っていないとき 大きな　ダメージを　与える。"
+  },
+  "growth": {
+    "name_en": "growth",
+    "name_ja": "せいちょう",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "体を　一気に 大きく　生長させて 攻撃と　特攻を　あげる。"
+  },
+  "magic-room": {
+    "name_en": "magic-room",
+    "name_ja": "マジックルーム",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "まか不思議な　空間を　つくる。 ５ターンのあいだ　すべてのポケモンの 道具の　効果が　なくなる。"
+  },
+  "supercell-slam": {
+    "name_en": "supercell-slam",
+    "name_ja": "サンダーダイブ",
+    "power": 100,
+    "type": "electric",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "water-sport": {
+    "name_en": "water-sport",
+    "name_ja": "みずあそび",
+    "power": null,
+    "type": "water",
+    "class": "status",
+    "desc_ja": "あたりを　水で　びしょびしょにする。 ５ターンの　あいだ ほのおタイプの　技を　弱める。"
+  },
+  "wing-attack": {
+    "name_en": "wing-attack",
+    "name_ja": "つばさでうつ",
+    "power": 60,
+    "type": "flying",
+    "class": "physical",
+    "desc_ja": "大きく　ひろげた　りっぱな　翼を 相手に　ぶつけて　攻撃する。 "
+  },
+  "strength": {
+    "name_en": "strength",
+    "name_ja": "かいりき",
+    "power": 80,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "こん身の　力で 相手を　なぐりつけて　攻撃する。 重たい　岩を　押すことも　できる。"
+  },
+  "stone-axe": {
+    "name_en": "stone-axe",
+    "name_ja": "がんせきアックス",
+    "power": 65,
+    "type": "rock",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "play-nice": {
+    "name_en": "play-nice",
+    "name_ja": "なかよくする",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "相手と　仲良くなって 戦う　気力を　失わせ 相手の　攻撃を　さげる。"
+  },
+  "belly-drum": {
+    "name_en": "belly-drum",
+    "name_ja": "はらだいこ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "自分の　ＨＰを　最大ＨＰの 半分　減らして　自分の　攻撃を 最大に　あげる。"
+  },
+  "head-smash": {
+    "name_en": "head-smash",
+    "name_ja": "もろはのずつき",
+    "power": 150,
+    "type": "rock",
+    "class": "physical",
+    "desc_ja": "命を　懸けて　こん身の　力で 相手に　ずつきを　する。自分も ものすごい　ダメージを　受ける。"
+  },
+  "fissure": {
+    "name_en": "fissure",
+    "name_ja": "じわれ",
+    "power": null,
+    "type": "ground",
+    "class": "physical",
+    "desc_ja": "地割れの　裂け目に 相手を　落として　攻撃する。 当たれば　一撃で　ひんしに　する。"
+  },
+  "teeter-dance": {
+    "name_en": "teeter-dance",
+    "name_ja": "フラフラダンス",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "フラフラと　ダンスを　おどって 自分の　周りに　いるものを 混乱状態に　させる。"
+  },
+  "tachyon-cutter": {
+    "name_en": "tachyon-cutter",
+    "name_ja": "タキオンカッター",
+    "power": 50,
+    "type": "steel",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "rock-tomb": {
+    "name_en": "rock-tomb",
+    "name_ja": "がんせきふうじ",
+    "power": 60,
+    "type": "rock",
+    "class": "physical",
+    "desc_ja": "岩石を　投げつけて　攻撃する。 相手の　動きを　封じることで 素早さを　さげる。"
+  },
+  "feather-dance": {
+    "name_en": "feather-dance",
+    "name_ja": "フェザーダンス",
+    "power": null,
+    "type": "flying",
+    "class": "status",
+    "desc_ja": "羽毛を　ふりまいて 相手の　体に　からませる。 相手の　攻撃を　がくっと　さげる。"
+  },
+  "chilly-reception": {
+    "name_en": "chilly-reception",
+    "name_ja": "さむいギャグ",
+    "power": 0,
+    "type": "ice",
+    "class": "status",
+    "desc_ja": ""
+  },
+  "chilling-water": {
+    "name_en": "chilling-water",
+    "name_ja": "ひやみず",
+    "power": 50,
+    "type": "water",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "mist-ball": {
+    "name_en": "mist-ball",
+    "name_ja": "ミストボール",
+    "power": 95,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "霧状の　羽毛で　包みこみ 攻撃する。 相手の　特攻を　さげることが　ある。"
+  },
+  "dragon-dance": {
+    "name_en": "dragon-dance",
+    "name_ja": "りゅうのまい",
+    "power": null,
+    "type": "dragon",
+    "class": "status",
+    "desc_ja": "神秘的で　力強い　舞を 激しく　おどる。自分の 攻撃と　素早さを　あげる。"
+  },
+  "ice-shard": {
+    "name_en": "ice-shard",
+    "name_ja": "こおりのつぶて",
+    "power": 40,
+    "type": "ice",
+    "class": "physical",
+    "desc_ja": "氷の塊を　一瞬で　つくり 相手に　素早く　放つ。 必ず　先制攻撃　できる。"
+  },
+  "follow-me": {
+    "name_en": "follow-me",
+    "name_ja": "このゆびとまれ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "自分に　注目させて 相手からの　攻撃を すべて　自分に　むけさせる。"
+  },
+  "swagger": {
+    "name_en": "swagger",
+    "name_ja": "いばる",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "相手を　怒らせて　混乱させる。 怒りで　相手の　攻撃は ぐーんと　あがってしまう。"
+  },
+  "dream-eater": {
+    "name_en": "dream-eater",
+    "name_ja": "ゆめくい",
+    "power": 100,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "寝ている　相手の　夢を　食べて 攻撃する。ダメージの　半分の ＨＰを　回復する。"
+  },
+  "sappy-seed": {
+    "name_en": "sappy-seed",
+    "name_ja": "すくすくボンバー",
+    "power": 100,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": "巨大な　ツルを　生やし　タネを 撒きちらかして　攻撃する。　タネは 毎ターン　相手の　HPを　吸いとる。"
+  },
+  "water-gun": {
+    "name_en": "water-gun",
+    "name_ja": "みずでっぽう",
+    "power": 40,
+    "type": "water",
+    "class": "special",
+    "desc_ja": "水を　勢いよく 相手に　発射して　攻撃する。 "
+  },
+  "sweet-scent": {
+    "name_en": "sweet-scent",
+    "name_ja": "あまいかおり",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "香りで　相手の　回避率を がくっと　さげる。草むら　などで 使うと　ポケモンが　よってくる。"
+  },
+  "low-sweep": {
+    "name_en": "low-sweep",
+    "name_ja": "ローキック",
+    "power": 65,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "素早い　動きで　相手の　足を ねらって　攻撃する。 相手の　素早さを　さげる。"
+  },
+  "telekinesis": {
+    "name_en": "telekinesis",
+    "name_ja": "テレキネシス",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "超能力で　相手を　浮かせる。 ３ターンの　あいだ　攻撃が 相手に　当たりやすく　なる。"
+  },
+  "soft-boiled": {
+    "name_en": "soft-boiled",
+    "name_ja": "タマゴうみ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "最大ＨＰの　半分 自分の　ＨＰを　回復する。 仲間に　ＨＰを　わけることも　できる。"
+  },
+  "flamethrower": {
+    "name_en": "flamethrower",
+    "name_ja": "かえんほうしゃ",
+    "power": 90,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "激しい　炎を 相手に　発射して　攻撃する。 やけど状態に　することが　ある。"
+  },
+  "floral-healing": {
+    "name_en": "floral-healing",
+    "name_ja": "フラワーヒール",
+    "power": null,
+    "type": "fairy",
+    "class": "status",
+    "desc_ja": "最大ＨＰの　半分 相手の　ＨＰを　回復する。 グラスフィールドの時　効果が　あがる。"
+  },
+  "shed-tail": {
+    "name_en": "shed-tail",
+    "name_ja": "しっぽきり",
+    "power": 0,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": ""
+  },
+  "wrap": {
+    "name_en": "wrap",
+    "name_ja": "まきつく",
+    "power": 15,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "長い　体や　つるなどを　つかって ４ー５ターンの　あいだ 相手に　まきついて　攻撃する。"
+  },
+  "mud-shot": {
+    "name_en": "mud-shot",
+    "name_ja": "マッドショット",
+    "power": 55,
+    "type": "ground",
+    "class": "special",
+    "desc_ja": "泥の　塊を 相手に　投げつけて　攻撃する。 同時に　相手の　素早さを　さげる。"
+  },
+  "guard-swap": {
+    "name_en": "guard-swap",
+    "name_ja": "ガードスワップ",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "超能力で　自分と　相手の 防御と　特防の 能力変化を　入れ替える。"
+  },
+  "roar-of-time": {
+    "name_en": "roar-of-time",
+    "name_ja": "ときのほうこう",
+    "power": 150,
+    "type": "dragon",
+    "class": "special",
+    "desc_ja": "時間が　ゆがむほどの　力を うちだして　相手を　攻撃する。 次の　ターンは　動けなくなる。"
+  },
+  "thousand-waves": {
+    "name_en": "thousand-waves",
+    "name_ja": "サウザンウェーブ",
+    "power": 90,
+    "type": "ground",
+    "class": "physical",
+    "desc_ja": "地をはう　波によって　攻撃。 波に　巻き込まれた　相手は 戦闘から　逃げられなくなる。"
+  },
+  "gyro-ball": {
+    "name_en": "gyro-ball",
+    "name_ja": "ジャイロボール",
+    "power": null,
+    "type": "steel",
+    "class": "physical",
+    "desc_ja": "体を　高速に　回転させて 体当たりする。相手より　素早さが 低いほど　強い。"
+  },
+  "multi-attack": {
+    "name_en": "multi-attack",
+    "name_ja": "マルチアタック",
+    "power": 120,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "高い　エネルギーを　まといつつ 相手に　ぶつかって　攻撃する。 メモリに　より　タイプが　変わる。"
+  },
+  "beat-up": {
+    "name_en": "beat-up",
+    "name_ja": "ふくろだたき",
+    "power": null,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "味方　全員で　攻撃する。 仲間の　ポケモンが　多いほど 技の　攻撃回数が　増える。"
+  },
+  "icy-wind": {
+    "name_en": "icy-wind",
+    "name_ja": "こごえるかぜ",
+    "power": 55,
+    "type": "ice",
+    "class": "special",
+    "desc_ja": "凍てつく　冷気を 相手に　吹きつけて　攻撃する。 相手の　素早さを　さげる。"
+  },
+  "stored-power": {
+    "name_en": "stored-power",
+    "name_ja": "アシストパワー",
+    "power": 20,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "蓄積された　パワーで　相手を 攻撃する。自分の　能力が あがっているほど　威力が　あがる。"
+  },
+  "head-charge": {
+    "name_en": "head-charge",
+    "name_ja": "アフロブレイク",
+    "power": 120,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "すごい　アフロの　頭で 相手に　突進して　攻撃する。 自分も　少し　ダメージを　受ける。"
+  },
+  "thief": {
+    "name_en": "thief",
+    "name_ja": "どろぼう",
+    "power": 60,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "攻撃と　同時に　道具を　盗む。 自分が　道具を　持っている　場合は 盗めない。"
+  },
+  "belch": {
+    "name_en": "belch",
+    "name_ja": "ゲップ",
+    "power": 120,
+    "type": "poison",
+    "class": "special",
+    "desc_ja": "相手に　向かって　ゲップを 浴びせて　ダメージを　与える。 きのみを　食べないと　だせない。"
+  },
+  "blizzard": {
+    "name_en": "blizzard",
+    "name_ja": "ふぶき",
+    "power": 110,
+    "type": "ice",
+    "class": "special",
+    "desc_ja": "激しい　吹雪を 相手に　吹きつけて　攻撃する。 こおり状態に　することが　ある。"
+  },
+  "slam": {
+    "name_en": "slam",
+    "name_ja": "たたきつける",
+    "power": 80,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "長い　しっぽや　つるなどを　使い 相手を　たたきつけて　攻撃する。 "
+  },
+  "double-kick": {
+    "name_en": "double-kick",
+    "name_ja": "にどげり",
+    "power": 30,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "２本の　足で　相手を　けとばして 攻撃する。２回連続で ダメージを　与える。"
+  },
+  "heal-pulse": {
+    "name_en": "heal-pulse",
+    "name_ja": "いやしのはどう",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "いやしのはどうを　とばして 最大ＨＰの　半分 相手の　ＨＰを　回復する。"
+  },
+  "aura-sphere": {
+    "name_en": "aura-sphere",
+    "name_ja": "はどうだん",
+    "power": 80,
+    "type": "fighting",
+    "class": "special",
+    "desc_ja": "体の　奥から　波導の　力を 相手に　うち放つ。 攻撃は　必ず　命中する。"
+  },
+  "soak": {
+    "name_en": "soak",
+    "name_ja": "みずびたし",
+    "power": null,
+    "type": "water",
+    "class": "status",
+    "desc_ja": "たくさんの　水を　浴びせかけて 相手を　みずタイプに　する。 "
+  },
+  "attack-order": {
+    "name_en": "attack-order",
+    "name_ja": "こうげきしれい",
+    "power": 90,
+    "type": "bug",
+    "class": "physical",
+    "desc_ja": "しもべを　呼びだして 相手に　むかって　攻撃させる。 急所に　当たりやすい。"
+  },
+  "mind-blown": {
+    "name_en": "mind-blown",
+    "name_ja": "ビックリヘッド",
+    "power": 150,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "自分の　頭を　爆発　させて 周りの　すべてを　攻撃する。 自分も　ダメージを　受けてしまう。"
+  },
+  "double-iron-bash": {
+    "name_en": "double-iron-bash",
+    "name_ja": "ダブルパンツァー",
+    "power": 60,
+    "type": "steel",
+    "class": "physical",
+    "desc_ja": "胸の　ナットを　軸に　回転して ２回　続けて　うでを　たたきつける。 相手を　ひるませる　ことが　ある。"
+  },
+  "meteor-assault": {
+    "name_en": "meteor-assault",
+    "name_ja": "スターアサルト",
+    "power": 150,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "太い　クキを　ふりまわして　攻撃。 ただし　自分も　よろめいてしまうため 次の　ターンは　動けなくなる。"
+  },
+  "rock-wrecker": {
+    "name_en": "rock-wrecker",
+    "name_ja": "がんせきほう",
+    "power": 150,
+    "type": "rock",
+    "class": "physical",
+    "desc_ja": "巨大な　岩を 相手に　発射して　攻撃する。 次の　ターンは　動けなくなる。"
+  },
+  "obstruct": {
+    "name_en": "obstruct",
+    "name_ja": "ブロッキング",
+    "power": null,
+    "type": "dark",
+    "class": "status",
+    "desc_ja": "相手の　攻撃を　まったく　受けない。 連続で　だすと　失敗しやすい。 触れると　防御が　がくっと　下がる。"
+  },
+  "waterfall": {
+    "name_en": "waterfall",
+    "name_ja": "たきのぼり",
+    "power": 80,
+    "type": "water",
+    "class": "physical",
+    "desc_ja": "すごい　勢いで　相手に　つっこむ。 相手を　ひるませることが　ある。 滝も　泳いで　のぼれる。"
+  },
+  "heart-stamp": {
+    "name_en": "heart-stamp",
+    "name_ja": "ハートスタンプ",
+    "power": 60,
+    "type": "psychic",
+    "class": "physical",
+    "desc_ja": "かわいい　しぐさで　油断させて 強烈な　一撃を　浴びせる。 相手を　ひるませることが　ある。"
+  },
+  "skill-swap": {
+    "name_en": "skill-swap",
+    "name_ja": "スキルスワップ",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "超能力で　自分の　特性と 相手の　特性を　入れ替える。 "
+  },
+  "scald": {
+    "name_en": "scald",
+    "name_ja": "ねっとう",
+    "power": 80,
+    "type": "water",
+    "class": "special",
+    "desc_ja": "熱く　煮えたぎる　水を 相手に　発射して　攻撃する。 やけど状態に　することが　ある。"
+  },
+  "raging-bull": {
+    "name_en": "raging-bull",
+    "name_ja": "レイジングブル",
+    "power": 90,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "tri-attack": {
+    "name_en": "tri-attack",
+    "name_ja": "トライアタック",
+    "power": 80,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": "３つの　光線で　攻撃する。 まひか　やけどか　こおり状態の どれかに　することが　ある。"
+  },
+  "reflect": {
+    "name_en": "reflect",
+    "name_ja": "リフレクター",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "５ターンの　あいだ　不思議な　かべで 相手から　受ける　物理攻撃の ダメージを　弱める。"
+  },
+  "block": {
+    "name_en": "block",
+    "name_ja": "とおせんぼう",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "両手を　ひろげて　たちはだかり 相手の　逃げ道を　ふさいで 逃げられなくする。"
+  },
+  "nightmare": {
+    "name_en": "nightmare",
+    "name_ja": "あくむ",
+    "power": null,
+    "type": "ghost",
+    "class": "status",
+    "desc_ja": "眠り状態の　相手に 悪夢を　みせて　毎ターン　少しずつ ＨＰを　減らしていく。"
+  },
+  "ally-switch": {
+    "name_en": "ally-switch",
+    "name_ja": "サイドチェンジ",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "不思議な　力で　テレポートして 自分と　味方の　居場所を 入れ替える。"
+  },
+  "moongeist-beam": {
+    "name_en": "moongeist-beam",
+    "name_ja": "シャドーレイ",
+    "power": 100,
+    "type": "ghost",
+    "class": "special",
+    "desc_ja": "怪しい　光線を　放って 攻撃する。相手の　特性を 無視して　攻撃　することが　できる。"
+  },
+  "night-shade": {
+    "name_en": "night-shade",
+    "name_ja": "ナイトヘッド",
+    "power": null,
+    "type": "ghost",
+    "class": "special",
+    "desc_ja": "恐ろしい　幻を　みせて 自分の　レベルと　同じだけの ダメージを　相手に　与える。"
+  },
+  "confide": {
+    "name_en": "confide",
+    "name_ja": "ないしょばなし",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "ないしょばなしを　することで　相手の 集中力を　失わせ 相手の　特攻を　さげる。"
+  },
+  "rock-polish": {
+    "name_en": "rock-polish",
+    "name_ja": "ロックカット",
+    "power": null,
+    "type": "rock",
+    "class": "status",
+    "desc_ja": "自分の　体を　磨いて　空気の 抵抗を　少なくする。素早さを ぐーんと　あげることが　できる。"
+  },
+  "hyper-drill": {
+    "name_en": "hyper-drill",
+    "name_ja": "ハイパードリル",
+    "power": 100,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "fickle-beam": {
+    "name_en": "fickle-beam",
+    "name_ja": "きまぐレーザー",
+    "power": 80,
+    "type": "dragon",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "crabhammer": {
+    "name_en": "crabhammer",
+    "name_ja": "クラブハンマー",
+    "power": 100,
+    "type": "water",
+    "class": "physical",
+    "desc_ja": "大きな　ハサミを 相手に　たたきつけて　攻撃する。 急所に　当たりやすい。"
+  },
+  "mystical-fire": {
+    "name_en": "mystical-fire",
+    "name_ja": "マジカルフレイム",
+    "power": 75,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "口から　吐きだす　特別 熱い　炎で　攻撃する。 相手の　特攻を　さげる。"
+  },
+  "egg-bomb": {
+    "name_en": "egg-bomb",
+    "name_ja": "タマゴばくだん",
+    "power": 100,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "大きな　タマゴを　力いっぱい 相手に　投げつけて　攻撃する。 "
+  },
+  "rest": {
+    "name_en": "rest",
+    "name_ja": "ねむる",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "２ターンの　あいだ　眠り続ける。 自分の　ＨＰと　状態異常を すべて　回復する。"
+  },
+  "scratch": {
+    "name_en": "scratch",
+    "name_ja": "ひっかく",
+    "power": 40,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "硬く　とがった　鋭い　ツメで 相手を　ひっかいて　攻撃する。 "
+  },
+  "phantom-force": {
+    "name_en": "phantom-force",
+    "name_ja": "ゴーストダイブ",
+    "power": 90,
+    "type": "ghost",
+    "class": "physical",
+    "desc_ja": "１ターンめで　どこかに　消えて ２ターンめに　相手を　攻撃する。 守りを　無視して　攻撃できる。"
+  },
+  "quash": {
+    "name_en": "quash",
+    "name_ja": "さきおくり",
+    "power": null,
+    "type": "dark",
+    "class": "status",
+    "desc_ja": "相手を　おさえつけて 行動の　順番を 最後に　する。"
+  },
+  "toxic": {
+    "name_en": "toxic",
+    "name_ja": "どくどく",
+    "power": null,
+    "type": "poison",
+    "class": "status",
+    "desc_ja": "相手を　猛毒の　状態に　する。 ターンが　すすむほど 毒の　ダメージが　増えていく。"
+  },
+  "refresh": {
+    "name_en": "refresh",
+    "name_ja": "リフレッシュ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "体を　やすめて　自分が　おっている 毒　まひ　やけどの 状態異常を　治す。"
+  },
+  "astonish": {
+    "name_en": "astonish",
+    "name_ja": "おどろかす",
+    "power": 30,
+    "type": "ghost",
+    "class": "physical",
+    "desc_ja": "大きな　声などで 不意に　驚かして　攻撃する。 相手を　ひるませることが　ある。"
+  },
+  "screech": {
+    "name_en": "screech",
+    "name_ja": "いやなおと",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "おもわず　耳を　ふさぎたくなる いやなおとを　だして 相手の　防御を　がくっと　さげる。"
+  },
+  "tail-glow": {
+    "name_en": "tail-glow",
+    "name_ja": "ほたるび",
+    "power": null,
+    "type": "bug",
+    "class": "status",
+    "desc_ja": "点滅する　光を　眺めて 自分の　精神を　統一し 特攻を　ぐぐーんと　あげる。"
+  },
+  "glitzy-glow": {
+    "name_en": "glitzy-glow",
+    "name_ja": "どばどばオーラ",
+    "power": 80,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "念力を　これでもかと　あびせる。 相手の　特殊攻撃を　弱める 不思議な　かべを　つくりだす。"
+  },
+  "cut": {
+    "name_en": "cut",
+    "name_ja": "いあいぎり",
+    "power": 50,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "カマや　ツメなどで 相手を　切りつけて　攻撃する。 細い木も　切ることが　できる。"
+  },
+  "barrage": {
+    "name_en": "barrage",
+    "name_ja": "たまなげ",
+    "power": 15,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "まるい　ものを 相手に　投げつけて　攻撃する。 ２ー５回の　あいだ　連続で　だす。"
+  },
+  "harden": {
+    "name_en": "harden",
+    "name_ja": "かたくなる",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "全身に　力を　こめて 体を　硬くして 自分の　防御を　あげる。"
+  },
+  "switcheroo": {
+    "name_en": "switcheroo",
+    "name_ja": "すりかえ",
+    "power": null,
+    "type": "dark",
+    "class": "status",
+    "desc_ja": "目にも　とまらぬ　速さで 自分と　相手の 持ち物を　交換する。"
+  },
+  "whirlpool": {
+    "name_en": "whirlpool",
+    "name_ja": "うずしお",
+    "power": 35,
+    "type": "water",
+    "class": "special",
+    "desc_ja": "激しく　渦をまく　水の中に ４ー５ターンの　あいだ 相手を　閉じこめて　攻撃する。"
+  },
+  "arm-thrust": {
+    "name_en": "arm-thrust",
+    "name_ja": "つっぱり",
+    "power": 15,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "ひらいた　両手で 相手を　つっぱって　攻撃する。 ２ー５回の　あいだ　連続で　だす。"
+  },
+  "earthquake": {
+    "name_en": "earthquake",
+    "name_ja": "じしん",
+    "power": 100,
+    "type": "ground",
+    "class": "physical",
+    "desc_ja": "地震の　衝撃で　自分の 周りに　いるものを　攻撃する。 "
+  },
+  "cosmic-power": {
+    "name_en": "cosmic-power",
+    "name_ja": "コスモパワー",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "宇宙から　神秘の　力を とりこむ　ことで 自分の　防御と　特防を　あげる。"
+  },
+  "tera-blast": {
+    "name_en": "tera-blast",
+    "name_ja": "テラバースト",
+    "power": 80,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "natures-madness": {
+    "name_en": "natures-madness",
+    "name_ja": "しぜんのいかり",
+    "power": null,
+    "type": "fairy",
+    "class": "special",
+    "desc_ja": "自然の　怒りを　相手に　ぶつける。 相手の　ＨＰは　半分に　なる。"
+  },
+  "retaliate": {
+    "name_en": "retaliate",
+    "name_ja": "かたきうち",
+    "power": 70,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "倒れた　味方の　かたきを　討つ。 前の　ターンに　味方が 倒されていると　威力が　あがる。"
+  },
+  "sky-drop": {
+    "name_en": "sky-drop",
+    "name_ja": "フリーフォール",
+    "power": 60,
+    "type": "flying",
+    "class": "physical",
+    "desc_ja": "１ターン目で　相手を　空へ　連れさり ２ターン目に　落として　攻撃する。 連れさられた　相手は　動けない。"
+  },
+  "roost": {
+    "name_en": "roost",
+    "name_ja": "はねやすめ",
+    "power": null,
+    "type": "flying",
+    "class": "status",
+    "desc_ja": "地面に　降りて　体を　やすめる。 最大ＨＰの　半分の ＨＰを　回復する。"
+  },
+  "mega-drain": {
+    "name_en": "mega-drain",
+    "name_ja": "メガドレイン",
+    "power": 40,
+    "type": "grass",
+    "class": "special",
+    "desc_ja": "養分を　吸い取り　攻撃する。 相手に　与えた　ダメージの 半分の　ＨＰを　回復できる。"
+  },
+  "spider-web": {
+    "name_en": "spider-web",
+    "name_ja": "クモのす",
+    "power": null,
+    "type": "bug",
+    "class": "status",
+    "desc_ja": "ネバネバした　細い　糸を グルグルと　からませて　相手を 戦闘から　逃げられなくする。"
+  },
+  "burning-jealousy": {
+    "name_en": "burning-jealousy",
+    "name_ja": "しっとのほのお",
+    "power": 70,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "しっとの　エネルギーで　相手を　攻撃。 そのターン　能力が　あがった　ポケモンを やけどの　状態に　する。"
+  },
+  "luster-purge": {
+    "name_en": "luster-purge",
+    "name_ja": "ラスターパージ",
+    "power": 95,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "まばゆい　光を 解放して　攻撃する。 相手の　特防を　さげることが　ある。"
+  },
+  "iron-defense": {
+    "name_en": "iron-defense",
+    "name_ja": "てっぺき",
+    "power": null,
+    "type": "steel",
+    "class": "status",
+    "desc_ja": "皮膚を　鉄のように 硬くする　ことで 自分の　防御を　ぐーんと　あげる。"
+  },
+  "wide-guard": {
+    "name_en": "wide-guard",
+    "name_ja": "ワイドガード",
+    "power": null,
+    "type": "rock",
+    "class": "status",
+    "desc_ja": "味方全員に　当たる　攻撃を １ターンの　あいだ　防ぐ。 "
+  },
+  "dynamax-cannon": {
+    "name_en": "dynamax-cannon",
+    "name_ja": "ダイマックスほう",
+    "power": 100,
+    "type": "dragon",
+    "class": "special",
+    "desc_ja": "コアから　ビームを　放って　攻撃。 相手が　ダイマックス　していると ダメージは　２倍に　なる。"
+  },
+  "pin-missile": {
+    "name_en": "pin-missile",
+    "name_ja": "ミサイルばり",
+    "power": 25,
+    "type": "bug",
+    "class": "physical",
+    "desc_ja": "鋭い　ハリを 相手に　発射して　攻撃する。 ２ー５回の　あいだ　連続で　だす。"
+  },
+  "curse": {
+    "name_en": "curse",
+    "name_ja": "のろい",
+    "power": null,
+    "type": "ghost",
+    "class": "status",
+    "desc_ja": "使う　ポケモンが ゴーストタイプと　それ以外　とでは 効果が　変わる。"
+  },
+  "bone-rush": {
+    "name_en": "bone-rush",
+    "name_ja": "ボーンラッシュ",
+    "power": 25,
+    "type": "ground",
+    "class": "physical",
+    "desc_ja": "硬い　ホネで 相手を　なぐりつけて　攻撃する。 ２ー５回の　あいだ　連続で　だす。"
+  },
+  "odor-sleuth": {
+    "name_en": "odor-sleuth",
+    "name_ja": "かぎわける",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "ゴーストタイプに　効果がない　技や 回避率の　高い　相手に 攻撃が　当たるように　なる。"
+  },
+  "blast-burn": {
+    "name_en": "blast-burn",
+    "name_ja": "ブラストバーン",
+    "power": 150,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "爆発の　炎で 相手を　焼きつくして　攻撃する。 次の　ターンは　動けなくなる。"
+  },
+  "spite": {
+    "name_en": "spite",
+    "name_ja": "うらみ",
+    "power": null,
+    "type": "ghost",
+    "class": "status",
+    "desc_ja": "相手が　最後に　使った技に 恨みを　抱いて その技の　ＰＰを　４だけ　減らす。"
+  },
+  "autotomize": {
+    "name_en": "autotomize",
+    "name_ja": "ボディパージ",
+    "power": null,
+    "type": "steel",
+    "class": "status",
+    "desc_ja": "体の　ムダな　部分を　削る。 自分の　素早さを　ぐーんと　あげて 体重も　軽くなる。"
+  },
+  "collision-course": {
+    "name_en": "collision-course",
+    "name_ja": "アクセルブレイク",
+    "power": 100,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "overheat": {
+    "name_en": "overheat",
+    "name_ja": "オーバーヒート",
+    "power": 130,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "フルパワーで　相手を　攻撃する。 使うと　反動で 自分の　特攻が　がくっと　さがる。"
+  },
+  "meteor-beam": {
+    "name_en": "meteor-beam",
+    "name_ja": "メテオビーム",
+    "power": 120,
+    "type": "rock",
+    "class": "special",
+    "desc_ja": "１ターン目に　宇宙の　力を 集めることで　特攻が　あがり ２ターン目に　相手を　攻撃する。"
+  },
+  "plasma-fists": {
+    "name_en": "plasma-fists",
+    "name_ja": "プラズマフィスト",
+    "power": 100,
+    "type": "electric",
+    "class": "physical",
+    "desc_ja": "電気を　まとった　こぶしで 攻撃。　ノーマルタイプの　技を でんきタイプに　してしまう。"
+  },
+  "lick": {
+    "name_en": "lick",
+    "name_ja": "したでなめる",
+    "power": 30,
+    "type": "ghost",
+    "class": "physical",
+    "desc_ja": "長い　舌で 相手を　なめまわして　攻撃する。 まひ状態に　することが　ある。"
+  },
+  "geomancy": {
+    "name_en": "geomancy",
+    "name_ja": "ジオコントロール",
+    "power": null,
+    "type": "fairy",
+    "class": "status",
+    "desc_ja": "１ターン目で　エネルギーを 吸収し　２ターン目に　特攻 特防　素早さを　ぐーんと　あげる。"
+  },
+  "swallow": {
+    "name_en": "swallow",
+    "name_ja": "のみこむ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "蓄えた　力を　のみこんで 自分の　ＨＰを　回復する。 蓄えているほど　回復する。"
+  },
+  "gear-up": {
+    "name_en": "gear-up",
+    "name_ja": "アシストギア",
+    "power": null,
+    "type": "steel",
+    "class": "status",
+    "desc_ja": "ギアを　入れる　ことによって 特性　プラスと　マイナスの 攻撃と　特攻が　あがる。"
+  },
+  "fake-tears": {
+    "name_en": "fake-tears",
+    "name_ja": "うそなき",
+    "power": null,
+    "type": "dark",
+    "class": "status",
+    "desc_ja": "ないた　ふりをして　涙を　流す。 こまらせる　ことで 相手の　特防を　がくっと　さげる。"
+  },
+  "karate-chop": {
+    "name_en": "karate-chop",
+    "name_ja": "からてチョップ",
+    "power": 50,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "鋭い　チョップで 相手を　たたいて　攻撃する。 急所に　当たりやすい。"
+  },
+  "lock-on": {
+    "name_en": "lock-on",
+    "name_ja": "ロックオン",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "照準を　しっかり　あわせて 次の　攻撃が　必ず 相手に　当たるように　する。"
+  },
+  "acid-armor": {
+    "name_en": "acid-armor",
+    "name_ja": "とける",
+    "power": null,
+    "type": "poison",
+    "class": "status",
+    "desc_ja": "細胞の　変化で　液状に　なり 自分の　防御を　ぐーんと　あげる。 "
+  },
+  "shell-trap": {
+    "name_en": "shell-trap",
+    "name_ja": "トラップシェル",
+    "power": 150,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "こうらの　トラップを　しかける。 相手が　物理技を　出すと 爆発して　ダメージを　与える。"
+  },
+  "dragon-energy": {
+    "name_en": "dragon-energy",
+    "name_ja": "ドラゴンエナジー",
+    "power": 150,
+    "type": "dragon",
+    "class": "special",
+    "desc_ja": "生命力を　パワーに　変え　相手を 攻撃する。　自分の　ＨＰが　少ないほど 技の　威力は　さがる。"
+  },
+  "aurora-veil": {
+    "name_en": "aurora-veil",
+    "name_ja": "オーロラベール",
+    "power": null,
+    "type": "ice",
+    "class": "status",
+    "desc_ja": "５ターンの　間　物理と 特殊の　ダメージを　弱める。 あられの　時しか　出すことが　できない。"
+  },
+  "defend-order": {
+    "name_en": "defend-order",
+    "name_ja": "ぼうぎょしれい",
+    "power": null,
+    "type": "bug",
+    "class": "status",
+    "desc_ja": "しもべを　呼びだして　自分の　体に おおい　つかせる。防御と　特防を あげることが　できる。"
+  },
+  "embargo": {
+    "name_en": "embargo",
+    "name_ja": "さしおさえ",
+    "power": null,
+    "type": "dark",
+    "class": "status",
+    "desc_ja": "持たせた　道具を　使えなくする。 トレーナーも　その　ポケモンには 道具を　使えない。"
+  },
+  "headbutt": {
+    "name_en": "headbutt",
+    "name_ja": "ずつき",
+    "power": 70,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "頭を　突きだして まっすぐ　つっこんで　攻撃する。 相手を　ひるませることが　ある。"
+  },
+  "springtide-storm": {
+    "name_en": "springtide-storm",
+    "name_ja": "はるのあらし",
+    "power": 100,
+    "type": "fairy",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "trick-or-treat": {
+    "name_en": "trick-or-treat",
+    "name_ja": "ハロウィン",
+    "power": null,
+    "type": "ghost",
+    "class": "status",
+    "desc_ja": "相手を　ハロウィンに　誘う。 相手の　タイプに ゴーストタイプが　追加される。"
+  },
+  "vice-grip": {
+    "name_en": "vice-grip",
+    "name_ja": "はさむ",
+    "power": 55,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "相手を　両側から　はさんで ダメージを　あたえる。 "
+  },
+  "hydro-steam": {
+    "name_en": "hydro-steam",
+    "name_ja": "ハイドロスチーム",
+    "power": 80,
+    "type": "water",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "bide": {
+    "name_en": "bide",
+    "name_ja": "がまん",
+    "power": null,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "２ターンの　あいだ　攻撃に　たえて 受けた　ダメージを　２倍にして 相手に　返す。"
+  },
+  "dragon-claw": {
+    "name_en": "dragon-claw",
+    "name_ja": "ドラゴンクロー",
+    "power": 80,
+    "type": "dragon",
+    "class": "physical",
+    "desc_ja": "鋭く　とがった　巨大な　ツメで 相手を　切り裂いて　攻撃する。 "
+  },
+  "hidden-power": {
+    "name_en": "hidden-power",
+    "name_ja": "めざめるパワー",
+    "power": 60,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": "技を　使った　ポケモンに　よって 技の　タイプが　変わる。"
+  },
+  "snatch": {
+    "name_en": "snatch",
+    "name_ja": "よこどり",
+    "power": null,
+    "type": "dark",
+    "class": "status",
+    "desc_ja": "相手が　使おうと　した 回復技や　能力変化の 技を　うばって　自分に　使う。"
+  },
+  "freezing-glare": {
+    "name_en": "freezing-glare",
+    "name_ja": "いてつくしせん",
+    "power": 90,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "両目から　サイコパワーを 撃ちだして　攻撃する。 こおり状態に　することが　ある。"
+  },
+  "vital-throw": {
+    "name_en": "vital-throw",
+    "name_ja": "あてみなげ",
+    "power": 70,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "相手より　あとに　攻撃する。 そのかわり　自分の　攻撃は 必ず　命中する。"
+  },
+  "destiny-bond": {
+    "name_en": "destiny-bond",
+    "name_ja": "みちづれ",
+    "power": null,
+    "type": "ghost",
+    "class": "status",
+    "desc_ja": "技を　だしたあと　攻撃を　受けて ひんしに　なったとき 攻撃　相手も　ひんしに　する。"
+  },
+  "glaciate": {
+    "name_en": "glaciate",
+    "name_ja": "こごえるせかい",
+    "power": 65,
+    "type": "ice",
+    "class": "special",
+    "desc_ja": "凍えるような　冷気を 相手に　吹きつけて　攻撃する。 相手の　素早さを　さげる。"
+  },
+  "withdraw": {
+    "name_en": "withdraw",
+    "name_ja": "からにこもる",
+    "power": null,
+    "type": "water",
+    "class": "status",
+    "desc_ja": "殻に　潜りこんで　身を守り 自分の　防御を　あげる。 "
+  },
+  "trick-room": {
+    "name_en": "trick-room",
+    "name_ja": "トリックルーム",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "まか不思議な　空間を　つくる。 ５ターンの　あいだ 遅い　ポケモンから　行動できる。"
+  },
+  "rage-fist": {
+    "name_en": "rage-fist",
+    "name_ja": "ふんどのこぶし",
+    "power": 50,
+    "type": "ghost",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "ivy-cudgel": {
+    "name_en": "ivy-cudgel",
+    "name_ja": "ツタこんぼう",
+    "power": 100,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "poison-gas": {
+    "name_en": "poison-gas",
+    "name_ja": "どくガス",
+    "power": null,
+    "type": "poison",
+    "class": "status",
+    "desc_ja": "毒ガスを　相手の　顔に　吹きかけて 毒の　状態に　する。 "
+  },
+  "mega-kick": {
+    "name_en": "mega-kick",
+    "name_ja": "メガトンキック",
+    "power": 120,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "ものすごい　力を　こめた　キックで 相手を　けとばして　攻撃する。 "
+  },
+  "sleep-talk": {
+    "name_en": "sleep-talk",
+    "name_ja": "ねごと",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "自分が　おぼえている　技の　うち どれか　１つを　くりだす。 自分が　寝ているときだけ　使える。"
+  },
+  "flame-burst": {
+    "name_en": "flame-burst",
+    "name_ja": "はじけるほのお",
+    "power": 70,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "当たると　はじける　炎で　相手を 攻撃する。はじけた　炎は 隣の　相手にも　ふりかかる。"
+  },
+  "triple-axel": {
+    "name_en": "triple-axel",
+    "name_ja": "トリプルアクセル",
+    "power": 20,
+    "type": "ice",
+    "class": "physical",
+    "desc_ja": "３回連続で　キックを　くりだして 攻撃する。　技が　当たるたびに 威力は　あがる。"
+  },
+  "roar": {
+    "name_en": "roar",
+    "name_ja": "ほえる",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "相手を　逃がして 控えの　ポケモンを　ひきずりだす。 野生の　場合は　戦闘が　終わる。"
+  },
+  "muddy-water": {
+    "name_en": "muddy-water",
+    "name_ja": "だくりゅう",
+    "power": 90,
+    "type": "water",
+    "class": "special",
+    "desc_ja": "濁った　水を 相手に　発射して　攻撃する。 命中率を　さげることが　ある。"
+  },
+  "grassy-glide": {
+    "name_en": "grassy-glide",
+    "name_ja": "グラススライダー",
+    "power": 55,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": "地面を　滑るように　相手を　攻撃。 グラスフィールドの時 必ず　先制攻撃　できる。"
+  },
+  "power-up-punch": {
+    "name_en": "power-up-punch",
+    "name_ja": "グロウパンチ",
+    "power": 40,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "繰り返し　打つことで だんだん　こぶしが　固くなる。 相手に　当てると　攻撃が　あがる。"
+  },
+  "body-slam": {
+    "name_en": "body-slam",
+    "name_ja": "のしかかり",
+    "power": 85,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "全身で 相手に　のしかかり　攻撃する。 まひ状態に　することが　ある。"
+  },
+  "tearful-look": {
+    "name_en": "tearful-look",
+    "name_ja": "なみだめ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "なみだめに　なって 相手の　戦力を　喪失させる。 相手の　攻撃と　特攻が　さがる。"
+  },
+  "crush-claw": {
+    "name_en": "crush-claw",
+    "name_ja": "ブレイククロー",
+    "power": 75,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "硬く　鋭い　ツメで 切り裂いて　攻撃する。 相手の　防御を　さげることが　ある。"
+  },
+  "conversion-2": {
+    "name_en": "conversion-2",
+    "name_ja": "テクスチャー２",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "相手が　最後に　使った技に 抵抗できる　ように 自分の　タイプを　変化させる。"
+  },
+  "v-create": {
+    "name_en": "v-create",
+    "name_ja": "Ｖジェネレート",
+    "power": 180,
+    "type": "fire",
+    "class": "physical",
+    "desc_ja": "灼熱の　炎を　額から 発生させて　捨て身の　体当たり。 防御　特防　素早さが　さがる。"
+  },
+  "baton-pass": {
+    "name_en": "baton-pass",
+    "name_ja": "バトンタッチ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "控えの　ポケモンと　入れ替わる。 能力変化は　替わった ポケモンが　そのまま　受けつぐ。"
+  },
+  "scary-face": {
+    "name_en": "scary-face",
+    "name_ja": "こわいかお",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "恐ろしい　顔で　にらみ　おびえさせて 相手の　素早さを　がくっと　さげる。 "
+  },
+  "night-slash": {
+    "name_en": "night-slash",
+    "name_ja": "つじぎり",
+    "power": 70,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "一瞬の　すきを　ついて 相手を　切りはらう。 急所に　当たりやすい。"
+  },
+  "vacuum-wave": {
+    "name_en": "vacuum-wave",
+    "name_ja": "しんくうは",
+    "power": 40,
+    "type": "fighting",
+    "class": "special",
+    "desc_ja": "こぶしを　ふって 真空の　波を　まきおこす。 必ず　先制攻撃できる。"
+  },
+  "drum-beating": {
+    "name_en": "drum-beating",
+    "name_ja": "ドラムアタック",
+    "power": 80,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": "ドラムの　根っこを　ドラミングで コントロールして　こうげき　することで 相手の　素早さを　下げる。"
+  },
+  "electroweb": {
+    "name_en": "electroweb",
+    "name_ja": "エレキネット",
+    "power": 55,
+    "type": "electric",
+    "class": "special",
+    "desc_ja": "電気の　ネットで 相手を　捕まえて　攻撃する。 相手の　素早さを　さげる。"
+  },
+  "terrain-pulse": {
+    "name_en": "terrain-pulse",
+    "name_ja": "だいちのはどう",
+    "power": 50,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": "フィールドの力を　借りて　攻撃。 使った時の　フィールドの状態に　よって 技の　タイプと　威力が　変わる。"
+  },
+  "will-o-wisp": {
+    "name_en": "will-o-wisp",
+    "name_ja": "おにび",
+    "power": null,
+    "type": "fire",
+    "class": "status",
+    "desc_ja": "不気味で　怪しい　炎を　放って 相手を　やけどの　状態に　する。 "
+  },
+  "fire-blast": {
+    "name_en": "fire-blast",
+    "name_ja": "だいもんじ",
+    "power": 110,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "大の字の　炎で 相手を　焼きつくす。 やけど状態に　することが　ある。"
+  },
+  "relic-song": {
+    "name_en": "relic-song",
+    "name_ja": "いにしえのうた",
+    "power": 75,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": "いにしえのうたを　相手に　聞かせて 心に　うったえて　攻撃する。 眠り状態に　することが　ある。"
+  },
+  "rising-voltage": {
+    "name_en": "rising-voltage",
+    "name_ja": "ライジングボルト",
+    "power": 70,
+    "type": "electric",
+    "class": "special",
+    "desc_ja": "地面から　立ちのぼる　電撃で　攻撃。 相手が　エレキフィールドに　いる時 技の　威力が　２倍に　なる。"
+  },
+  "bulk-up": {
+    "name_en": "bulk-up",
+    "name_ja": "ビルドアップ",
+    "power": null,
+    "type": "fighting",
+    "class": "status",
+    "desc_ja": "体に　力を　こめて 筋肉を　ぶあつく　することで 自分の　攻撃と　防御を　あげる。"
+  },
+  "liquidation": {
+    "name_en": "liquidation",
+    "name_ja": "アクアブレイク",
+    "power": 85,
+    "type": "water",
+    "class": "physical",
+    "desc_ja": "水の　力で　相手に ぶつかって　攻撃する。 相手の　防御を　さげる　ことがある。"
+  },
+  "nuzzle": {
+    "name_en": "nuzzle",
+    "name_ja": "ほっぺすりすり",
+    "power": 20,
+    "type": "electric",
+    "class": "physical",
+    "desc_ja": "電気を　帯びた　ほっぺを すりつけて　攻撃。 相手を　まひ状態に　する。"
+  },
+  "brave-bird": {
+    "name_en": "brave-bird",
+    "name_ja": "ブレイブバード",
+    "power": 120,
+    "type": "flying",
+    "class": "physical",
+    "desc_ja": "はねを　おりたたみ 低空飛行で　突撃する。 自分も　かなり　ダメージを　受ける。"
+  },
+  "speed-swap": {
+    "name_en": "speed-swap",
+    "name_ja": "スピードスワップ",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "相手の　素早さと 自分の　素早さを 入れ替えてしまう。"
+  },
+  "trick": {
+    "name_en": "trick",
+    "name_ja": "トリック",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "相手の　すきを　ついて 自分と　相手の 持ち物を　交換する。"
+  },
+  "mystical-power": {
+    "name_en": "mystical-power",
+    "name_ja": "しんぴのちから",
+    "power": 70,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "sand-tomb": {
+    "name_en": "sand-tomb",
+    "name_ja": "すなじごく",
+    "power": 35,
+    "type": "ground",
+    "class": "physical",
+    "desc_ja": "激しく　吹きあれる　砂あらしの 中に　４ー５ターンの　あいだ 相手を　閉じこめて　攻撃する。"
+  },
+  "bug-buzz": {
+    "name_en": "bug-buzz",
+    "name_ja": "むしのさざめき",
+    "power": 90,
+    "type": "bug",
+    "class": "special",
+    "desc_ja": "はねの　振動で　音波を　おこして 攻撃する。相手の　特防を さげることが　ある。"
+  },
+  "dazzling-gleam": {
+    "name_en": "dazzling-gleam",
+    "name_ja": "マジカルシャイン",
+    "power": 80,
+    "type": "fairy",
+    "class": "special",
+    "desc_ja": "強力な　光を　放ち 相手に　ダメージを　与える。 "
+  },
+  "misty-explosion": {
+    "name_en": "misty-explosion",
+    "name_ja": "ミストバースト",
+    "power": 100,
+    "type": "fairy",
+    "class": "special",
+    "desc_ja": "自分の　周りに　いる　すべてを 攻撃するが　使うと　瀕死になる。 ミストフィールドで　威力が　あがる。"
+  },
+  "quick-guard": {
+    "name_en": "quick-guard",
+    "name_ja": "ファストガード",
+    "power": null,
+    "type": "fighting",
+    "class": "status",
+    "desc_ja": "自分と　味方を　相手の 先制攻撃から　守る。 "
+  },
+  "jet-punch": {
+    "name_en": "jet-punch",
+    "name_ja": "ジェットパンチ",
+    "power": 60,
+    "type": "water",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "laser-focus": {
+    "name_en": "laser-focus",
+    "name_ja": "とぎすます",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "精神を　集中して 次の　攻撃を　必ず 急所に　当てる。"
+  },
+  "chatter": {
+    "name_en": "chatter",
+    "name_ja": "おしゃべり",
+    "power": 65,
+    "type": "flying",
+    "class": "special",
+    "desc_ja": "おぼえた　言葉で 音波を　おこして　攻撃する。 相手を　混乱させる。"
+  },
+  "super-fang": {
+    "name_en": "super-fang",
+    "name_ja": "いかりのまえば",
+    "power": null,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "鋭い　前歯で 激しく　かみついて　攻撃する。 相手の　ＨＰは　半分に　なる。"
+  },
+  "pay-day": {
+    "name_en": "pay-day",
+    "name_ja": "ネコにこばん",
+    "power": 40,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "相手の　体に 小判を　投げつけて　攻撃する。 戦闘の　あとで　お金が　もらえる。"
+  },
+  "growl": {
+    "name_en": "growl",
+    "name_ja": "なきごえ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "かわいい　なきごえを　聞かせて 気を　ひき　油断を　させて 相手の　攻撃を　さげる。"
+  },
+  "absorb": {
+    "name_en": "absorb",
+    "name_ja": "すいとる",
+    "power": 20,
+    "type": "grass",
+    "class": "special",
+    "desc_ja": "養分を　吸い取り　攻撃する。 相手に　与えた　ダメージの 半分の　ＨＰを　回復できる。"
+  },
+  "ceaseless-edge": {
+    "name_en": "ceaseless-edge",
+    "name_ja": "ひけん・ちえなみ",
+    "power": 65,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "trop-kick": {
+    "name_en": "trop-kick",
+    "name_ja": "トロピカルキック",
+    "power": 70,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": "南国　由来の　熱い キックを　相手に　浴びせる。 相手の　攻撃を　さげる。"
+  },
+  "assist": {
+    "name_en": "assist",
+    "name_ja": "ねこのて",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "大急ぎで　味方の　助けを　かりて 控えの　ポケモンが　おぼえている 技を　どれか　１つ　使う。"
+  },
+  "revenge": {
+    "name_en": "revenge",
+    "name_ja": "リベンジ",
+    "power": 60,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "相手から　技を　受けていると その相手に　対して 与える　ダメージが　２倍に　なる。"
+  },
+  "hyper-fang": {
+    "name_en": "hyper-fang",
+    "name_ja": "ひっさつまえば",
+    "power": 80,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "鋭い　前歯で 強く　かみついて　攻撃する。 相手を　ひるませることが　ある。"
+  },
+  "dragon-cheer": {
+    "name_en": "dragon-cheer",
+    "name_ja": "ドラゴンエール",
+    "power": 0,
+    "type": "dragon",
+    "class": "status",
+    "desc_ja": ""
+  },
+  "instruct": {
+    "name_en": "instruct",
+    "name_ja": "さいはい",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "相手が　出した　技を 指示して　もう一度 出させることが　できる。"
+  },
+  "fillet-away": {
+    "name_en": "fillet-away",
+    "name_ja": "みをけずる",
+    "power": 0,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": ""
+  },
+  "secret-power": {
+    "name_en": "secret-power",
+    "name_ja": "ひみつのちから",
+    "power": 70,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "秘密の　力で 相手を　攻撃する。使う　場所で 追加効果が　変化する。"
+  },
+  "heat-crash": {
+    "name_en": "heat-crash",
+    "name_ja": "ヒートスタンプ",
+    "power": null,
+    "type": "fire",
+    "class": "physical",
+    "desc_ja": "燃える　体で　相手に　ぶつかって 攻撃する。自分が　相手より 重いほど　威力が　あがる。"
+  },
+  "double-edge": {
+    "name_en": "double-edge",
+    "name_ja": "すてみタックル",
+    "power": 120,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "命を　懸けて 相手に　突進して　攻撃する。 自分も　かなり　ダメージを　受ける。"
+  },
+  "tidy-up": {
+    "name_en": "tidy-up",
+    "name_ja": "おかたづけ",
+    "power": 0,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": ""
+  },
+  "venom-drench": {
+    "name_en": "venom-drench",
+    "name_ja": "ベノムトラップ",
+    "power": null,
+    "type": "poison",
+    "class": "status",
+    "desc_ja": "特殊な　毒液を　浴びせかける。 毒状態の　相手は 攻撃　特攻　素早さが　さがる。"
+  },
+  "purify": {
+    "name_en": "purify",
+    "name_ja": "じょうか",
+    "power": null,
+    "type": "poison",
+    "class": "status",
+    "desc_ja": "相手の　状態異常を　治す。 治すと　自分は　ＨＰを 回復　することが　できる。"
+  },
+  "apple-acid": {
+    "name_en": "apple-acid",
+    "name_ja": "りんごさん",
+    "power": 80,
+    "type": "grass",
+    "class": "special",
+    "desc_ja": "すっぱい　りんごから　つくりだした 酸性の　液体で　攻撃。 相手の　特防を　下げる。"
+  },
+  "pursuit": {
+    "name_en": "pursuit",
+    "name_ja": "おいうち",
+    "power": 40,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "相手　ポケモンが　入れ替わるときに 技を　だしていると 倍の　威力で　攻撃できる。"
+  },
+  "metal-burst": {
+    "name_en": "metal-burst",
+    "name_ja": "メタルバースト",
+    "power": null,
+    "type": "steel",
+    "class": "physical",
+    "desc_ja": "技を　だす前に 最後に　受けた　技の　ダメージを 大きくして　だした　相手に　返す。"
+  },
+  "spectral-thief": {
+    "name_en": "spectral-thief",
+    "name_ja": "シャドースチール",
+    "power": 90,
+    "type": "ghost",
+    "class": "physical",
+    "desc_ja": "相手の　影に　潜り込み 相手の　能力アップを 奪って　攻撃する。"
+  },
+  "me-first": {
+    "name_en": "me-first",
+    "name_ja": "さきどり",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "威力を　あげて　相手が だそうとする　技を　先にだす。 先に　だせないと　失敗する。"
+  },
+  "photon-geyser": {
+    "name_en": "photon-geyser",
+    "name_ja": "フォトンゲイザー",
+    "power": 100,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "光の　柱で　攻撃する。 攻撃と　特攻を　比べて 高いほうで　ダメージを　与える。"
+  },
+  "flatter": {
+    "name_en": "flatter",
+    "name_ja": "おだてる",
+    "power": null,
+    "type": "dark",
+    "class": "status",
+    "desc_ja": "相手を　おだてて　混乱させる。 同時に　相手の　特攻も あげてしまう。"
+  },
+  "mind-reader": {
+    "name_en": "mind-reader",
+    "name_ja": "こころのめ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "相手の　動きを　心で　感じて 次の　攻撃が　必ず 相手に　当たるように　する。"
+  },
+  "blaze-kick": {
+    "name_en": "blaze-kick",
+    "name_ja": "ブレイズキック",
+    "power": 85,
+    "type": "fire",
+    "class": "physical",
+    "desc_ja": "攻撃した　相手を やけど状態に　することが　ある。 急所にも　当たりやすい。"
+  },
+  "judgment": {
+    "name_en": "judgment",
+    "name_ja": "さばきのつぶて",
+    "power": 100,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": "無数の　光弾を　相手に　放出する。 自分の　持つ　プレートに　より タイプが　変わる。"
+  },
+  "shadow-force": {
+    "name_en": "shadow-force",
+    "name_ja": "シャドーダイブ",
+    "power": 120,
+    "type": "ghost",
+    "class": "physical",
+    "desc_ja": "１ターン目で　姿を　消して ２ターン目に　相手を　攻撃する。 守っていても　攻撃は　当たる。"
+  },
+  "frustration": {
+    "name_en": "frustration",
+    "name_ja": "やつあたり",
+    "power": null,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "不満を　はらすため　全力で 相手を　攻撃する。 なついていないほど　威力は　あがる。"
+  },
+  "grass-pledge": {
+    "name_en": "grass-pledge",
+    "name_ja": "くさのちかい",
+    "power": 80,
+    "type": "grass",
+    "class": "special",
+    "desc_ja": "草の柱で　攻撃する。 みずと　組みあわせると　威力が あがって　あたりが　湿原に　なる。"
+  },
+  "punishment": {
+    "name_en": "punishment",
+    "name_ja": "おしおき",
+    "power": null,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "能力変化で 相手が　パワーアップ　しているほど 技の　威力が　あがる。"
+  },
+  "double-team": {
+    "name_en": "double-team",
+    "name_ja": "かげぶんしん",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "素早い　動きで　分身を　つくり 相手を　まどわせて 回避率を　あげる。"
+  },
+  "poison-tail": {
+    "name_en": "poison-tail",
+    "name_ja": "ポイズンテール",
+    "power": 50,
+    "type": "poison",
+    "class": "physical",
+    "desc_ja": "しっぽで　たたく。 毒状態に　することが　あり 急所にも　当たりやすい。"
+  },
+  "steel-roller": {
+    "name_en": "steel-roller",
+    "name_ja": "アイアンローラー",
+    "power": 130,
+    "type": "steel",
+    "class": "physical",
+    "desc_ja": "フィールドを　破壊しながら　攻撃。 なんらかの　フィールド状態に 変わっていないと　技は　失敗する。"
+  },
+  "perish-song": {
+    "name_en": "perish-song",
+    "name_ja": "ほろびのうた",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "歌を　聴いた　ポケモンは ３ターン　たつと　ひんしに　なる。 交代すると　効果は　なくなる。"
+  },
+  "scorching-sands": {
+    "name_en": "scorching-sands",
+    "name_ja": "ねっさのだいち",
+    "power": 70,
+    "type": "ground",
+    "class": "special",
+    "desc_ja": "熱く　焼けた　砂を 相手に　ぶつけて　攻撃する。 やけど状態に　することが　ある。"
+  },
+  "clamp": {
+    "name_en": "clamp",
+    "name_ja": "からではさむ",
+    "power": 35,
+    "type": "water",
+    "class": "physical",
+    "desc_ja": "とても　頑丈な　ぶあつい　殻に ４ー５ターンの　あいだ 相手を　はさんで　攻撃する。"
+  },
+  "amnesia": {
+    "name_en": "amnesia",
+    "name_ja": "ドわすれ",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "頭を　からにして 一瞬　なにかを　忘れることで 自分の　特防を　ぐーんと　あげる。"
+  },
+  "skull-bash": {
+    "name_en": "skull-bash",
+    "name_ja": "ロケットずつき",
+    "power": 130,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "１ターン目に　頭を　ひっこめて 防御を　あげる。 ２ターン目に　相手を　攻撃する。"
+  },
+  "smack-down": {
+    "name_en": "smack-down",
+    "name_ja": "うちおとす",
+    "power": 50,
+    "type": "rock",
+    "class": "physical",
+    "desc_ja": "石や　弾を　投げて　飛んでいる 相手を　攻撃する。相手は うち落とされて　地面に　落ちる。"
+  },
+  "power-trip": {
+    "name_en": "power-trip",
+    "name_ja": "つけあがる",
+    "power": 20,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "自分の　強さを　鼻高々に 攻撃する。自分の　能力が あがって　いるほど　威力が　あがる。"
+  },
+  "beak-blast": {
+    "name_en": "beak-blast",
+    "name_ja": "くちばしキャノン",
+    "power": 100,
+    "type": "flying",
+    "class": "physical",
+    "desc_ja": "最初に　クチバシを　加熱してから 攻撃を　くりだす。 加熱中に　さわると　やけどする。"
+  },
+  "fleur-cannon": {
+    "name_en": "fleur-cannon",
+    "name_ja": "フルールカノン",
+    "power": 130,
+    "type": "fairy",
+    "class": "special",
+    "desc_ja": "強力な　ビームを　放ったあと 自分の　特攻が　がくっと　さがる。"
+  },
+  "surging-strikes": {
+    "name_en": "surging-strikes",
+    "name_ja": "すいりゅうれんだ",
+    "power": 25,
+    "type": "water",
+    "class": "physical",
+    "desc_ja": "みずの型を　極めし 流れるような　３回の　連撃。 必ず　急所に　当たる。"
+  },
+  "nature-power": {
+    "name_en": "nature-power",
+    "name_ja": "しぜんのちから",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "自然の　力で　攻撃する。 使う　場所で でてくる　技が　変化する。"
+  },
+  "ancient-power": {
+    "name_en": "ancient-power",
+    "name_ja": "げんしのちから",
+    "power": 60,
+    "type": "rock",
+    "class": "special",
+    "desc_ja": "原始の　力で　攻撃する。 自分の　すべての 能力が　あがることが　ある。"
+  },
+  "no-retreat": {
+    "name_en": "no-retreat",
+    "name_ja": "はいすいのじん",
+    "power": null,
+    "type": "fighting",
+    "class": "status",
+    "desc_ja": "自分の　すべての 能力が　上がるが　交代　したり 逃げることが　できなくなる。"
+  },
+  "pluck": {
+    "name_en": "pluck",
+    "name_ja": "ついばむ",
+    "power": 60,
+    "type": "flying",
+    "class": "physical",
+    "desc_ja": "くちばしで　攻撃。 相手が　きのみを　持っているとき 食べて　きのみの　効果を　受けられる。"
+  },
+  "water-pledge": {
+    "name_en": "water-pledge",
+    "name_ja": "みずのちかい",
+    "power": 80,
+    "type": "water",
+    "class": "special",
+    "desc_ja": "水の柱で　攻撃する。 ほのおと　組みあわせると　威力が あがって　空に　にじが　かかる。"
+  },
+  "skitter-smack": {
+    "name_en": "skitter-smack",
+    "name_ja": "はいよるいちげき",
+    "power": 70,
+    "type": "bug",
+    "class": "physical",
+    "desc_ja": "背後から　はいより　攻撃する。 相手の　特攻を　さげる。"
+  },
+  "pyro-ball": {
+    "name_en": "pyro-ball",
+    "name_ja": "かえんボール",
+    "power": 120,
+    "type": "fire",
+    "class": "physical",
+    "desc_ja": "小石を　燃やした　炎の　ボールで 相手を　攻撃する。 やけど　状態に　することが　ある。"
+  },
+  "fire-punch": {
+    "name_en": "fire-punch",
+    "name_ja": "ほのおのパンチ",
+    "power": 75,
+    "type": "fire",
+    "class": "physical",
+    "desc_ja": "炎を　こめた　パンチで 相手を　攻撃する。 やけど状態に　することが　ある。"
+  },
+  "tickle": {
+    "name_en": "tickle",
+    "name_ja": "くすぐる",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "体を　くすぐり　笑わせる　ことで 相手の　攻撃と　防御を　さげる。 "
+  },
+  "dark-void": {
+    "name_en": "dark-void",
+    "name_ja": "ダークホール",
+    "power": null,
+    "type": "dark",
+    "class": "status",
+    "desc_ja": "暗黒の　世界に　ひきずり　落として 相手を　眠り状態に　する。 "
+  },
+  "aurora-beam": {
+    "name_en": "aurora-beam",
+    "name_ja": "オーロラビーム",
+    "power": 65,
+    "type": "ice",
+    "class": "special",
+    "desc_ja": "にじいろの　ビームを 相手に　発射して　攻撃する。 攻撃を　さげる　ことが　ある。"
+  },
+  "thunder-fang": {
+    "name_en": "thunder-fang",
+    "name_ja": "かみなりのキバ",
+    "power": 65,
+    "type": "electric",
+    "class": "physical",
+    "desc_ja": "電気を　ためた　キバで　かみつく。 相手を　ひるませたり まひ状態に　することが　ある。"
+  },
+  "zing-zap": {
+    "name_en": "zing-zap",
+    "name_ja": "びりびりちくちく",
+    "power": 80,
+    "type": "electric",
+    "class": "physical",
+    "desc_ja": "相手に　ぶつかって　強力な 電気を浴びせ　びりびりちくちく　させる。 相手を　ひるませる　ことが　ある。"
+  },
+  "moonlight": {
+    "name_en": "moonlight",
+    "name_ja": "つきのひかり",
+    "power": null,
+    "type": "fairy",
+    "class": "status",
+    "desc_ja": "自分の　ＨＰを　回復する。 天気に　よって 回復の　量が　変化する。"
+  },
+  "strange-steam": {
+    "name_en": "strange-steam",
+    "name_ja": "ワンダースチーム",
+    "power": 90,
+    "type": "fairy",
+    "class": "special",
+    "desc_ja": "煙を　噴出して 相手を　攻撃。 混乱　させることが　ある。"
+  },
+  "psychic": {
+    "name_en": "psychic",
+    "name_ja": "サイコキネシス",
+    "power": 90,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "強い　念力を　相手に　送って 攻撃する。相手の　特防を さげることが　ある。"
+  },
+  "flare-blitz": {
+    "name_en": "flare-blitz",
+    "name_ja": "フレアドライブ",
+    "power": 120,
+    "type": "fire",
+    "class": "physical",
+    "desc_ja": "炎を　まとって　突進する。 自分も　かなり　ダメージを　受ける。 やけど状態に　することが　ある。"
+  },
+  "quiver-dance": {
+    "name_en": "quiver-dance",
+    "name_ja": "ちょうのまい",
+    "power": null,
+    "type": "bug",
+    "class": "status",
+    "desc_ja": "神秘的で　美しい　舞を 軽やかに　おどる。自分の　特攻と 特防と　素早さを　あげる。"
+  },
+  "copycat": {
+    "name_en": "copycat",
+    "name_ja": "まねっこ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "直前に　でた　技を　まねして 同じ　技を　だす。 技が　でていないと　失敗する。"
+  },
+  "false-surrender": {
+    "name_en": "false-surrender",
+    "name_ja": "どげざつき",
+    "power": 80,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "頭を　下げる　ふりを　しながら 振りみだした　髪の毛を　突き刺す。 攻撃は　必ず　命中する。"
+  },
+  "volt-switch": {
+    "name_en": "volt-switch",
+    "name_ja": "ボルトチェンジ",
+    "power": 70,
+    "type": "electric",
+    "class": "special",
+    "desc_ja": "攻撃したあと ものすごい　スピードで　もどってきて 控えポケモンと　入れ替わる。"
+  },
+  "hyper-voice": {
+    "name_en": "hyper-voice",
+    "name_ja": "ハイパーボイス",
+    "power": 90,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": "うるさく　響く　大きな　振動を 相手に　与えて　攻撃する。 "
+  },
+  "flame-wheel": {
+    "name_en": "flame-wheel",
+    "name_ja": "かえんぐるま",
+    "power": 60,
+    "type": "fire",
+    "class": "physical",
+    "desc_ja": "炎を　まとい 相手に　突進して　攻撃する。 やけど状態に　することが　ある。"
+  },
+  "bullet-seed": {
+    "name_en": "bullet-seed",
+    "name_ja": "タネマシンガン",
+    "power": 25,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": "タネを　勢いよく 相手に　発射して　攻撃する。 ２ー５回の　あいだ　連続で　だす。"
+  },
+  "taunt": {
+    "name_en": "taunt",
+    "name_ja": "ちょうはつ",
+    "power": null,
+    "type": "dark",
+    "class": "status",
+    "desc_ja": "相手を　怒らせる。３ターンの あいだ　相手は　ダメージを 与える　技しか　だせなくなる。"
+  },
+  "metronome": {
+    "name_en": "metronome",
+    "name_ja": "ゆびをふる",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "指をふり　自分の　脳を　刺激して すべての　技の　なかから どれか　１つを　くりだす。"
+  },
+  "foresight": {
+    "name_en": "foresight",
+    "name_ja": "みやぶる",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "ゴーストタイプに　効果がない　技や 回避率の　高い　相手に 攻撃が　当たるように　なる。"
+  },
+  "seed-flare": {
+    "name_en": "seed-flare",
+    "name_ja": "シードフレア",
+    "power": 120,
+    "type": "grass",
+    "class": "special",
+    "desc_ja": "体の　中から　衝撃波を 発生させる。相手の　特防を がくっと　さげることが　ある。"
+  },
+  "dark-pulse": {
+    "name_en": "dark-pulse",
+    "name_ja": "あくのはどう",
+    "power": 80,
+    "type": "dark",
+    "class": "special",
+    "desc_ja": "体から　悪意に　みちた 恐ろしい　オーラを　発する。 相手を　ひるませることが　ある。"
+  },
+  "sharpen": {
+    "name_en": "sharpen",
+    "name_ja": "かくばる",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "体の　かどを　増やして カクカクに　なることで 自分の　攻撃を　あげる。"
+  },
+  "flower-trick": {
+    "name_en": "flower-trick",
+    "name_ja": "トリックフラワー",
+    "power": 70,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "fell-stinger": {
+    "name_en": "fell-stinger",
+    "name_ja": "とどめばり",
+    "power": 50,
+    "type": "bug",
+    "class": "physical",
+    "desc_ja": "この　技を　使って 相手を　倒すと 攻撃が　ぐーんと　あがる。"
+  },
+  "court-change": {
+    "name_en": "court-change",
+    "name_ja": "コートチェンジ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "不思議な　力で お互いの　場の　効果を　入れ替える。"
+  },
+  "poison-fang": {
+    "name_en": "poison-fang",
+    "name_ja": "どくどくのキバ",
+    "power": 50,
+    "type": "poison",
+    "class": "physical",
+    "desc_ja": "毒の　ある　キバで 相手に　かみついて　攻撃する。 猛毒を　おわせる　ことが　ある。"
+  },
+  "forests-curse": {
+    "name_en": "forests-curse",
+    "name_ja": "もりののろい",
+    "power": null,
+    "type": "grass",
+    "class": "status",
+    "desc_ja": "相手に　森ののろいを　かける。 のろいを　かけられた　相手は タイプに　くさタイプが　追加される。"
+  },
+  "yawn": {
+    "name_en": "yawn",
+    "name_ja": "あくび",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "大きな　あくびで　眠気を　誘う。 次の　ターンに 相手を　眠り状態に　する。"
+  },
+  "recycle": {
+    "name_en": "recycle",
+    "name_ja": "リサイクル",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "戦闘中に　使って　なくなった 自分の　持ち物を　再生させて 使えるように　する。"
+  },
+  "dual-wingbeat": {
+    "name_en": "dual-wingbeat",
+    "name_ja": "ダブルウイング",
+    "power": 40,
+    "type": "flying",
+    "class": "physical",
+    "desc_ja": "翼を　相手に　ぶつけて 攻撃する。　２回連続で ダメージを　与える。"
+  },
+  "protect": {
+    "name_en": "protect",
+    "name_ja": "まもる",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "相手の　攻撃を まったく　受けない。 連続で　だすと　失敗しやすい。"
+  },
+  "acupressure": {
+    "name_en": "acupressure",
+    "name_ja": "つぼをつく",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "つぼおしで　体を　活性化させる。 能力の　どれか　１つを ぐーんと　あげる。"
+  },
+  "safeguard": {
+    "name_en": "safeguard",
+    "name_ja": "しんぴのまもり",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "５ターンの　あいだ 不思議な　力に　守られて 状態異常に　ならなくなる。"
+  },
+  "ember": {
+    "name_en": "ember",
+    "name_ja": "ひのこ",
+    "power": 40,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "小さな　炎を 相手に　発射して　攻撃する。 やけど状態に　することが　ある。"
+  },
+  "eerie-spell": {
+    "name_en": "eerie-spell",
+    "name_ja": "ぶきみなじゅもん",
+    "power": 80,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "強力な　サイコパワーで　攻撃。 相手が　最後に　使った技の ＰＰを　３だけ　減らす。"
+  },
+  "armor-cannon": {
+    "name_en": "armor-cannon",
+    "name_ja": "アーマーキャノン",
+    "power": 120,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "matcha-gotcha": {
+    "name_en": "matcha-gotcha",
+    "name_ja": "シャカシャカほう",
+    "power": 80,
+    "type": "grass",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "dragon-hammer": {
+    "name_en": "dragon-hammer",
+    "name_ja": "ドラゴンハンマー",
+    "power": 90,
+    "type": "dragon",
+    "class": "physical",
+    "desc_ja": "体を　ハンマーのように 使って　相手に　襲いかかり ダメージを　与える。"
+  },
+  "calm-mind": {
+    "name_en": "calm-mind",
+    "name_ja": "めいそう",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "静かに　精神を　統一し 心を　鎮めることで　自分の 特攻と　特防を　あげる。"
+  },
+  "boomburst": {
+    "name_en": "boomburst",
+    "name_ja": "ばくおんぱ",
+    "power": 140,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": "すさまじい　爆音の 破壊力に　よって 周りに　いるものを　攻撃する。"
+  },
+  "superpower": {
+    "name_en": "superpower",
+    "name_ja": "ばかぢから",
+    "power": 120,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "すごい　力を　発揮して 相手を　攻撃する。自分の 攻撃と　防御が　さがる。"
+  },
+  "aura-wheel": {
+    "name_en": "aura-wheel",
+    "name_ja": "オーラぐるま",
+    "power": 110,
+    "type": "electric",
+    "class": "physical",
+    "desc_ja": "ほほぶくろに　溜めた　エネルギーで 攻撃し　自分の　素早さを　あげる。 モルペコの　姿で　タイプが　変わる。"
+  },
+  "torch-song": {
+    "name_en": "torch-song",
+    "name_ja": "フレアソング",
+    "power": 80,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "wake-up-slap": {
+    "name_en": "wake-up-slap",
+    "name_ja": "めざましビンタ",
+    "power": 70,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "眠り状態の　相手に 大きな　ダメージを　与える。 かわりに　相手は　眠りから　さめる。"
+  },
+  "lucky-chant": {
+    "name_en": "lucky-chant",
+    "name_ja": "おまじない",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "天に　むかって　おいのりを　ささげ 相手の　攻撃を 急所に　当たらなくする。"
+  },
+  "icicle-crash": {
+    "name_en": "icicle-crash",
+    "name_ja": "つららおとし",
+    "power": 85,
+    "type": "ice",
+    "class": "physical",
+    "desc_ja": "大きな　氷柱を 激しく　ぶつけて　攻撃する。 相手を　ひるませることが　ある。"
+  },
+  "natural-gift": {
+    "name_en": "natural-gift",
+    "name_ja": "しぜんのめぐみ",
+    "power": null,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "きのみから　力を　もらい 攻撃する。持たせた　きのみで 技の　タイプと　威力が　変わる。"
+  },
+  "rototiller": {
+    "name_en": "rototiller",
+    "name_ja": "たがやす",
+    "power": null,
+    "type": "ground",
+    "class": "status",
+    "desc_ja": "地面を　耕して　草木が 育ちやすいようにする。くさタイプの 攻撃と　特攻が　あがる。"
+  },
+  "crafty-shield": {
+    "name_en": "crafty-shield",
+    "name_ja": "トリックガード",
+    "power": null,
+    "type": "fairy",
+    "class": "status",
+    "desc_ja": "不思議な　力を　使って 味方への　変化技を　防ぐ。 ダメージ技は　受けてしまう。"
+  },
+  "power-trick": {
+    "name_en": "power-trick",
+    "name_ja": "パワートリック",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "超能力で 自分の　攻撃と　防御の 力を　交換する。"
+  },
+  "rock-climb": {
+    "name_en": "rock-climb",
+    "name_ja": "ロッククライム",
+    "power": 90,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "すごい　勢いで　相手に つっこみ　攻撃する。 相手を　混乱させることが　ある。"
+  },
+  "sing": {
+    "name_en": "sing",
+    "name_ja": "うたう",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "心地好い　きれいな 歌声を　聞かせて 相手を　眠り状態に　する。"
+  },
+  "hammer-arm": {
+    "name_en": "hammer-arm",
+    "name_ja": "アームハンマー",
+    "power": 100,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "強くて　重い　こぶしを ふるって　ダメージを　与える。 自分の　素早さが　さがる。"
+  },
+  "peck": {
+    "name_en": "peck",
+    "name_ja": "つつく",
+    "power": 35,
+    "type": "flying",
+    "class": "physical",
+    "desc_ja": "鋭く　とがった　くちばしや　つので 相手を　突いて　攻撃する。 "
+  },
+  "high-horsepower": {
+    "name_en": "high-horsepower",
+    "name_ja": "１０まんばりき",
+    "power": 95,
+    "type": "ground",
+    "class": "physical",
+    "desc_ja": "全身を　使って 相手に　猛アタックする。"
+  },
+  "heart-swap": {
+    "name_en": "heart-swap",
+    "name_ja": "ハートスワップ",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "超能力で 自分と　相手に　かかっている 能力変化を　入れ替える。"
+  },
+  "dizzy-punch": {
+    "name_en": "dizzy-punch",
+    "name_ja": "ピヨピヨパンチ",
+    "power": 70,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "リズミカルに　パンチを　くりだして 相手を　攻撃する。 混乱させることが　ある。"
+  },
+  "first-impression": {
+    "name_en": "first-impression",
+    "name_ja": "であいがしら",
+    "power": 90,
+    "type": "bug",
+    "class": "physical",
+    "desc_ja": "威力が　高い　技　だが 戦闘に　出たら すぐに　出さないと　成功　しない。"
+  },
+  "haze": {
+    "name_en": "haze",
+    "name_ja": "くろいきり",
+    "power": null,
+    "type": "ice",
+    "class": "status",
+    "desc_ja": "黒い霧を　だして　戦闘に でている　ポケモン　全員の 能力変化を　もとに　もどす。"
+  },
+  "rock-throw": {
+    "name_en": "rock-throw",
+    "name_ja": "いわおとし",
+    "power": 50,
+    "type": "rock",
+    "class": "physical",
+    "desc_ja": "小さな　岩を　持ちあげて 相手に　投げつけて　攻撃する。 "
+  },
+  "chloroblast": {
+    "name_en": "chloroblast",
+    "name_ja": "クロロブラスト",
+    "power": 150,
+    "type": "grass",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "secret-sword": {
+    "name_en": "secret-sword",
+    "name_ja": "しんぴのつるぎ",
+    "power": 85,
+    "type": "fighting",
+    "class": "special",
+    "desc_ja": "長い　つので　切りつけ　攻撃する。 つのが　まとった　不思議な　力は 物理的な　ダメージを　与える。"
+  },
+  "overdrive": {
+    "name_en": "overdrive",
+    "name_ja": "オーバードライブ",
+    "power": 80,
+    "type": "electric",
+    "class": "special",
+    "desc_ja": "ギターや　ベースを　かきならして 激しく　響く　大きな　振動を 相手に　与えて　攻撃する。"
+  },
+  "alluring-voice": {
+    "name_en": "alluring-voice",
+    "name_ja": "みわくのボイス",
+    "power": 80,
+    "type": "fairy",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "ingrain": {
+    "name_en": "ingrain",
+    "name_ja": "ねをはる",
+    "power": null,
+    "type": "grass",
+    "class": "status",
+    "desc_ja": "大地に　根を　張り 毎ターン　自分の　ＨＰを　回復する。 根を　張っているので　入れ替えられない。"
+  },
+  "imprison": {
+    "name_en": "imprison",
+    "name_ja": "ふういん",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "相手が　自分と　同じ　技を おぼえていたら　相手だけ その技を　使えなくする。"
+  },
+  "milk-drink": {
+    "name_en": "milk-drink",
+    "name_ja": "ミルクのみ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "最大ＨＰの　半分 自分の　ＨＰを　回復する。 仲間に　ＨＰを　わけることも　できる。"
+  },
+  "snap-trap": {
+    "name_en": "snap-trap",
+    "name_ja": "トラバサミ",
+    "power": 35,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": "トラバサミで　捕らえて ４－５ターンの　間 相手を　はさんで　攻撃する。"
+  },
+  "wicked-blow": {
+    "name_en": "wicked-blow",
+    "name_ja": "あんこくきょうだ",
+    "power": 75,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "あくの型を　極めし 強烈な　一撃。 必ず　急所に　当たる。"
+  },
+  "fire-lash": {
+    "name_en": "fire-lash",
+    "name_ja": "ほのおのムチ",
+    "power": 80,
+    "type": "fire",
+    "class": "physical",
+    "desc_ja": "焼けたムチで　相手を　打ちつける。 攻撃を　受けた　相手は 防御が　さがる。"
+  },
+  "return": {
+    "name_en": "return",
+    "name_ja": "おんがえし",
+    "power": null,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "トレーナーの　ために　全力で 相手を　攻撃する。 なついているほど　威力は　あがる。"
+  },
+  "seismic-toss": {
+    "name_en": "seismic-toss",
+    "name_ja": "ちきゅうなげ",
+    "power": null,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "引力を　使い　投げとばす。 自分の　レベルと　同じ　ダメージを 相手に　与える。"
+  },
+  "pound": {
+    "name_en": "pound",
+    "name_ja": "はたく",
+    "power": 40,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "長い　しっぽや　手などを　使って 相手を　はたいて　攻撃する。 "
+  },
+  "horn-attack": {
+    "name_en": "horn-attack",
+    "name_ja": "つのでつく",
+    "power": 65,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "鋭く　とがった　つので 相手を　攻撃する。 "
+  },
+  "fling": {
+    "name_en": "fling",
+    "name_ja": "なげつける",
+    "power": null,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "持たせた　道具を 素早く　投げつけて　攻撃する。 道具で　威力と　効果が　変わる。"
+  },
+  "fury-cutter": {
+    "name_en": "fury-cutter",
+    "name_ja": "れんぞくぎり",
+    "power": 40,
+    "type": "bug",
+    "class": "physical",
+    "desc_ja": "カマや　ツメなどで　相手を 切りつけて　攻撃する。 連続で　当てると　威力が　あがる。"
+  },
+  "poison-sting": {
+    "name_en": "poison-sting",
+    "name_ja": "どくばり",
+    "power": 15,
+    "type": "poison",
+    "class": "physical",
+    "desc_ja": "毒の　ある　ハリを 相手に　突き刺して　攻撃する。 毒状態に　することが　ある。"
+  },
+  "toxic-spikes": {
+    "name_en": "toxic-spikes",
+    "name_ja": "どくびし",
+    "power": null,
+    "type": "poison",
+    "class": "status",
+    "desc_ja": "相手の　足下に　どくびしを しかける。交代で　でてきた　相手の ポケモンに　毒を　おわせる。"
+  },
+  "endure": {
+    "name_en": "endure",
+    "name_ja": "こらえる",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "攻撃を　受けても ＨＰを　必ず　１だけ　残せる。 連続で　だすと　失敗しやすい。"
+  },
+  "coil": {
+    "name_en": "coil",
+    "name_ja": "とぐろをまく",
+    "power": null,
+    "type": "poison",
+    "class": "status",
+    "desc_ja": "とぐろを　まいて　集中する。 自分の　攻撃と　防御と 命中率を　あげる。"
+  },
+  "explosion": {
+    "name_en": "explosion",
+    "name_ja": "だいばくはつ",
+    "power": 250,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "大きな　爆発で　自分の 周りに　いるものを　攻撃する。 使ったあとに　ひんしに　なる。"
+  },
+  "draining-kiss": {
+    "name_en": "draining-kiss",
+    "name_ja": "ドレインキッス",
+    "power": 50,
+    "type": "fairy",
+    "class": "special",
+    "desc_ja": "キッスによって　相手から　ＨＰを 吸い取る。与えた　ダメージの 半分以上　ＨＰを　回復する。"
+  },
+  "spore": {
+    "name_en": "spore",
+    "name_ja": "キノコのほうし",
+    "power": null,
+    "type": "grass",
+    "class": "status",
+    "desc_ja": "催眠効果の　ある 胞子を　パラパラと　ふりまき 相手を　眠り状態に　する。"
+  },
+  "hurricane": {
+    "name_en": "hurricane",
+    "name_ja": "ぼうふう",
+    "power": 110,
+    "type": "flying",
+    "class": "special",
+    "desc_ja": "強烈な　風で　相手を 包みこんで　攻撃する。 相手を　混乱させることが　ある。"
+  },
+  "giga-impact": {
+    "name_en": "giga-impact",
+    "name_ja": "ギガインパクト",
+    "power": 150,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "持てる　力を　すべて　使って 相手に　突撃する。 次の　ターンは　動けなくなる。"
+  },
+  "heal-bell": {
+    "name_en": "heal-bell",
+    "name_ja": "いやしのすず",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "心地好い　鈴の　音色を　聞かせて 味方　全員の 状態異常を　回復　する。"
+  },
+  "victory-dance": {
+    "name_en": "victory-dance",
+    "name_ja": "しょうりのまい",
+    "power": 0,
+    "type": "fighting",
+    "class": "status",
+    "desc_ja": ""
+  },
+  "whirlwind": {
+    "name_en": "whirlwind",
+    "name_ja": "ふきとばし",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "相手を　吹きとばして 控えの　ポケモンを　ひきずりだす。 野生の　場合は　戦闘が　終わる。"
+  },
+  "surf": {
+    "name_en": "surf",
+    "name_ja": "なみのり",
+    "power": 90,
+    "type": "water",
+    "class": "special",
+    "desc_ja": "大きな　波で　自分の 周りに　いるものを　攻撃する。"
+  },
+  "bestow": {
+    "name_en": "bestow",
+    "name_ja": "ギフトパス",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "相手が　道具を　持っていないとき 自分が　持っている　道具を 相手に　わたす。"
+  },
+  "frost-breath": {
+    "name_en": "frost-breath",
+    "name_ja": "こおりのいぶき",
+    "power": 60,
+    "type": "ice",
+    "class": "special",
+    "desc_ja": "冷たい　息を 相手に　吹きつけて　攻撃する。 必ず　急所に　当たる。"
+  },
+  "solar-beam": {
+    "name_en": "solar-beam",
+    "name_ja": "ソーラービーム",
+    "power": 120,
+    "type": "grass",
+    "class": "special",
+    "desc_ja": "１ターン目に　光を　いっぱいに　集め ２ターン目に　光の　束を 発射して　攻撃する。"
+  },
+  "mud-slap": {
+    "name_en": "mud-slap",
+    "name_ja": "どろかけ",
+    "power": 20,
+    "type": "ground",
+    "class": "special",
+    "desc_ja": "相手の　顔などに 泥を　投げつけて　攻撃する。 命中率を　さげる。"
+  },
+  "fly": {
+    "name_en": "fly",
+    "name_ja": "そらをとぶ",
+    "power": 90,
+    "type": "flying",
+    "class": "physical",
+    "desc_ja": "１ターン目で　空へ　飛び ２ターン目に　相手を　攻撃する。 知っている　街に　飛ぶことも　できる。"
+  },
+  "core-enforcer": {
+    "name_en": "core-enforcer",
+    "name_ja": "コアパニッシャー",
+    "power": 100,
+    "type": "dragon",
+    "class": "special",
+    "desc_ja": "ダメージを　与えた　相手が すでに　行動を　終えていたら 相手の　特性を　消してしまう。"
+  },
+  "grudge": {
+    "name_en": "grudge",
+    "name_ja": "おんねん",
+    "power": null,
+    "type": "ghost",
+    "class": "status",
+    "desc_ja": "相手の　技で　ひんしに　されたとき おんねんを　かけて その技の　ＰＰを　０に　する。"
+  },
+  "substitute": {
+    "name_en": "substitute",
+    "name_ja": "みがわり",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "自分の　ＨＰを　少し　削って 分身を　だす。 分身は　自分の　身代わりに　なる。"
+  },
+  "revival-blessing": {
+    "name_en": "revival-blessing",
+    "name_ja": "さいきのいのり",
+    "power": 0,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": ""
+  },
+  "heal-order": {
+    "name_en": "heal-order",
+    "name_ja": "かいふくしれい",
+    "power": null,
+    "type": "bug",
+    "class": "status",
+    "desc_ja": "しもべを　呼びだして　きずを　治す。 最大ＨＰの　半分 自分の　ＨＰを　回復する。"
+  },
+  "slack-off": {
+    "name_en": "slack-off",
+    "name_ja": "なまける",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "怠けて　やすむ。 自分の　ＨＰを　最大ＨＰの 半分　回復する。"
+  },
+  "psycho-boost": {
+    "name_en": "psycho-boost",
+    "name_ja": "サイコブースト",
+    "power": 140,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "フルパワーで　相手を　攻撃する。 使うと　反動で 自分の　特攻が　がくっと　さがる。"
+  },
+  "upper-hand": {
+    "name_en": "upper-hand",
+    "name_ja": "はやてがえし",
+    "power": 65,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "mean-look": {
+    "name_en": "mean-look",
+    "name_ja": "くろいまなざし",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "吸いこまれるような　黒い　まなざしで じっと　みつめて　相手を 戦闘から　逃げられなくする。"
+  },
+  "blue-flare": {
+    "name_en": "blue-flare",
+    "name_ja": "あおいほのお",
+    "power": 130,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "美しくも　激しい　青い炎で 相手を　包みこんで　攻撃する。 やけど状態に　することが　ある。"
+  },
+  "fiery-dance": {
+    "name_en": "fiery-dance",
+    "name_ja": "ほのおのまい",
+    "power": 80,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "炎を　まとい　はばたいて　相手を 攻撃する。自分の　特攻が あがることが　ある。"
+  },
+  "rock-smash": {
+    "name_en": "rock-smash",
+    "name_ja": "いわくだき",
+    "power": 40,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "パンチで　攻撃する。相手の 防御を　さげる　ことが　ある。 岩を　砕くことも　ある。"
+  },
+  "expanding-force": {
+    "name_en": "expanding-force",
+    "name_ja": "ワイドフォース",
+    "power": 80,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "サイコパワーで　相手を　攻撃する。 サイコフィールドの時　威力が　あがり すべての　相手に　ダメージを　与える。"
+  },
+  "wild-charge": {
+    "name_en": "wild-charge",
+    "name_ja": "ワイルドボルト",
+    "power": 90,
+    "type": "electric",
+    "class": "physical",
+    "desc_ja": "電気を　まとって 相手に　ぶつかって　攻撃する。 自分も　少し　ダメージを　受ける。"
+  },
+  "confusion": {
+    "name_en": "confusion",
+    "name_ja": "ねんりき",
+    "power": 50,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "弱い　念力を 相手に　送って　攻撃する。 相手を　混乱させることが　ある。"
+  },
+  "leech-seed": {
+    "name_en": "leech-seed",
+    "name_ja": "やどりぎのタネ",
+    "power": null,
+    "type": "grass",
+    "class": "status",
+    "desc_ja": "植えつけた　相手の　ＨＰを 毎ターン　少しだけ　吸い取り 自分の　ＨＰを　回復する。"
+  },
+  "sparkly-swirl": {
+    "name_en": "sparkly-swirl",
+    "name_ja": "きらきらストーム",
+    "power": 120,
+    "type": "fairy",
+    "class": "special",
+    "desc_ja": "むせかえる　ような　香りの　竜巻で 相手を　つつんで　攻撃。　味方の 状態異常を　回復する。"
+  },
+  "sizzly-slide": {
+    "name_en": "sizzly-slide",
+    "name_ja": "めらめらバーン",
+    "power": 60,
+    "type": "fire",
+    "class": "physical",
+    "desc_ja": "炎を　まとった　体で 勢いよく　相手に　ぶつかる。 相手を　やけど状態に　する。"
+  },
+  "mirror-move": {
+    "name_en": "mirror-move",
+    "name_ja": "オウムがえし",
+    "power": null,
+    "type": "flying",
+    "class": "status",
+    "desc_ja": "相手の　使った　技を　まねして 自分も　同じ技を　使う。 "
+  },
+  "electric-terrain": {
+    "name_en": "electric-terrain",
+    "name_ja": "エレキフィールド",
+    "power": null,
+    "type": "electric",
+    "class": "status",
+    "desc_ja": "５ターンの　あいだ　足元を エレキフィールドにする。地面にいる ポケモンは　眠らなくなる。"
+  },
+  "vine-whip": {
+    "name_en": "vine-whip",
+    "name_ja": "つるのムチ",
+    "power": 45,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": "ムチのように　しなる　細長い　つるで 相手を　たたきつけて　攻撃する。 "
+  },
+  "sludge-wave": {
+    "name_en": "sludge-wave",
+    "name_ja": "ヘドロウェーブ",
+    "power": 95,
+    "type": "poison",
+    "class": "special",
+    "desc_ja": "ヘドロの　波で　自分の 周りに　いるものを　攻撃する。 毒状態に　することが　ある。"
+  },
+  "crunch": {
+    "name_en": "crunch",
+    "name_ja": "かみくだく",
+    "power": 80,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "鋭い　歯で 相手を　かみくだいて　攻撃する。 相手の　防御を　さげることが　ある。"
+  },
+  "astral-barrage": {
+    "name_en": "astral-barrage",
+    "name_ja": "アストラルビット",
+    "power": 120,
+    "type": "ghost",
+    "class": "special",
+    "desc_ja": "たくさんの　小さな　霊体を 相手に　ぶつけて　攻撃する。"
+  },
+  "trump-card": {
+    "name_en": "trump-card",
+    "name_ja": "きりふだ",
+    "power": null,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": "きりふだの　残り　ＰＰが 少なければ　少ないほど 技の　威力が　あがる。"
+  },
+  "shelter": {
+    "name_en": "shelter",
+    "name_ja": "たてこもる",
+    "power": 0,
+    "type": "steel",
+    "class": "status",
+    "desc_ja": ""
+  },
+  "origin-pulse": {
+    "name_en": "origin-pulse",
+    "name_ja": "こんげんのはどう",
+    "power": 110,
+    "type": "water",
+    "class": "special",
+    "desc_ja": "青白く　輝く　無数の　光線で 相手を　攻撃する。"
+  },
+  "inferno": {
+    "name_en": "inferno",
+    "name_ja": "れんごく",
+    "power": 100,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "激しい　炎で 相手を　包みこみ　攻撃する。 やけど状態に　する。"
+  },
+  "spark": {
+    "name_en": "spark",
+    "name_ja": "スパーク",
+    "power": 65,
+    "type": "electric",
+    "class": "physical",
+    "desc_ja": "電気を　まとい 相手に　突進して　攻撃する。 まひ状態に　することが　ある。"
+  },
+  "endeavor": {
+    "name_en": "endeavor",
+    "name_ja": "がむしゃら",
+    "power": null,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "相手の　ＨＰが　自分の　ＨＰと 同じくらいに　なるように ダメージを　与える。"
+  },
+  "air-slash": {
+    "name_en": "air-slash",
+    "name_ja": "エアスラッシュ",
+    "power": 75,
+    "type": "flying",
+    "class": "special",
+    "desc_ja": "空をも　切り裂く 空気の　刃で　攻撃する。 相手を　ひるませることが　ある。"
+  },
+  "memento": {
+    "name_en": "memento",
+    "name_ja": "おきみやげ",
+    "power": null,
+    "type": "dark",
+    "class": "status",
+    "desc_ja": "自分は　ひんしに　なるが　そのかわりに 相手の　攻撃と　特攻を がくっと　さげる。"
+  },
+  "earth-power": {
+    "name_en": "earth-power",
+    "name_ja": "だいちのちから",
+    "power": 90,
+    "type": "ground",
+    "class": "special",
+    "desc_ja": "相手の　足下へ　大地の力を 放出する。相手の　特防を さげることが　ある。"
+  },
+  "coaching": {
+    "name_en": "coaching",
+    "name_ja": "コーチング",
+    "power": null,
+    "type": "fighting",
+    "class": "status",
+    "desc_ja": "的確な　指導を　おこなうことで　 味方　全員の 攻撃と　防御を　上げる。"
+  },
+  "headlong-rush": {
+    "name_en": "headlong-rush",
+    "name_ja": "ぶちかまし",
+    "power": 120,
+    "type": "ground",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "dig": {
+    "name_en": "dig",
+    "name_ja": "あなをほる",
+    "power": 80,
+    "type": "ground",
+    "class": "physical",
+    "desc_ja": "１ターン目に　潜り　２ターン目で 相手を　攻撃する。 洞窟からの　脱出も　できる。"
+  },
+  "dive": {
+    "name_en": "dive",
+    "name_ja": "ダイビング",
+    "power": 80,
+    "type": "water",
+    "class": "physical",
+    "desc_ja": "１ターン目で　潜り　２ターン目に 浮きあがって　攻撃する。"
+  },
+  "draco-meteor": {
+    "name_en": "draco-meteor",
+    "name_ja": "りゅうせいぐん",
+    "power": 130,
+    "type": "dragon",
+    "class": "special",
+    "desc_ja": "天空から　隕石を 相手に　落とす。使うと　反動で 自分の　特攻が　がくっと　さがる。"
+  },
+  "accelerock": {
+    "name_en": "accelerock",
+    "name_ja": "アクセルロック",
+    "power": 40,
+    "type": "rock",
+    "class": "physical",
+    "desc_ja": "素早い　スピードで 相手に　ぶつかって　攻撃する。 必ず　先制攻撃　できる。"
+  },
+  "synchronoise": {
+    "name_en": "synchronoise",
+    "name_ja": "シンクロノイズ",
+    "power": 120,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "不思議な　電波で　周りに　いる 自分と　同じ　タイプの ポケモンに　ダメージを　与える。"
+  },
+  "work-up": {
+    "name_en": "work-up",
+    "name_ja": "ふるいたてる",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "自分を　奮いたてて 攻撃と　特攻を　あげる。 "
+  },
+  "strength-sap": {
+    "name_en": "strength-sap",
+    "name_ja": "ちからをすいとる",
+    "power": null,
+    "type": "grass",
+    "class": "status",
+    "desc_ja": "相手の　攻撃力と　同じだけ 自分の　ＨＰを　回復する。 そして　相手の　攻撃を　さげる。"
+  },
+  "cross-chop": {
+    "name_en": "cross-chop",
+    "name_ja": "クロスチョップ",
+    "power": 100,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "両手チョップを 相手に　たたきつけて　攻撃する。 急所に　当たりやすい。"
+  },
+  "ice-burn": {
+    "name_en": "ice-burn",
+    "name_ja": "コールドフレア",
+    "power": 140,
+    "type": "ice",
+    "class": "special",
+    "desc_ja": "すべてを　凍らせる　激しい　冷気で ２ターン目に　相手を　包みこむ。 やけど状態に　することが　ある。"
+  },
+  "sonic-boom": {
+    "name_en": "sonic-boom",
+    "name_ja": "ソニックブーム",
+    "power": null,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": "衝撃波を 相手に　ぶつけて　攻撃する。 ２０の　ダメージを　決まって　与える。"
+  },
+  "temper-flare": {
+    "name_en": "temper-flare",
+    "name_ja": "やけっぱち",
+    "power": 75,
+    "type": "fire",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "thousand-arrows": {
+    "name_en": "thousand-arrows",
+    "name_ja": "サウザンアロー",
+    "power": 90,
+    "type": "ground",
+    "class": "physical",
+    "desc_ja": "浮いている　ポケモンにも　当たる。 浮いていた　相手は 撃ち落とされて　地面に　落ちる。"
+  },
+  "ice-hammer": {
+    "name_en": "ice-hammer",
+    "name_ja": "アイスハンマー",
+    "power": 100,
+    "type": "ice",
+    "class": "physical",
+    "desc_ja": "強くて　重い　こぶしを ふるって　ダメージを　与える。 自分の　素早さが　さがる。"
+  },
+  "circle-throw": {
+    "name_en": "circle-throw",
+    "name_ja": "ともえなげ",
+    "power": 60,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "相手を　投げとばして 控えの　ポケモンを　ひきずりだす。 野生の　場合は　戦闘が　終わる。"
+  },
+  "nasty-plot": {
+    "name_en": "nasty-plot",
+    "name_ja": "わるだくみ",
+    "power": null,
+    "type": "dark",
+    "class": "status",
+    "desc_ja": "悪いことを　考えて 頭を　活性化させる。 自分の　特攻を　ぐーんと　あげる。"
+  },
+  "solar-blade": {
+    "name_en": "solar-blade",
+    "name_ja": "ソーラーブレード",
+    "power": 125,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": "１ターン目に　光を　いっぱいに　集め ２ターン目に　その　力を 剣に　込めて　攻撃する。"
+  },
+  "reflect-type": {
+    "name_en": "reflect-type",
+    "name_ja": "ミラータイプ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "相手の　タイプを　反射して 自分も　同じ　タイプに　なる。 "
+  },
+  "mat-block": {
+    "name_en": "mat-block",
+    "name_ja": "たたみがえし",
+    "power": null,
+    "type": "fighting",
+    "class": "status",
+    "desc_ja": "かえした　タタミを　盾にして　自分や 味方への　技の　ダメージを　防ぐ。 変化技は　防ぐことが　できない。"
+  },
+  "string-shot": {
+    "name_en": "string-shot",
+    "name_ja": "いとをはく",
+    "power": null,
+    "type": "bug",
+    "class": "status",
+    "desc_ja": "口から　吹きだした 糸を　まきつけて　相手の 素早さを　がくっと　さげる。"
+  },
+  "thrash": {
+    "name_en": "thrash",
+    "name_ja": "あばれる",
+    "power": 120,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "２ー３ターンの　あいだ 暴れまくって　相手を　攻撃する。 暴れたあとは　混乱する。"
+  },
+  "mirror-coat": {
+    "name_en": "mirror-coat",
+    "name_ja": "ミラーコート",
+    "power": null,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "相手から　受けた　特殊攻撃の ダメージを　２倍に　して その相手に　返す。"
+  },
+  "horn-leech": {
+    "name_en": "horn-leech",
+    "name_ja": "ウッドホーン",
+    "power": 75,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": "つのを　突き刺して　相手の　養分を 吸い取る。与えた　ダメージの 半分の　ＨＰを　回復できる。"
+  },
+  "conversion": {
+    "name_en": "conversion",
+    "name_ja": "テクスチャー",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "自分の　タイプを おぼえている　技で　一番　上の 技と　同じ　タイプに　する。"
+  },
+  "snowscape": {
+    "name_en": "snowscape",
+    "name_ja": "ゆきげしき",
+    "power": 0,
+    "type": "ice",
+    "class": "status",
+    "desc_ja": ""
+  },
+  "lash-out": {
+    "name_en": "lash-out",
+    "name_ja": "うっぷんばらし",
+    "power": 75,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "相手への　いらだちを　ぶつけて　攻撃。 そのターンに　能力を　さげられていると 技の　威力が　２倍に　なる。"
+  },
+  "kings-shield": {
+    "name_en": "kings-shield",
+    "name_ja": "キングシールド",
+    "power": null,
+    "type": "steel",
+    "class": "status",
+    "desc_ja": "相手の　攻撃を　防ぐと　同時に 防御態勢になる。　触れた 相手の　攻撃を　がくっと　さげる。"
+  },
+  "dual-chop": {
+    "name_en": "dual-chop",
+    "name_ja": "ダブルチョップ",
+    "power": 40,
+    "type": "dragon",
+    "class": "physical",
+    "desc_ja": "体の　硬い部分で　相手を たたいて　攻撃する。 ２回連続で　ダメージを　与える。"
+  },
+  "tera-starstorm": {
+    "name_en": "tera-starstorm",
+    "name_ja": "テラクラスター",
+    "power": 120,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "disarming-voice": {
+    "name_en": "disarming-voice",
+    "name_ja": "チャームボイス",
+    "power": 40,
+    "type": "fairy",
+    "class": "special",
+    "desc_ja": "魅惑の　鳴き声を　だして　相手に 精神的な　ダメージを　与える。 攻撃は　必ず　命中　する。"
+  },
+  "false-swipe": {
+    "name_en": "false-swipe",
+    "name_ja": "みねうち",
+    "power": 40,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "相手の　ＨＰが 必ず　１だけ　残るように 手加減して　攻撃する。"
+  },
+  "poison-jab": {
+    "name_en": "poison-jab",
+    "name_ja": "どくづき",
+    "power": 80,
+    "type": "poison",
+    "class": "physical",
+    "desc_ja": "毒に　そまった　触手や　腕で 相手を　突き刺す。 毒状態に　することが　ある。"
+  },
+  "defog": {
+    "name_en": "defog",
+    "name_ja": "きりばらい",
+    "power": null,
+    "type": "flying",
+    "class": "status",
+    "desc_ja": "強い風で　相手の　リフレクターや ひかりのかべ　などを　はらいのける。 回避率も　さげる。"
+  },
+  "mud-sport": {
+    "name_en": "mud-sport",
+    "name_ja": "どろあそび",
+    "power": null,
+    "type": "ground",
+    "class": "status",
+    "desc_ja": "あたりを　泥まみれにする。 ５ターンの　あいだ でんきタイプの　技を　弱める。"
+  },
+  "mach-punch": {
+    "name_en": "mach-punch",
+    "name_ja": "マッハパンチ",
+    "power": 40,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "目にも　留まらぬ　ものすごい　速さで パンチを　くりだす。 必ず　先制攻撃　できる。"
+  },
+  "cotton-guard": {
+    "name_en": "cotton-guard",
+    "name_ja": "コットンガード",
+    "power": null,
+    "type": "grass",
+    "class": "status",
+    "desc_ja": "フワフワの　綿毛で　自分の 体を　包みこんで　守る。 防御を　ぐぐーんと　あげる。"
+  },
+  "dire-claw": {
+    "name_en": "dire-claw",
+    "name_ja": "フェイタルクロー",
+    "power": 80,
+    "type": "poison",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "thunder-punch": {
+    "name_en": "thunder-punch",
+    "name_ja": "かみなりパンチ",
+    "power": 75,
+    "type": "electric",
+    "class": "physical",
+    "desc_ja": "電撃を　こめた　パンチで 相手を　攻撃する。 まひ状態に　することが　ある。"
+  },
+  "fury-attack": {
+    "name_en": "fury-attack",
+    "name_ja": "みだれづき",
+    "power": 15,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "つのや　くちばしで 相手を　つついて　攻撃する。 ２ー５回の　あいだ　連続で　だす。"
+  },
+  "spirit-shackle": {
+    "name_en": "spirit-shackle",
+    "name_ja": "かげぬい",
+    "power": 80,
+    "type": "ghost",
+    "class": "physical",
+    "desc_ja": "攻撃と　同時に 相手の　影を　縫い付けて 逃げられなくする。"
+  },
+  "close-combat": {
+    "name_en": "close-combat",
+    "name_ja": "インファイト",
+    "power": 120,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "守りを　捨てて　相手の　ふところに 突撃する。自分の 防御と　特防が　さがる。"
+  },
+  "wave-crash": {
+    "name_en": "wave-crash",
+    "name_ja": "ウェーブタックル",
+    "power": 120,
+    "type": "water",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "burning-bulwark": {
+    "name_en": "burning-bulwark",
+    "name_ja": "かえんのまもり",
+    "power": 0,
+    "type": "fire",
+    "class": "status",
+    "desc_ja": ""
+  },
+  "raging-fury": {
+    "name_en": "raging-fury",
+    "name_ja": "だいふんげき",
+    "power": 120,
+    "type": "fire",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "pollen-puff": {
+    "name_en": "pollen-puff",
+    "name_ja": "かふんだんご",
+    "power": 90,
+    "type": "bug",
+    "class": "special",
+    "desc_ja": "敵には　爆発する　だんごを 使って　攻撃。　味方には 回復する　だんごを　与える。"
+  },
+  "life-dew": {
+    "name_en": "life-dew",
+    "name_ja": "いのちのしずく",
+    "power": null,
+    "type": "water",
+    "class": "status",
+    "desc_ja": "不思議な　水を　ふりまいて 自分と　場にいる 味方の　ＨＰを　回復する。"
+  },
+  "clanging-scales": {
+    "name_en": "clanging-scales",
+    "name_ja": "スケイルノイズ",
+    "power": 110,
+    "type": "dragon",
+    "class": "special",
+    "desc_ja": "全身の　うろこを　こすり 大きな　音を　出して　攻撃する。 攻撃後　自分の　防御が　さがる。"
+  },
+  "aqua-step": {
+    "name_en": "aqua-step",
+    "name_ja": "アクアステップ",
+    "power": 80,
+    "type": "water",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "baneful-bunker": {
+    "name_en": "baneful-bunker",
+    "name_ja": "トーチカ",
+    "power": null,
+    "type": "poison",
+    "class": "status",
+    "desc_ja": "相手の　攻撃を　防ぐと 同時に　触れた　相手に 毒を　与えてしまう。"
+  },
+  "shell-side-arm": {
+    "name_en": "shell-side-arm",
+    "name_ja": "シェルアームズ",
+    "power": 90,
+    "type": "poison",
+    "class": "special",
+    "desc_ja": "物理か　特殊か　より多く　ダメージを 与えられる　能力で　攻撃する。 毒状態に　することが　ある。"
+  },
+  "thunder-cage": {
+    "name_en": "thunder-cage",
+    "name_ja": "サンダープリズン",
+    "power": 80,
+    "type": "electric",
+    "class": "special",
+    "desc_ja": "ほとばしる　電気の　おりの　中に ４ー５ターンの　間 相手を　閉じこめて　攻撃する。"
+  },
+  "outrage": {
+    "name_en": "outrage",
+    "name_ja": "げきりん",
+    "power": 120,
+    "type": "dragon",
+    "class": "physical",
+    "desc_ja": "２ー３ターンの　あいだ 暴れまくって　攻撃する。 暴れたあとは　混乱する。"
+  },
+  "rage": {
+    "name_en": "rage",
+    "name_ja": "いかり",
+    "power": 20,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "技を　だしたときに　攻撃を 受けると　怒りの　力で 攻撃が　あがる。"
+  },
+  "octolock": {
+    "name_en": "octolock",
+    "name_ja": "たこがため",
+    "power": null,
+    "type": "fighting",
+    "class": "status",
+    "desc_ja": "相手を　逃げられなくする。 かためられた　相手は　毎ターン 防御と　特防が　下がる。"
+  },
+  "leafage": {
+    "name_en": "leafage",
+    "name_ja": "このは",
+    "power": 40,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": "はっぱを　相手に　当てて 攻撃する。"
+  },
+  "double-hit": {
+    "name_en": "double-hit",
+    "name_ja": "ダブルアタック",
+    "power": 35,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "しっぽなどを　使い 相手を　たたいて　攻撃する。 ２回連続で　ダメージを　与える。"
+  },
+  "final-gambit": {
+    "name_en": "final-gambit",
+    "name_ja": "いのちがけ",
+    "power": null,
+    "type": "fighting",
+    "class": "special",
+    "desc_ja": "命懸けで　相手を　攻撃する。 自分は　ひんしに　なるが　相手に ＨＰ分の　ダメージを　与える。"
+  },
+  "metal-claw": {
+    "name_en": "metal-claw",
+    "name_ja": "メタルクロー",
+    "power": 50,
+    "type": "steel",
+    "class": "physical",
+    "desc_ja": "鋼鉄の　ツメで 相手を　切り裂いて　攻撃する。 自分の　攻撃が　あがることが　ある。"
+  },
+  "feint": {
+    "name_en": "feint",
+    "name_ja": "フェイント",
+    "power": 30,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "まもるや　みきりを　している 相手に　攻撃が　できる。 守りの　効果を　解除させる。"
+  },
+  "shadow-bone": {
+    "name_en": "shadow-bone",
+    "name_ja": "シャドーボーン",
+    "power": 85,
+    "type": "ghost",
+    "class": "physical",
+    "desc_ja": "魂の　宿った　ホネで 相手を　なぐりつけて　攻撃する。 相手の　防御を　さげる　ことがある。"
+  },
+  "thunderous-kick": {
+    "name_en": "thunderous-kick",
+    "name_ja": "らいめいげり",
+    "power": 90,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "雷の　ような　動きで 相手を　翻弄しながら　キックする。 相手の　防御を　さげる。"
+  },
+  "shell-smash": {
+    "name_en": "shell-smash",
+    "name_ja": "からをやぶる",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "殻を　やぶって　自分の　防御 特防を　さげるが　攻撃　特攻 素早さを　ぐーんと　あげる。"
+  },
+  "submission": {
+    "name_en": "submission",
+    "name_ja": "じごくぐるま",
+    "power": 80,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "地面に　自分ごと 相手を　投げつけて　攻撃する。 自分も　少し　ダメージを　受ける。"
+  },
+  "assurance": {
+    "name_en": "assurance",
+    "name_ja": "ダメおし",
+    "power": 60,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "そのターンに　相手が すでに　ダメージを　受けていたら 技の　威力は　２倍に　なる。"
+  },
+  "energy-ball": {
+    "name_en": "energy-ball",
+    "name_ja": "エナジーボール",
+    "power": 90,
+    "type": "grass",
+    "class": "special",
+    "desc_ja": "自然から　集めた 命の力を　発射する。 相手の　特防を　さげることがある。"
+  },
+  "stomp": {
+    "name_en": "stomp",
+    "name_ja": "ふみつけ",
+    "power": 65,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "大きな　足で 相手を　踏みつけて　攻撃する。 相手を　ひるませることが　ある。"
+  },
+  "metal-sound": {
+    "name_en": "metal-sound",
+    "name_ja": "きんぞくおん",
+    "power": null,
+    "type": "steel",
+    "class": "status",
+    "desc_ja": "金属を　こすって　でるような いやな　音を　聞かせる。 相手の　特防を　がくっと　さげる。"
+  },
+  "baddy-bad": {
+    "name_en": "baddy-bad",
+    "name_ja": "わるわるゾーン",
+    "power": 80,
+    "type": "dark",
+    "class": "special",
+    "desc_ja": "わるさを　アピールして　攻撃。 相手の　物理攻撃を　弱める 不思議な　かべを　つくりだす。"
+  },
+  "flash-cannon": {
+    "name_en": "flash-cannon",
+    "name_ja": "ラスターカノン",
+    "power": 80,
+    "type": "steel",
+    "class": "special",
+    "desc_ja": "体の　光を　一点に　集めて 力を　放つ。 相手の　特防を　さげることが　ある。"
+  },
+  "iron-tail": {
+    "name_en": "iron-tail",
+    "name_ja": "アイアンテール",
+    "power": 100,
+    "type": "steel",
+    "class": "physical",
+    "desc_ja": "硬い　しっぽで 相手を　たたきつけて　攻撃する。 相手の　防御を　さげることが　ある。"
+  },
+  "spit-up": {
+    "name_en": "spit-up",
+    "name_ja": "はきだす",
+    "power": null,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": "蓄えた　力を 相手に　ぶつけて　攻撃する。 蓄えているほど　威力が　あがる。"
+  },
+  "moonblast": {
+    "name_en": "moonblast",
+    "name_ja": "ムーンフォース",
+    "power": 95,
+    "type": "fairy",
+    "class": "special",
+    "desc_ja": "月の　パワーを　かりて 相手を　攻撃する。　相手の 特攻を　さげる　ことがある。"
+  },
+  "lumina-crash": {
+    "name_en": "lumina-crash",
+    "name_ja": "ルミナコリジョン",
+    "power": 80,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "axe-kick": {
+    "name_en": "axe-kick",
+    "name_ja": "かかとおとし",
+    "power": 120,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "dynamic-punch": {
+    "name_en": "dynamic-punch",
+    "name_ja": "ばくれつパンチ",
+    "power": 100,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "こん身の　力で パンチを　くりだして　攻撃する。 相手を　必ず　混乱させる。"
+  },
+  "thunder-wave": {
+    "name_en": "thunder-wave",
+    "name_ja": "でんじは",
+    "power": null,
+    "type": "electric",
+    "class": "status",
+    "desc_ja": "弱い　電撃を　浴びせることで 相手を　まひ状態に　する。 "
+  },
+  "aerial-ace": {
+    "name_en": "aerial-ace",
+    "name_ja": "つばめがえし",
+    "power": 60,
+    "type": "flying",
+    "class": "physical",
+    "desc_ja": "素早い　動きで 相手を　ほんろうして　切りつける。 攻撃は　必ず　命中する。"
+  },
+  "freeze-dry": {
+    "name_en": "freeze-dry",
+    "name_ja": "フリーズドライ",
+    "power": 70,
+    "type": "ice",
+    "class": "special",
+    "desc_ja": "相手を　急激に　冷やして こおり　状態に　することが　ある。 みずタイプにも　効果抜群になる。"
+  },
+  "lands-wrath": {
+    "name_en": "lands-wrath",
+    "name_ja": "グランドフォース",
+    "power": 90,
+    "type": "ground",
+    "class": "physical",
+    "desc_ja": "大地の　パワーを　集め 力を　相手に　集中させて ダメージを　与える。"
+  },
+  "hypnosis": {
+    "name_en": "hypnosis",
+    "name_ja": "さいみんじゅつ",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "眠気を　誘う　暗示を　かけて 相手を　眠り状態に　する。 "
+  },
+  "mortal-spin": {
+    "name_en": "mortal-spin",
+    "name_ja": "キラースピン",
+    "power": 30,
+    "type": "poison",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "octazooka": {
+    "name_en": "octazooka",
+    "name_ja": "オクタンほう",
+    "power": 65,
+    "type": "water",
+    "class": "special",
+    "desc_ja": "相手の　顔などに 墨を　吹きかけて　攻撃する。 命中率を　さげることが　ある。"
+  },
+  "acid": {
+    "name_en": "acid",
+    "name_ja": "ようかいえき",
+    "power": 40,
+    "type": "poison",
+    "class": "special",
+    "desc_ja": "強い　酸を　相手に　かけて 攻撃する。相手の　特防を さげることが　ある。"
+  },
+  "stuff-cheeks": {
+    "name_en": "stuff-cheeks",
+    "name_ja": "ほおばる",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "持っている　きのみを　食べて 防御を　ぐーんと　あげる。"
+  },
+  "double-shock": {
+    "name_en": "double-shock",
+    "name_ja": "でんこうそうげき",
+    "power": 120,
+    "type": "electric",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "wring-out": {
+    "name_en": "wring-out",
+    "name_ja": "しぼりとる",
+    "power": null,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": "強く　締めあげて　攻撃を　する。 相手の　ＨＰが　残っているほど 威力は　あがる。"
+  },
+  "bullet-punch": {
+    "name_en": "bullet-punch",
+    "name_ja": "バレットパンチ",
+    "power": 40,
+    "type": "steel",
+    "class": "physical",
+    "desc_ja": "弾丸の　ような　速くて　硬い パンチを　相手に　くりだす。 必ず　先制攻撃　できる。"
+  },
+  "ice-punch": {
+    "name_en": "ice-punch",
+    "name_ja": "れいとうパンチ",
+    "power": 75,
+    "type": "ice",
+    "class": "physical",
+    "desc_ja": "冷気を　こめた　パンチで 相手を　攻撃する。 こおり状態に　することが　ある。"
+  },
+  "x-scissor": {
+    "name_en": "x-scissor",
+    "name_ja": "シザークロス",
+    "power": 80,
+    "type": "bug",
+    "class": "physical",
+    "desc_ja": "カマや　ツメを　ハサミのように 交差させながら　相手を　切り裂く。 "
+  },
+  "cross-poison": {
+    "name_en": "cross-poison",
+    "name_ja": "クロスポイズン",
+    "power": 70,
+    "type": "poison",
+    "class": "physical",
+    "desc_ja": "毒の　刃で　相手を　切り裂く。 毒状態に　することが　あり 急所にも　当たりやすい。"
+  },
+  "flame-charge": {
+    "name_en": "flame-charge",
+    "name_ja": "ニトロチャージ",
+    "power": 50,
+    "type": "fire",
+    "class": "physical",
+    "desc_ja": "炎を　まとい　相手を　攻撃する。 力を　ためて　自分の 素早さを　あげる。"
+  },
+  "gastro-acid": {
+    "name_en": "gastro-acid",
+    "name_ja": "いえき",
+    "power": null,
+    "type": "poison",
+    "class": "status",
+    "desc_ja": "胃液を　相手の 体に　吐きつける。ついた　胃液は 相手の　特性の　効果を　消す。"
+  },
+  "spotlight": {
+    "name_en": "spotlight",
+    "name_ja": "スポットライト",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "ポケモンに　スポットライトを　当て そのターンに　そのポケモンしか 狙えない　ようにする。"
+  },
+  "aromatherapy": {
+    "name_en": "aromatherapy",
+    "name_ja": "アロマセラピー",
+    "power": null,
+    "type": "grass",
+    "class": "status",
+    "desc_ja": "心地好い　やすらぐ　香りを　かがせて 味方全員の　状態異常を　回復する。 "
+  },
+  "leer": {
+    "name_en": "leer",
+    "name_ja": "にらみつける",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "鋭い　目つきで　おびえさせて 相手の　防御を　さげる。 "
+  },
+  "grass-whistle": {
+    "name_en": "grass-whistle",
+    "name_ja": "くさぶえ",
+    "power": null,
+    "type": "grass",
+    "class": "status",
+    "desc_ja": "心地好い　笛の　音色を　聞かせて 相手を　眠りの　状態に　する。 "
+  },
+  "hard-press": {
+    "name_en": "hard-press",
+    "name_ja": "ハードプレス",
+    "power": 0,
+    "type": "steel",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "hail": {
+    "name_en": "hail",
+    "name_ja": "あられ",
+    "power": null,
+    "type": "ice",
+    "class": "status",
+    "desc_ja": "５ターンの　あいだ　あられを　降らして こおりタイプで　ない　ポケモン 全員に　ダメージを　与える。"
+  },
+  "rock-blast": {
+    "name_en": "rock-blast",
+    "name_ja": "ロックブラスト",
+    "power": 25,
+    "type": "rock",
+    "class": "physical",
+    "desc_ja": "硬い　岩石を 相手に　発射して　攻撃する。 ２ー５回の　あいだ　連続で　だす。"
+  },
+  "jaw-lock": {
+    "name_en": "jaw-lock",
+    "name_ja": "くらいつく",
+    "power": 80,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "お互い　ひんしに　なるまで 交代が　できなくなる。　どちらかの ポケモンが　いなくなると　効果は消える。"
+  },
+  "hex": {
+    "name_en": "hex",
+    "name_ja": "たたりめ",
+    "power": 65,
+    "type": "ghost",
+    "class": "special",
+    "desc_ja": "たたみかける　ように　攻撃する。 状態異常の　相手に 大きな　ダメージを　与える。"
+  },
+  "lava-plume": {
+    "name_en": "lava-plume",
+    "name_ja": "ふんえん",
+    "power": 80,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "真っ赤な　炎で　自分の 周りに　いるものを　攻撃する。 やけど状態に　することが　ある。"
+  },
+  "toxic-thread": {
+    "name_en": "toxic-thread",
+    "name_ja": "どくのいと",
+    "power": null,
+    "type": "poison",
+    "class": "status",
+    "desc_ja": "毒の　混じった　糸を　吹き付ける。 相手を　毒にして 素早さを　さげる。"
+  },
+  "branch-poke": {
+    "name_en": "branch-poke",
+    "name_ja": "えだづき",
+    "power": 40,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": "するどく　とがった　枝で 相手を　突いて　攻撃する。"
+  },
+  "bitter-malice": {
+    "name_en": "bitter-malice",
+    "name_ja": "うらみつらみ",
+    "power": 75,
+    "type": "ghost",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "teleport": {
+    "name_en": "teleport",
+    "name_ja": "テレポート",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "野生ポケモンとの　戦闘を　やめる。 最後に　はいった ポケセンの　ある　街にも　行ける。"
+  },
+  "chip-away": {
+    "name_en": "chip-away",
+    "name_ja": "なしくずし",
+    "power": 70,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "すきを　みて　堅実に　攻撃する。 相手の　能力変化に 関係なく　ダメージを　与える。"
+  },
+  "triple-dive": {
+    "name_en": "triple-dive",
+    "name_ja": "トリプルダイブ",
+    "power": 30,
+    "type": "water",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "snarl": {
+    "name_en": "snarl",
+    "name_ja": "バークアウト",
+    "power": 55,
+    "type": "dark",
+    "class": "special",
+    "desc_ja": "まくしたてる　ように　怒鳴りつけて 相手の　特攻を　さげる。 "
+  },
+  "bite": {
+    "name_en": "bite",
+    "name_ja": "かみつく",
+    "power": 60,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "鋭く　とがった　歯で かみついて　攻撃する。 相手を　ひるませることが　ある。"
+  },
+  "miracle-eye": {
+    "name_en": "miracle-eye",
+    "name_ja": "ミラクルアイ",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "あくタイプに　効果がない　技や 回避率の　高い　相手に 攻撃が　当たるように　なる。"
+  },
+  "order-up": {
+    "name_en": "order-up",
+    "name_ja": "いっちょうあがり",
+    "power": 80,
+    "type": "dragon",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "water-pulse": {
+    "name_en": "water-pulse",
+    "name_ja": "みずのはどう",
+    "power": 60,
+    "type": "water",
+    "class": "special",
+    "desc_ja": "水の　振動を 相手に　与えて　攻撃する。 相手を　混乱させることが　ある。"
+  },
+  "drill-peck": {
+    "name_en": "drill-peck",
+    "name_ja": "ドリルくちばし",
+    "power": 80,
+    "type": "flying",
+    "class": "physical",
+    "desc_ja": "回転しながら　とがった　くちばしを 相手に　突き刺して　攻撃する。 "
+  },
+  "cotton-spore": {
+    "name_en": "cotton-spore",
+    "name_ja": "わたほうし",
+    "power": null,
+    "type": "grass",
+    "class": "status",
+    "desc_ja": "綿のような　フワフワの　胞子を まとわり　つかせて 相手の　素早さを　がくっと　さげる。"
+  },
+  "detect": {
+    "name_en": "detect",
+    "name_ja": "みきり",
+    "power": null,
+    "type": "fighting",
+    "class": "status",
+    "desc_ja": "相手の　攻撃を まったく　受けない。 連続で　だすと　失敗しやすい。"
+  },
+  "charge-beam": {
+    "name_en": "charge-beam",
+    "name_ja": "チャージビーム",
+    "power": 50,
+    "type": "electric",
+    "class": "special",
+    "desc_ja": "電撃の　束を　相手に 発射する。電気を　ためて　自分の 特攻を　あげることが　ある。"
+  },
+  "recover": {
+    "name_en": "recover",
+    "name_ja": "じこさいせい",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "細胞を　再生させて 自分の　最大ＨＰの 半分の　ＨＰを　回復する。"
+  },
+  "torment": {
+    "name_en": "torment",
+    "name_ja": "いちゃもん",
+    "power": null,
+    "type": "dark",
+    "class": "status",
+    "desc_ja": "相手に　いちゃもんを　つけて 同じ　技を　２回連続で だせなくする。"
+  },
+  "razor-shell": {
+    "name_en": "razor-shell",
+    "name_ja": "シェルブレード",
+    "power": 75,
+    "type": "water",
+    "class": "physical",
+    "desc_ja": "鋭い　貝殻で　切りつけて 攻撃する。相手の　防御を さげることが　ある。"
+  },
+  "power-shift": {
+    "name_en": "power-shift",
+    "name_ja": "パワーシフト",
+    "power": 0,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": ""
+  },
+  "corrosive-gas": {
+    "name_en": "corrosive-gas",
+    "name_ja": "ふしょくガス",
+    "power": null,
+    "type": "poison",
+    "class": "status",
+    "desc_ja": "強い　酸性の　ガスで 周りに　いるものを　包みこみ 持っている　道具を　溶かしてしまう。"
+  },
+  "flying-press": {
+    "name_en": "flying-press",
+    "name_ja": "フライングプレス",
+    "power": 100,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "空中から　相手に　ダイブする。 この技は　かくとうタイプと　同時に ひこうタイプでも　ある。"
+  },
+  "charm": {
+    "name_en": "charm",
+    "name_ja": "あまえる",
+    "power": null,
+    "type": "fairy",
+    "class": "status",
+    "desc_ja": "かわいく　みつめて　油断を　誘い 相手の　攻撃を　がくっと　さげる。 "
+  },
+  "needle-arm": {
+    "name_en": "needle-arm",
+    "name_ja": "ニードルアーム",
+    "power": 60,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": "トゲの　腕を 激しく　ふるって　攻撃する。 相手を　ひるませることが　ある。"
+  },
+  "high-jump-kick": {
+    "name_en": "high-jump-kick",
+    "name_ja": "とびひざげり",
+    "power": 130,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "ジャンプからの　ひざげりで 相手を　攻撃する。 はずすと　自分が　ダメージを　受ける。"
+  },
+  "fusion-flare": {
+    "name_en": "fusion-flare",
+    "name_ja": "クロスフレイム",
+    "power": 100,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "巨大な　炎を　たたきつける。 巨大な　雷の　影響を受け 技の　威力が　あがる。"
+  },
+  "topsy-turvy": {
+    "name_en": "topsy-turvy",
+    "name_ja": "ひっくりかえす",
+    "power": null,
+    "type": "dark",
+    "class": "status",
+    "desc_ja": "相手に　かかっている すべての　能力変化を ひっくり返して　逆にする。"
+  },
+  "jump-kick": {
+    "name_en": "jump-kick",
+    "name_ja": "とびげり",
+    "power": 100,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "高い　ジャンプからの　キックで 相手を　攻撃する。 はずすと　自分が　ダメージを　受ける。"
+  },
+  "splash": {
+    "name_en": "splash",
+    "name_ja": "はねる",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "攻撃もせずに　ピョン　ピョンと 跳ねるだけで　なにも　おこらない……。 "
+  },
+  "present": {
+    "name_en": "present",
+    "name_ja": "プレゼント",
+    "power": null,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "わなを　しかけた　箱を 相手に　わたして　攻撃する。ＨＰが 回復して　しまうことも　ある。"
+  },
+  "slash": {
+    "name_en": "slash",
+    "name_ja": "きりさく",
+    "power": 70,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "ツメや　カマなどで 相手を　切り裂いて　攻撃する。 急所に　当たりやすい。"
+  },
+  "entrainment": {
+    "name_en": "entrainment",
+    "name_ja": "なかまづくり",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "不思議な　リズムで　おどる。 動きを　まねさせて　自分と　相手の 特性を　同じに　する。"
+  },
+  "after-you": {
+    "name_en": "after-you",
+    "name_ja": "おさきにどうぞ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "相手の　行動を　サポートして 自分の　行動の　あとに 続けて　動けるように　する。"
+  },
+  "aqua-cutter": {
+    "name_en": "aqua-cutter",
+    "name_ja": "アクアカッター",
+    "power": 70,
+    "type": "water",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "ice-fang": {
+    "name_en": "ice-fang",
+    "name_ja": "こおりのキバ",
+    "power": 65,
+    "type": "ice",
+    "class": "physical",
+    "desc_ja": "冷気を　ひめた　キバで　かみつく。 相手を　ひるませたり こおり状態に　することが　ある。"
+  },
+  "leaf-tornado": {
+    "name_en": "leaf-tornado",
+    "name_ja": "グラスミキサー",
+    "power": 65,
+    "type": "grass",
+    "class": "special",
+    "desc_ja": "鋭い　はっぱで　相手を 包みこんで　攻撃する。 命中率を　さげることが　ある。"
+  },
+  "breaking-swipe": {
+    "name_en": "breaking-swipe",
+    "name_ja": "ワイドブレイカー",
+    "power": 60,
+    "type": "dragon",
+    "class": "physical",
+    "desc_ja": "きょうじんな　しっぽを　激しく ふりはらって　相手を　攻撃する。 相手の　攻撃を　下げる。"
+  },
+  "smart-strike": {
+    "name_en": "smart-strike",
+    "name_ja": "スマートホーン",
+    "power": 70,
+    "type": "steel",
+    "class": "physical",
+    "desc_ja": "とがった　つので　相手を 突き刺して　攻撃する。 攻撃は　必ず　命中する。"
+  },
+  "mega-punch": {
+    "name_en": "mega-punch",
+    "name_ja": "メガトンパンチ",
+    "power": 80,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "力を　こめた　パンチで 相手を　攻撃する。 "
+  },
+  "drain-punch": {
+    "name_en": "drain-punch",
+    "name_ja": "ドレインパンチ",
+    "power": 75,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "こぶしから　相手の　力を　吸い取る。 与えた　ダメージの 半分の　ＨＰを　回復できる。"
+  },
+  "glare": {
+    "name_en": "glare",
+    "name_ja": "へびにらみ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "おなかの　模様で　おびえさせて 相手を　まひの　状態に　する。 "
+  },
+  "focus-punch": {
+    "name_en": "focus-punch",
+    "name_ja": "きあいパンチ",
+    "power": 150,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "精神を　高めて　パンチを　くりだす。 技を　だすまでに 攻撃を　受けると　失敗する。"
+  },
+  "extreme-speed": {
+    "name_en": "extreme-speed",
+    "name_ja": "しんそく",
+    "power": 80,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "目にも　留まらぬ　ものすごい　速さで 相手に　突進して　攻撃する。 必ず　先制攻撃　できる。"
+  },
+  "mighty-cleave": {
+    "name_en": "mighty-cleave",
+    "name_ja": "パワフルエッジ",
+    "power": 95,
+    "type": "rock",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "electro-shot": {
+    "name_en": "electro-shot",
+    "name_ja": "エレクトロビーム",
+    "power": 130,
+    "type": "electric",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "buzzy-buzz": {
+    "name_en": "buzzy-buzz",
+    "name_ja": "びりびりエレキ",
+    "power": 60,
+    "type": "electric",
+    "class": "special",
+    "desc_ja": "電気を　飛ばし　相手に あびせて　攻撃する。　 相手を　まひ状態に　する。"
+  },
+  "eerie-impulse": {
+    "name_en": "eerie-impulse",
+    "name_ja": "かいでんぱ",
+    "power": null,
+    "type": "electric",
+    "class": "status",
+    "desc_ja": "体から　かいでんぱを　放ち 相手に　浴びせる　ことによって 特攻を　がくっと　さげる。"
+  },
+  "gravity": {
+    "name_en": "gravity",
+    "name_ja": "じゅうりょく",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "５ターンの　あいだ 重力を　強くして　ふゆうや 空へ　飛ぶ　技を　使えなくする。"
+  },
+  "diamond-storm": {
+    "name_en": "diamond-storm",
+    "name_ja": "ダイヤストーム",
+    "power": 100,
+    "type": "rock",
+    "class": "physical",
+    "desc_ja": "ダイヤの　嵐を　巻き起こし ダメージを　与える。　自分の 防御を　あげることが　ある。"
+  },
+  "fire-fang": {
+    "name_en": "fire-fang",
+    "name_ja": "ほのおのキバ",
+    "power": 65,
+    "type": "fire",
+    "class": "physical",
+    "desc_ja": "炎を　まとった　キバで　かみつく。 相手を　ひるませたり やけど状態に　することが　ある。"
+  },
+  "light-of-ruin": {
+    "name_en": "light-of-ruin",
+    "name_ja": "はめつのひかり",
+    "power": 140,
+    "type": "fairy",
+    "class": "special",
+    "desc_ja": "永遠の花　の　パワーを　かりて 強力な　光線を　撃ちだす。 自分も　かなりの　ダメージを　受ける。"
+  },
+  "u-turn": {
+    "name_en": "u-turn",
+    "name_ja": "とんぼがえり",
+    "power": 70,
+    "type": "bug",
+    "class": "physical",
+    "desc_ja": "攻撃したあと ものすごい　スピードで　もどってきて 控えの　ポケモンと　入れ替わる。"
+  },
+  "defense-curl": {
+    "name_en": "defense-curl",
+    "name_ja": "まるくなる",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "体を　まるめて　ちぢこまり 自分の　防御を　あげる。 "
+  },
+  "sandsear-storm": {
+    "name_en": "sandsear-storm",
+    "name_ja": "ねっさのあらし",
+    "power": 100,
+    "type": "ground",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "captivate": {
+    "name_en": "captivate",
+    "name_ja": "ゆうわく",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "♂なら♀を　♀なら♂を　誘惑して 相手の　特攻を　がくっと　さげる。 "
+  },
+  "bolt-beak": {
+    "name_en": "bolt-beak",
+    "name_ja": "でんげきくちばし",
+    "power": 85,
+    "type": "electric",
+    "class": "physical",
+    "desc_ja": "電気を　まとった　くちばしで　刺す。 相手より　先に　攻撃できると 技の　威力は　２倍に　なる。"
+  },
+  "ruination": {
+    "name_en": "ruination",
+    "name_ja": "カタストロフィ",
+    "power": 1,
+    "type": "dark",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "gunk-shot": {
+    "name_en": "gunk-shot",
+    "name_ja": "ダストシュート",
+    "power": 120,
+    "type": "poison",
+    "class": "physical",
+    "desc_ja": "汚い　ゴミを 相手に　ぶつけて　攻撃する。 毒状態に　することが　ある。"
+  },
+  "swords-dance": {
+    "name_en": "swords-dance",
+    "name_ja": "つるぎのまい",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "戦いの舞を　激しく　おどって 気合を　高める。 自分の　攻撃を　ぐーんと　あげる。"
+  },
+  "power-swap": {
+    "name_en": "power-swap",
+    "name_ja": "パワースワップ",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "超能力で　自分と　相手の 攻撃と　特攻の 能力変化を　入れ替える。"
+  },
+  "psycho-shift": {
+    "name_en": "psycho-shift",
+    "name_ja": "サイコシフト",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "超能力で　暗示を　かけて 自分の　受けている　状態異常を 相手に　うつす。"
+  },
+  "meditate": {
+    "name_en": "meditate",
+    "name_ja": "ヨガのポーズ",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "眠っている　力を 体の　奥から　ひきだして 自分の　攻撃を　あげる。"
+  },
+  "dragon-pulse": {
+    "name_en": "dragon-pulse",
+    "name_ja": "りゅうのはどう",
+    "power": 85,
+    "type": "dragon",
+    "class": "special",
+    "desc_ja": "大きな　口から　衝撃波を まきおこして　相手を　攻撃する。 "
+  },
+  "sticky-web": {
+    "name_en": "sticky-web",
+    "name_ja": "ねばねばネット",
+    "power": null,
+    "type": "bug",
+    "class": "status",
+    "desc_ja": "相手の　周りに　ねばねばした ネットを　はりめぐらせ　交代で でてきた　相手の　素早さを　さげる。"
+  },
+  "mud-bomb": {
+    "name_en": "mud-bomb",
+    "name_ja": "どろばくだん",
+    "power": 65,
+    "type": "ground",
+    "class": "special",
+    "desc_ja": "硬い　泥の　弾を 相手に　発射して　攻撃する。 命中率を　さげることが　ある。"
+  },
+  "powder": {
+    "name_en": "powder",
+    "name_ja": "ふんじん",
+    "power": null,
+    "type": "bug",
+    "class": "status",
+    "desc_ja": "ふんじんを　浴びせた　相手が ほのお技を　使うと 爆発して　ダメージを　与える。"
+  },
+  "stockpile": {
+    "name_en": "stockpile",
+    "name_ja": "たくわえる",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "力を　蓄えて　自分の 防御と　特防を　あげる。 最大　３回まで　蓄えられる。"
+  },
+  "night-daze": {
+    "name_en": "night-daze",
+    "name_ja": "ナイトバースト",
+    "power": 85,
+    "type": "dark",
+    "class": "special",
+    "desc_ja": "暗黒の　衝撃波を とばして　相手を　攻撃する。 命中率を　さげることが　ある。"
+  },
+  "twin-beam": {
+    "name_en": "twin-beam",
+    "name_ja": "ツインビーム",
+    "power": 40,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "population-bomb": {
+    "name_en": "population-bomb",
+    "name_ja": "ネズミざん",
+    "power": 20,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "stone-edge": {
+    "name_en": "stone-edge",
+    "name_ja": "ストーンエッジ",
+    "power": 100,
+    "type": "rock",
+    "class": "physical",
+    "desc_ja": "とがった　岩を 相手に　突き刺して　攻撃する。 急所に　当たりやすい。"
+  },
+  "petal-blizzard": {
+    "name_en": "petal-blizzard",
+    "name_ja": "はなふぶき",
+    "power": 90,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": "激しい　花吹雪を　起こし 周りに　いるものに　攻撃して ダメージを　与える。"
+  },
+  "glacial-lance": {
+    "name_en": "glacial-lance",
+    "name_ja": "ブリザードランス",
+    "power": 120,
+    "type": "ice",
+    "class": "physical",
+    "desc_ja": "吹雪を　まとった　氷の　槍を 相手に　投げつけて　攻撃する。"
+  },
+  "horn-drill": {
+    "name_en": "horn-drill",
+    "name_ja": "つのドリル",
+    "power": null,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "回転する　つのを 相手に　突き刺して　攻撃する。 当たれば　一撃で　ひんしに　する。"
+  },
+  "oblivion-wing": {
+    "name_en": "oblivion-wing",
+    "name_ja": "デスウイング",
+    "power": 80,
+    "type": "flying",
+    "class": "special",
+    "desc_ja": "ねらいを　定めた　相手から　ＨＰを 吸い取る。与えた　ダメージの 半分以上　ＨＰを　回復する。"
+  },
+  "shadow-claw": {
+    "name_en": "shadow-claw",
+    "name_ja": "シャドークロー",
+    "power": 70,
+    "type": "ghost",
+    "class": "physical",
+    "desc_ja": "影から　つくった　鋭い　ツメで 相手を　切り裂く。 急所に　当たりやすい。"
+  },
+  "magma-storm": {
+    "name_en": "magma-storm",
+    "name_ja": "マグマストーム",
+    "power": 100,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "激しく　燃えたぎる　炎の　なかに ４ー５ターンの　あいだ 相手を　閉じこめて　攻撃する。"
+  },
+  "mountain-gale": {
+    "name_en": "mountain-gale",
+    "name_ja": "ひょうざんおろし",
+    "power": 100,
+    "type": "ice",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "sunsteel-strike": {
+    "name_en": "sunsteel-strike",
+    "name_ja": "メテオドライブ",
+    "power": 100,
+    "type": "steel",
+    "class": "physical",
+    "desc_ja": "流星の　ような　勢いで 突進する。　相手の　特性を 無視して　攻撃　することが　できる。"
+  },
+  "psych-up": {
+    "name_en": "psych-up",
+    "name_ja": "じこあんじ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "自分に　暗示を　かけることで 能力変化の　状態を 相手と　同じにする。"
+  },
+  "rock-slide": {
+    "name_en": "rock-slide",
+    "name_ja": "いわなだれ",
+    "power": 75,
+    "type": "rock",
+    "class": "physical",
+    "desc_ja": "大きな　岩を 激しく　ぶつけて　攻撃する。 相手を　ひるませることが　ある。"
+  },
+  "freezy-frost": {
+    "name_en": "freezy-frost",
+    "name_ja": "こちこちフロスト",
+    "power": 100,
+    "type": "ice",
+    "class": "special",
+    "desc_ja": "冷たく　凍った　くろいきりの 結晶で　攻撃。　全員の 能力変化を　もとに　もどす。"
+  },
+  "mimic": {
+    "name_en": "mimic",
+    "name_ja": "ものまね",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "相手が　最後に　使った　技を 戦闘の　あいだ 自分の　技に　することが　できる。"
+  },
+  "discharge": {
+    "name_en": "discharge",
+    "name_ja": "ほうでん",
+    "power": 80,
+    "type": "electric",
+    "class": "special",
+    "desc_ja": "まばゆい　電撃で　自分の 周りに　いるものを　攻撃する。 まひ状態に　することが　ある。"
+  },
+  "future-sight": {
+    "name_en": "future-sight",
+    "name_ja": "みらいよち",
+    "power": 120,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "技を　使った　２ターン後に 相手に　念力の 塊を　送って　攻撃する。"
+  },
+  "zippy-zap": {
+    "name_en": "zippy-zap",
+    "name_ja": "ばちばちアクセル",
+    "power": 80,
+    "type": "electric",
+    "class": "physical",
+    "desc_ja": "猛スピードの　電撃　アタック。 必ず　先制攻撃　できて 急所に　あたる。"
+  },
+  "magnet-bomb": {
+    "name_en": "magnet-bomb",
+    "name_ja": "マグネットボム",
+    "power": 60,
+    "type": "steel",
+    "class": "physical",
+    "desc_ja": "相手に　吸いつく 鋼の　爆弾を　発射する。 攻撃は　必ず　命中　する。"
+  },
+  "storm-throw": {
+    "name_en": "storm-throw",
+    "name_ja": "やまあらし",
+    "power": 60,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "強烈な　一撃を 相手に　くりだす。攻撃は 必ず　急所に　当たる。"
+  },
+  "kowtow-cleave": {
+    "name_en": "kowtow-cleave",
+    "name_ja": "ドゲザン",
+    "power": 85,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "anchor-shot": {
+    "name_en": "anchor-shot",
+    "name_ja": "アンカーショット",
+    "power": 80,
+    "type": "steel",
+    "class": "physical",
+    "desc_ja": "アンカーを　相手に　からませて 攻撃する。　相手は 逃げることが　できなくなる。"
+  },
+  "tailwind": {
+    "name_en": "tailwind",
+    "name_ja": "おいかぜ",
+    "power": null,
+    "type": "flying",
+    "class": "status",
+    "desc_ja": "激しく　吹きあれる 風の渦を　つくり　４ターンの　あいだ 味方　全員の　素早さを　あげる。"
+  },
+  "body-press": {
+    "name_en": "body-press",
+    "name_ja": "ボディプレス",
+    "power": 80,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "体を　ぶつけて　攻撃。 防御が　高いほど 与える　ダメージが　増える。"
+  },
+  "fire-spin": {
+    "name_en": "fire-spin",
+    "name_ja": "ほのおのうず",
+    "power": 35,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "激しく　渦をまく　炎の中に ４ー５ターンの　あいだ 相手を　閉じこめて　攻撃する。"
+  },
+  "focus-blast": {
+    "name_en": "focus-blast",
+    "name_ja": "きあいだま",
+    "power": 120,
+    "type": "fighting",
+    "class": "special",
+    "desc_ja": "気合を　高めて ありったけの　力を　放出する。 相手の　特防を　さげることが　ある。"
+  },
+  "reversal": {
+    "name_en": "reversal",
+    "name_ja": "きしかいせい",
+    "power": null,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "力を　ふりしぼり　攻撃する。 自分の　ＨＰが　少ないほど 技の　威力は　あがる。"
+  },
+  "encore": {
+    "name_en": "encore",
+    "name_ja": "アンコール",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "相手が　最後に　使った技を ３ターンの　あいだ ずっと　ださせる。"
+  },
+  "rapid-spin": {
+    "name_en": "rapid-spin",
+    "name_ja": "こうそくスピン",
+    "power": 50,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "回転して　相手を　攻撃する。 しめつける　まきつく　やどりぎのタネ まきびし　なども　吹きとばせる。"
+  },
+  "wonder-room": {
+    "name_en": "wonder-room",
+    "name_ja": "ワンダールーム",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "まか不思議な　空間を　つくる。 ５ターンのあいだ　すべてのポケモンの 防御と　特防が　入れ替わる。"
+  },
+  "sheer-cold": {
+    "name_en": "sheer-cold",
+    "name_ja": "ぜったいれいど",
+    "power": null,
+    "type": "ice",
+    "class": "special",
+    "desc_ja": "絶対零度の　冷たさで 相手を　攻撃する。 当たれば　一撃で　ひんしに　する。"
+  },
+  "fiery-wrath": {
+    "name_en": "fiery-wrath",
+    "name_ja": "もえあがるいかり",
+    "power": 90,
+    "type": "dark",
+    "class": "special",
+    "desc_ja": "怒りを　炎の　ような オーラに　変えて　攻撃する。 相手を　ひるませることが　ある。"
+  },
+  "magic-powder": {
+    "name_en": "magic-powder",
+    "name_ja": "まほうのこな",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "まほうのこなを　浴びせて 相手を　エスパータイプに　変化させる。"
+  },
+  "gust": {
+    "name_en": "gust",
+    "name_ja": "かぜおこし",
+    "power": 40,
+    "type": "flying",
+    "class": "special",
+    "desc_ja": "翼で　おこした　激しい　風を 相手に　ぶつけて　攻撃する。 "
+  },
+  "wildbolt-storm": {
+    "name_en": "wildbolt-storm",
+    "name_ja": "かみなりあらし",
+    "power": 100,
+    "type": "electric",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "infestation": {
+    "name_en": "infestation",
+    "name_ja": "まとわりつく",
+    "power": 20,
+    "type": "bug",
+    "class": "special",
+    "desc_ja": "４ー５ターンの　あいだ　相手に まとわりついて　攻撃する。 そのあいだ　相手は　逃げられない。"
+  },
+  "ice-beam": {
+    "name_en": "ice-beam",
+    "name_ja": "れいとうビーム",
+    "power": 90,
+    "type": "ice",
+    "class": "special",
+    "desc_ja": "凍える　ビームを 相手に　発射して　攻撃する。 こおり状態に　することが　ある。"
+  },
+  "petal-dance": {
+    "name_en": "petal-dance",
+    "name_ja": "はなびらのまい",
+    "power": 120,
+    "type": "grass",
+    "class": "special",
+    "desc_ja": "２ー３ターンの　あいだ　花を まきちらして　相手を　攻撃する。 まきちらした　あとは　混乱する。"
+  },
+  "misty-terrain": {
+    "name_en": "misty-terrain",
+    "name_ja": "ミストフィールド",
+    "power": null,
+    "type": "fairy",
+    "class": "status",
+    "desc_ja": "５ターンの　あいだ　足元を ミストフィールドにする。地面にいると 状態異常に　ならない。"
+  },
+  "smog": {
+    "name_en": "smog",
+    "name_ja": "スモッグ",
+    "power": 30,
+    "type": "poison",
+    "class": "special",
+    "desc_ja": "汚れた　ガスを 相手に　吹きつけて　攻撃する。 毒状態に　することが　ある。"
+  },
+  "sky-attack": {
+    "name_en": "sky-attack",
+    "name_ja": "ゴッドバード",
+    "power": 140,
+    "type": "flying",
+    "class": "physical",
+    "desc_ja": "２ターン目に　相手を　攻撃する。 たまに　ひるませる。 急所にも　当たりやすい。"
+  },
+  "grass-knot": {
+    "name_en": "grass-knot",
+    "name_ja": "くさむすび",
+    "power": null,
+    "type": "grass",
+    "class": "special",
+    "desc_ja": "草を　からませて　相手を 転ばせる。相手が　重いほど 威力が　あがる。"
+  },
+  "leaf-blade": {
+    "name_en": "leaf-blade",
+    "name_ja": "リーフブレード",
+    "power": 90,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": "はっぱを　剣のように　あやつり 相手を　切りつけて　攻撃する。 急所に　当たりやすい。"
+  },
+  "make-it-rain": {
+    "name_en": "make-it-rain",
+    "name_ja": "ゴールドラッシュ",
+    "power": 120,
+    "type": "steel",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "psyshock": {
+    "name_en": "psyshock",
+    "name_ja": "サイコショック",
+    "power": 80,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "不思議な　念波を　実体化して 相手を　攻撃する。 物理的な　ダメージを　与える。"
+  },
+  "poison-powder": {
+    "name_en": "poison-powder",
+    "name_ja": "どくのこな",
+    "power": null,
+    "type": "poison",
+    "class": "status",
+    "desc_ja": "毒の　ある　粉を たくさん　ふりまいて 相手を　毒状態に　する。"
+  },
+  "smokescreen": {
+    "name_en": "smokescreen",
+    "name_ja": "えんまく",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "煙や　墨などを　吹きかけて 相手の　命中率を　さげる。 "
+  },
+  "quick-attack": {
+    "name_en": "quick-attack",
+    "name_ja": "でんこうせっか",
+    "power": 40,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "目にも　留まらぬ　ものすごい　速さで 相手に　つっこむ。 必ず　先制攻撃　できる。"
+  },
+  "fishious-rend": {
+    "name_en": "fishious-rend",
+    "name_ja": "エラがみ",
+    "power": 85,
+    "type": "water",
+    "class": "physical",
+    "desc_ja": "かたい　エラで　かみつく。 相手より　先に　攻撃できると 技の　威力は　２倍に　なる。"
+  },
+  "wish": {
+    "name_en": "wish",
+    "name_ja": "ねがいごと",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "次の　ターンに 自分の　ＨＰを　最大ＨＰの 半分　回復する。"
+  },
+  "hydro-pump": {
+    "name_en": "hydro-pump",
+    "name_ja": "ハイドロポンプ",
+    "power": 110,
+    "type": "water",
+    "class": "special",
+    "desc_ja": "大量の　水を 激しい　勢いで 相手に　発射して　攻撃する。"
+  },
+  "ion-deluge": {
+    "name_en": "ion-deluge",
+    "name_ja": "プラズマシャワー",
+    "power": null,
+    "type": "electric",
+    "class": "status",
+    "desc_ja": "電気を　帯びた　粒子を 拡散し　ノーマルタイプの　技を でんきタイプに　してしまう。"
+  },
+  "mist": {
+    "name_en": "mist",
+    "name_ja": "しろいきり",
+    "power": null,
+    "type": "ice",
+    "class": "status",
+    "desc_ja": "白い霧で　体を　おおう。 ５ターンの　あいだ　相手に 能力を　さげられなく　なる。"
+  },
+  "smelling-salts": {
+    "name_en": "smelling-salts",
+    "name_ja": "きつけ",
+    "power": 70,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "まひ状態の　相手には 威力が　２倍に　なるが かわりに　相手の　まひが　治る。"
+  },
+  "disable": {
+    "name_en": "disable",
+    "name_ja": "かなしばり",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "相手の　動きを　とめて 直前に　だしていた　技を ４ターンの　あいだ　使えなくする。"
+  },
+  "rolling-kick": {
+    "name_en": "rolling-kick",
+    "name_ja": "まわしげり",
+    "power": 60,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "体を　素早く　回転させながら けとばして　攻撃する。 相手を　ひるませる　ことが　ある。"
+  },
+  "steel-beam": {
+    "name_en": "steel-beam",
+    "name_ja": "てっていこうせん",
+    "power": 140,
+    "type": "steel",
+    "class": "special",
+    "desc_ja": "全身から　集めた　はがねを ビームとして　激しく　撃ちだす。 自分も　ダメージを　受けてしまう。"
+  },
+  "tar-shot": {
+    "name_en": "tar-shot",
+    "name_ja": "タールショット",
+    "power": null,
+    "type": "rock",
+    "class": "status",
+    "desc_ja": "ねばねばの　タールを　浴びせて 相手の　素早さを　下げる。 相手は　ほのおが　弱点に　なる。"
+  },
+  "minimize": {
+    "name_en": "minimize",
+    "name_ja": "ちいさくなる",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "体を　ちぢめて　小さく　みせて 自分の　回避率を ぐーんと　あげる。"
+  },
+  "meteor-mash": {
+    "name_en": "meteor-mash",
+    "name_ja": "コメットパンチ",
+    "power": 90,
+    "type": "steel",
+    "class": "physical",
+    "desc_ja": "すい星の　ごとく　パンチを　くりだして 相手を　攻撃する。自分の 攻撃が　あがることが　ある。"
+  },
+  "lovely-kiss": {
+    "name_en": "lovely-kiss",
+    "name_ja": "あくまのキッス",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "恐ろしい　顔で　キスを　せまる。 相手を　眠り状態に　する。 "
+  },
+  "eruption": {
+    "name_en": "eruption",
+    "name_ja": "ふんか",
+    "power": 150,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "怒りを　爆発させて　相手を 攻撃する。自分の　ＨＰが 少ないほど　技の　威力は　さがる。"
+  },
+  "last-resort": {
+    "name_en": "last-resort",
+    "name_ja": "とっておき",
+    "power": 140,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "戦闘中に　おぼえている　技を すべて　使うと　はじめて　だせる とっておきの　技。"
+  },
+  "psyshield-bash": {
+    "name_en": "psyshield-bash",
+    "name_ja": "バリアーラッシュ",
+    "power": 70,
+    "type": "psychic",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "electro-ball": {
+    "name_en": "electro-ball",
+    "name_ja": "エレキボール",
+    "power": null,
+    "type": "electric",
+    "class": "special",
+    "desc_ja": "電気の　塊を　相手に ぶつける。相手より　素早さが 速いほど　威力が　あがる。"
+  },
+  "tail-slap": {
+    "name_en": "tail-slap",
+    "name_ja": "スイープビンタ",
+    "power": 25,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "硬い　しっぽで 相手を　たたいて　攻撃する。 ２ー５回の　あいだ　連続で　だす。"
+  },
+  "shift-gear": {
+    "name_en": "shift-gear",
+    "name_ja": "ギアチェンジ",
+    "power": null,
+    "type": "steel",
+    "class": "status",
+    "desc_ja": "歯車を　回して 自分の　攻撃を　あげる　だけでなく 素早さも　ぐーんと　あげる。"
+  },
+  "play-rough": {
+    "name_en": "play-rough",
+    "name_ja": "じゃれつく",
+    "power": 90,
+    "type": "fairy",
+    "class": "physical",
+    "desc_ja": "相手に　じゃれついて 攻撃する。　相手の 攻撃を　さげる　ことがある。"
+  },
+  "spin-out": {
+    "name_en": "spin-out",
+    "name_ja": "ホイールスピン",
+    "power": 100,
+    "type": "steel",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "decorate": {
+    "name_en": "decorate",
+    "name_ja": "デコレーション",
+    "power": null,
+    "type": "fairy",
+    "class": "status",
+    "desc_ja": "かざりつけを　することで 相手の　攻撃と　特攻を ぐーんと　上げる。"
+  },
+  "brine": {
+    "name_en": "brine",
+    "name_ja": "しおみず",
+    "power": 65,
+    "type": "water",
+    "class": "special",
+    "desc_ja": "相手が　ＨＰの　半分くらい きずを　おっていると　技の　威力が ２倍に　なる。"
+  },
+  "sketch": {
+    "name_en": "sketch",
+    "name_ja": "スケッチ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "相手が　使った　技を 自分の　ものに　する。 １回　使うと　スケッチは　消える。"
+  },
+  "magnet-rise": {
+    "name_en": "magnet-rise",
+    "name_ja": "でんじふゆう",
+    "power": null,
+    "type": "electric",
+    "class": "status",
+    "desc_ja": "電気で　つくった　磁力の　力で 宙に　浮かぶ。 ５ターンの　あいだ　浮遊できる。"
+  },
+  "fairy-wind": {
+    "name_en": "fairy-wind",
+    "name_ja": "ようせいのかぜ",
+    "power": 40,
+    "type": "fairy",
+    "class": "special",
+    "desc_ja": "ようせいのかぜを　起こし 相手に　吹きつけて　攻撃する。 "
+  },
+  "darkest-lariat": {
+    "name_en": "darkest-lariat",
+    "name_ja": "ＤＤラリアット",
+    "power": 85,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "両腕を　回し　相手に　当てる。 相手の　能力変化に 関係なく　ダメージを　与える。"
+  },
+  "frenzy-plant": {
+    "name_en": "frenzy-plant",
+    "name_ja": "ハードプラント",
+    "power": 150,
+    "type": "grass",
+    "class": "special",
+    "desc_ja": "大きな　樹木で 相手を　たたきつけて　攻撃する。 次の　ターンは　動けなくなる。"
+  },
+  "psychic-fangs": {
+    "name_en": "psychic-fangs",
+    "name_ja": "サイコファング",
+    "power": 85,
+    "type": "psychic",
+    "class": "physical",
+    "desc_ja": "サイコパワーで　かみついて 相手を　攻撃する。　ひかりのかべや リフレクター　なども　破壊できる。"
+  },
+  "revelation-dance": {
+    "name_en": "revelation-dance",
+    "name_ja": "めざめるダンス",
+    "power": 90,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": "全力で　踊って　攻撃する。 この　技の　タイプは 自分の　タイプと　同じになる。"
+  },
+  "zen-headbutt": {
+    "name_en": "zen-headbutt",
+    "name_ja": "しねんのずつき",
+    "power": 80,
+    "type": "psychic",
+    "class": "physical",
+    "desc_ja": "思念の　力を 額に　集めて　攻撃する。 相手を　ひるませることが　ある。"
+  },
+  "sucker-punch": {
+    "name_en": "sucker-punch",
+    "name_ja": "ふいうち",
+    "power": 70,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "相手より　先に　攻撃　できる。 相手が　だす技が 攻撃技でないと　失敗する。"
+  },
+  "thunder-shock": {
+    "name_en": "thunder-shock",
+    "name_ja": "でんきショック",
+    "power": 40,
+    "type": "electric",
+    "class": "special",
+    "desc_ja": "電気の　刺激を 相手に　浴びせて　攻撃する。 まひ状態に　することが　ある。"
+  },
+  "dragon-rush": {
+    "name_en": "dragon-rush",
+    "name_ja": "ドラゴンダイブ",
+    "power": 100,
+    "type": "dragon",
+    "class": "physical",
+    "desc_ja": "すさまじい　殺気で　威圧しながら 体当たりする。 相手を　ひるませることが　ある。"
+  },
+  "bounce": {
+    "name_en": "bounce",
+    "name_ja": "とびはねる",
+    "power": 85,
+    "type": "flying",
+    "class": "physical",
+    "desc_ja": "空高く　飛び跳ねて ２ターン目に　相手を　攻撃する。 まひ状態に　することが　ある。"
+  },
+  "barb-barrage": {
+    "name_en": "barb-barrage",
+    "name_ja": "どくばりセンボン",
+    "power": 60,
+    "type": "poison",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "magnetic-flux": {
+    "name_en": "magnetic-flux",
+    "name_ja": "じばそうさ",
+    "power": null,
+    "type": "electric",
+    "class": "status",
+    "desc_ja": "磁場を　操作　することによって 特性　プラスと　マイナスの 防御　特防が　あがる。"
+  },
+  "stealth-rock": {
+    "name_en": "stealth-rock",
+    "name_ja": "ステルスロック",
+    "power": null,
+    "type": "rock",
+    "class": "status",
+    "desc_ja": "相手の　周りに　無数の　岩を 浮かべて　交代で　でてきた　相手の ポケモンに　ダメージを　与える。"
+  },
+  "flip-turn": {
+    "name_en": "flip-turn",
+    "name_ja": "クイックターン",
+    "power": 60,
+    "type": "water",
+    "class": "physical",
+    "desc_ja": "攻撃した　あと ものすごい　スピードで　戻ってきて 控えの　ポケモンと　入れ替わる。"
+  },
+  "prismatic-laser": {
+    "name_en": "prismatic-laser",
+    "name_ja": "プリズムレーザー",
+    "power": 160,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "プリズムの　力で　強力な 光線を　発射する。 次の　ターンは　動けなくなる。"
+  },
+  "knock-off": {
+    "name_en": "knock-off",
+    "name_ja": "はたきおとす",
+    "power": 65,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "相手の　持ち物を　はたき　落として 戦闘が　終わるまで　使えなくする。 物を持つ　相手には　ダメージが増す。"
+  },
+  "air-cutter": {
+    "name_en": "air-cutter",
+    "name_ja": "エアカッター",
+    "power": 60,
+    "type": "flying",
+    "class": "special",
+    "desc_ja": "鋭い　風で 相手を　切りつけて　攻撃する。 急所に　当たりやすい。"
+  },
+  "hone-claws": {
+    "name_en": "hone-claws",
+    "name_ja": "つめとぎ",
+    "power": null,
+    "type": "dark",
+    "class": "status",
+    "desc_ja": "ツメを　磨いて　鋭く　する。 自分の　攻撃と 命中率を　あげる。"
+  },
+  "constrict": {
+    "name_en": "constrict",
+    "name_ja": "からみつく",
+    "power": 10,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "触手や　ツタなどを　からみつけて 攻撃する。相手の　素早さを さげることが　ある。"
+  },
+  "dragon-tail": {
+    "name_en": "dragon-tail",
+    "name_ja": "ドラゴンテール",
+    "power": 60,
+    "type": "dragon",
+    "class": "physical",
+    "desc_ja": "相手を　はじきとばして 控えの　ポケモンを　ひきずりだす。 野生の　場合は　戦闘が　終わる。"
+  },
+  "foul-play": {
+    "name_en": "foul-play",
+    "name_ja": "イカサマ",
+    "power": 95,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": "相手の　力を　利用する。 戦っている　相手の　攻撃が 高いほど　ダメージが　あがる。"
+  },
+  "bonemerang": {
+    "name_en": "bonemerang",
+    "name_ja": "ホネブーメラン",
+    "power": 50,
+    "type": "ground",
+    "class": "physical",
+    "desc_ja": "手に　持った　ホネを　相手に　投げつけ 行きと　帰りの　２回連続で ダメージを　与える。"
+  },
+  "shadow-sneak": {
+    "name_en": "shadow-sneak",
+    "name_ja": "かげうち",
+    "power": 40,
+    "type": "ghost",
+    "class": "physical",
+    "desc_ja": "影を　のばして 相手の　背後から　攻撃する。 必ず　先制攻撃　できる。"
+  },
+  "powder-snow": {
+    "name_en": "powder-snow",
+    "name_ja": "こなゆき",
+    "power": 40,
+    "type": "ice",
+    "class": "special",
+    "desc_ja": "冷たい　粉雪を 相手に　吹きつけて　攻撃する。 こおり状態に　することが　ある。"
+  },
+  "glaive-rush": {
+    "name_en": "glaive-rush",
+    "name_ja": "きょけんとつげき",
+    "power": 120,
+    "type": "dragon",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "weather-ball": {
+    "name_en": "weather-ball",
+    "name_ja": "ウェザーボール",
+    "power": 50,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": "使ったときの　天気に　よって 技の　タイプと　威力が　変わる。 "
+  },
+  "howl": {
+    "name_en": "howl",
+    "name_ja": "とおぼえ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "大声で　ほえて　気合を　高め 自分の　攻撃を　あげる。 "
+  },
+  "magical-leaf": {
+    "name_en": "magical-leaf",
+    "name_ja": "マジカルリーフ",
+    "power": 60,
+    "type": "grass",
+    "class": "special",
+    "desc_ja": "相手を　追跡する 不思議な　はっぱを まきちらす。 攻撃は　必ず　命中する。"
+  },
+  "fury-swipes": {
+    "name_en": "fury-swipes",
+    "name_ja": "みだれひっかき",
+    "power": 18,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "ツメや　カマなどで 相手を　ひっかいて　攻撃する。 ２ー５回の　あいだ　連続で　だす。"
+  },
+  "sky-uppercut": {
+    "name_en": "sky-uppercut",
+    "name_ja": "スカイアッパー",
+    "power": 85,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "空に　むかうような　高い　アッパーで 相手を　突きあげて　攻撃する。 "
+  },
+  "flower-shield": {
+    "name_en": "flower-shield",
+    "name_ja": "フラワーガード",
+    "power": null,
+    "type": "fairy",
+    "class": "status",
+    "desc_ja": "不思議な　力を　使って 場にいる　くさタイプの　ポケモン 全員の　防御を　あげる。"
+  },
+  "triple-kick": {
+    "name_en": "triple-kick",
+    "name_ja": "トリプルキック",
+    "power": 10,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "３回連続で　キックを　くりだして 攻撃する。技が　当たるたびに 威力は　あがる。"
+  },
+  "blood-moon": {
+    "name_en": "blood-moon",
+    "name_ja": "ブラッドムーン",
+    "power": 140,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "shore-up": {
+    "name_en": "shore-up",
+    "name_ja": "すなあつめ",
+    "power": null,
+    "type": "ground",
+    "class": "status",
+    "desc_ja": "最大ＨＰの　半分 自分の　ＨＰを　回復する。 すなあらしの時は　多く　回復。"
+  },
+  "hyperspace-hole": {
+    "name_en": "hyperspace-hole",
+    "name_ja": "いじげんホール",
+    "power": 80,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "異次元ホールで　突然　相手の 真横に　現れ　攻撃する。 まもるや　みきりも　無視　できる。"
+  },
+  "grassy-terrain": {
+    "name_en": "grassy-terrain",
+    "name_ja": "グラスフィールド",
+    "power": null,
+    "type": "grass",
+    "class": "status",
+    "desc_ja": "５ターンの　あいだ　足元を グラスフィールドにする。地面にいる ポケモンは　毎ターン　回復する。"
+  },
+  "worry-seed": {
+    "name_en": "worry-seed",
+    "name_ja": "なやみのタネ",
+    "power": null,
+    "type": "grass",
+    "class": "status",
+    "desc_ja": "心を　なやませる　タネを 植えつける。相手を　眠れなくして 特性を　ふみんに　する。"
+  },
+  "ice-spinner": {
+    "name_en": "ice-spinner",
+    "name_ja": "アイススピナー",
+    "power": 80,
+    "type": "ice",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "incinerate": {
+    "name_en": "incinerate",
+    "name_ja": "やきつくす",
+    "power": 60,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "炎で　相手を　攻撃する。 相手が　きのみなどを　持っているとき 燃やして　使えなくする。"
+  },
+  "low-kick": {
+    "name_en": "low-kick",
+    "name_ja": "けたぐり",
+    "power": null,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "足を　強く　けり 相手を　転ばせて　攻撃する。 相手が　重いほど　威力が　あがる。"
+  },
+  "burn-up": {
+    "name_en": "burn-up",
+    "name_ja": "もえつきる",
+    "power": 130,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "全身の　ほのおを　すべて 燃やして　大ダメージを　与える。 自分の　ほのおタイプが　なくなる。"
+  },
+  "doodle": {
+    "name_en": "doodle",
+    "name_ja": "うつしえ",
+    "power": 0,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": ""
+  },
+  "teatime": {
+    "name_en": "teatime",
+    "name_ja": "おちゃかい",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "おちゃかいを　ひらいて 場にいる　ポケモンが　それぞれ 持っている　きのみを　食べる。"
+  },
+  "ominous-wind": {
+    "name_en": "ominous-wind",
+    "name_ja": "あやしいかぜ",
+    "power": 60,
+    "type": "ghost",
+    "class": "special",
+    "desc_ja": "みのけも　よだつ　突風で　相手を 攻撃する。自分の　すべての 能力が　あがることが　ある。"
+  },
+  "zap-cannon": {
+    "name_en": "zap-cannon",
+    "name_ja": "でんじほう",
+    "power": 120,
+    "type": "electric",
+    "class": "special",
+    "desc_ja": "大砲の　ような 電気を　発射して　攻撃する。 相手を　まひの　状態に　する。"
+  },
+  "kinesis": {
+    "name_en": "kinesis",
+    "name_ja": "スプーンまげ",
+    "power": null,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": "スプーンを　まげて　注意を　ひき 相手の　命中率を　さげる。 "
+  },
+  "pain-split": {
+    "name_en": "pain-split",
+    "name_ja": "いたみわけ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "自分の　ＨＰと　相手の　ＨＰを あわせて　それを　自分と　相手で なかよく　わける。"
+  },
+  "wood-hammer": {
+    "name_en": "wood-hammer",
+    "name_ja": "ウッドハンマー",
+    "power": 120,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": "硬い　胴体を 相手に　たたきつけて　攻撃する。 自分も　かなり　ダメージを　受ける。"
+  },
+  "sparkling-aria": {
+    "name_en": "sparkling-aria",
+    "name_ja": "うたかたのアリア",
+    "power": 90,
+    "type": "water",
+    "class": "special",
+    "desc_ja": "歌うことによって　たくさんの バルーンを　放出する。 技を　受けると　やけどが　治る。"
+  },
+  "twister": {
+    "name_en": "twister",
+    "name_ja": "たつまき",
+    "power": 40,
+    "type": "dragon",
+    "class": "special",
+    "desc_ja": "竜巻を　おこして 相手を　まきこみ　攻撃する。 相手を　ひるませることが　ある。"
+  },
+  "last-respects": {
+    "name_en": "last-respects",
+    "name_ja": "おはかまいり",
+    "power": 50,
+    "type": "ghost",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "heat-wave": {
+    "name_en": "heat-wave",
+    "name_ja": "ねっぷう",
+    "power": 95,
+    "type": "fire",
+    "class": "special",
+    "desc_ja": "熱い　息を 相手に　吹きつけて　攻撃する。 やけど状態に　することが　ある。"
+  },
+  "camouflage": {
+    "name_en": "camouflage",
+    "name_ja": "ほごしょく",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "水辺や　草むら　どうくつなど いる　場所に　あわせて 自分の　タイプを　変える。"
+  },
+  "bolt-strike": {
+    "name_en": "bolt-strike",
+    "name_ja": "らいげき",
+    "power": 130,
+    "type": "electric",
+    "class": "physical",
+    "desc_ja": "ぼうだいな　電気を　身に　まとって 相手に　突進して　攻撃する。 まひ状態に　することが　ある。"
+  },
+  "hyper-beam": {
+    "name_en": "hyper-beam",
+    "name_ja": "はかいこうせん",
+    "power": 150,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": "強い　光線を 相手に　発射して　攻撃する。 次の　ターンは　動けなくなる。"
+  },
+  "lunar-blessing": {
+    "name_en": "lunar-blessing",
+    "name_ja": "みかづきのいのり",
+    "power": 0,
+    "type": "psychic",
+    "class": "status",
+    "desc_ja": ""
+  },
+  "rollout": {
+    "name_en": "rollout",
+    "name_ja": "ころがる",
+    "power": 30,
+    "type": "rock",
+    "class": "physical",
+    "desc_ja": "５ターンの　あいだ　転がり続けて 攻撃する。技が　当たるたびに 威力が　あがる。"
+  },
+  "psybeam": {
+    "name_en": "psybeam",
+    "name_ja": "サイケこうせん",
+    "power": 65,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "不思議な　光線を 相手に　発射して　攻撃する。 混乱させることが　ある。"
+  },
+  "psywave": {
+    "name_en": "psywave",
+    "name_ja": "サイコウェーブ",
+    "power": null,
+    "type": "psychic",
+    "class": "special",
+    "desc_ja": "不思議な　念波を 相手に　発射して　攻撃する。 使うたびに　ダメージが　変わる。"
+  },
+  "steel-wing": {
+    "name_en": "steel-wing",
+    "name_ja": "はがねのつばさ",
+    "power": 70,
+    "type": "steel",
+    "class": "physical",
+    "desc_ja": "硬い　翼を　相手に　たたきつけて 攻撃する。自分の　防御が あがることが　ある。"
+  },
+  "bouncy-bubble": {
+    "name_en": "bouncy-bubble",
+    "name_ja": "いきいきバブル",
+    "power": 60,
+    "type": "water",
+    "class": "special",
+    "desc_ja": "水のかたまりを　ぶつけて　攻撃。 水を　吸いとり　ダメージの 半分の　HPを　回復する。"
+  },
+  "counter": {
+    "name_en": "counter",
+    "name_ja": "カウンター",
+    "power": null,
+    "type": "fighting",
+    "class": "physical",
+    "desc_ja": "相手から　受けた　物理攻撃の ダメージを　２倍に　して 同じ　相手に　返す。"
+  },
+  "pounce": {
+    "name_en": "pounce",
+    "name_ja": "とびつく",
+    "power": 50,
+    "type": "bug",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "thunderclap": {
+    "name_en": "thunderclap",
+    "name_ja": "じんらい",
+    "power": 70,
+    "type": "electric",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "comeuppance": {
+    "name_en": "comeuppance",
+    "name_ja": "ほうふく",
+    "power": 1,
+    "type": "dark",
+    "class": "physical",
+    "desc_ja": ""
+  },
+  "twineedle": {
+    "name_en": "twineedle",
+    "name_ja": "ダブルニードル",
+    "power": 25,
+    "type": "bug",
+    "class": "physical",
+    "desc_ja": "２本の　ハリを　相手に　突き刺し ２回連続で　ダメージ。 毒状態に　することが　ある。"
+  },
+  "echoed-voice": {
+    "name_en": "echoed-voice",
+    "name_ja": "エコーボイス",
+    "power": 40,
+    "type": "normal",
+    "class": "special",
+    "desc_ja": "響く　声で　相手を　攻撃する。 毎ターン　だれかが　技を 使い続けると　威力が　あがる。"
+  },
+  "rage-powder": {
+    "name_en": "rage-powder",
+    "name_ja": "いかりのこな",
+    "power": null,
+    "type": "bug",
+    "class": "status",
+    "desc_ja": "イライラさせる　粉を　自分に ふりかけて　注意を　ひく。相手の 攻撃を　すべて　自分に　むける。"
+  },
+  "comet-punch": {
+    "name_en": "comet-punch",
+    "name_ja": "れんぞくパンチ",
+    "power": 18,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "どとうの　パンチで 相手を　なぐりつけて　攻撃する。 ２ー５回の　あいだ　連続で　だす。"
+  },
+  "heavy-slam": {
+    "name_en": "heavy-slam",
+    "name_ja": "ヘビーボンバー",
+    "power": null,
+    "type": "steel",
+    "class": "physical",
+    "desc_ja": "重たい　体で　相手に　ぶつかって 攻撃する。自分が　相手より 重いほど　威力が　あがる。"
+  },
+  "clear-smog": {
+    "name_en": "clear-smog",
+    "name_ja": "クリアスモッグ",
+    "power": 50,
+    "type": "poison",
+    "class": "special",
+    "desc_ja": "特殊な　泥の　塊を 相手に　投げつけて　攻撃する。 能力変化を　もとに　もどす。"
+  },
+  "fake-out": {
+    "name_en": "fake-out",
+    "name_ja": "ねこだまし",
+    "power": 40,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "先制攻撃で　相手を　ひるませる。 戦闘に　でたら すぐに　ださないと　成功しない。"
+  },
+  "doom-desire": {
+    "name_en": "doom-desire",
+    "name_ja": "はめつのねがい",
+    "power": 140,
+    "type": "steel",
+    "class": "special",
+    "desc_ja": "技を　使った　２ターン後に 無数の　光の　束で 相手を　攻撃する。"
+  },
+  "spike-cannon": {
+    "name_en": "spike-cannon",
+    "name_ja": "とげキャノン",
+    "power": 20,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "鋭い　ハリを 相手に　発射して　攻撃する。 ２ー５回の　あいだ　連続で　だす。"
+  },
+  "malignant-chain": {
+    "name_en": "malignant-chain",
+    "name_ja": "じゃどくのくさり",
+    "power": 100,
+    "type": "poison",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "attract": {
+    "name_en": "attract",
+    "name_ja": "メロメロ",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "♂なら♀を　♀なら♂を　誘惑して メロメロに　する。 相手は　技が　だしにくくなる。"
+  },
+  "seed-bomb": {
+    "name_en": "seed-bomb",
+    "name_ja": "タネばくだん",
+    "power": 80,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": "硬い　殻を　もつ　大きな　タネを 上から　たたきつけて 相手を　攻撃する。"
+  },
+  "freeze-shock": {
+    "name_en": "freeze-shock",
+    "name_ja": "フリーズボルト",
+    "power": 140,
+    "type": "ice",
+    "class": "physical",
+    "desc_ja": "電気を　まとった　氷の　塊で ２ターン目に　相手を　たたきつける。 まひ状態に　することが　ある。"
+  },
+  "sludge": {
+    "name_en": "sludge",
+    "name_ja": "ヘドロこうげき",
+    "power": 65,
+    "type": "poison",
+    "class": "special",
+    "desc_ja": "汚い　ヘドロを 相手に　投げつけて　攻撃する。 毒状態に　することが　ある。"
+  },
+  "double-slap": {
+    "name_en": "double-slap",
+    "name_ja": "おうふくビンタ",
+    "power": 15,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "おうふく　ビンタで 相手を　たたいて　攻撃する。 ２ー５回の　あいだ　連続で　だす。"
+  },
+  "spacial-rend": {
+    "name_en": "spacial-rend",
+    "name_ja": "あくうせつだん",
+    "power": 100,
+    "type": "dragon",
+    "class": "special",
+    "desc_ja": "周りの　空間ごと　相手を 引き裂き　ダメージを　与える。 急所に　当たりやすい。"
+  },
+  "fusion-bolt": {
+    "name_en": "fusion-bolt",
+    "name_ja": "クロスサンダー",
+    "power": 100,
+    "type": "electric",
+    "class": "physical",
+    "desc_ja": "巨大な　雷を　たたきつける。 巨大な　炎の　影響を受け 技の　威力が　あがる。"
+  },
+  "razor-leaf": {
+    "name_en": "razor-leaf",
+    "name_ja": "はっぱカッター",
+    "power": 55,
+    "type": "grass",
+    "class": "physical",
+    "desc_ja": "はっぱを　とばして 相手を　切りつけて　攻撃する。 急所に　当たりやすい。"
+  },
+  "avalanche": {
+    "name_en": "avalanche",
+    "name_ja": "ゆきなだれ",
+    "power": 60,
+    "type": "ice",
+    "class": "physical",
+    "desc_ja": "相手から　技を　受けていると その　相手に　対して 技の　威力が　２倍に　なる。"
+  },
+  "simple-beam": {
+    "name_en": "simple-beam",
+    "name_ja": "シンプルビーム",
+    "power": null,
+    "type": "normal",
+    "class": "status",
+    "desc_ja": "なぞの　念波を　相手に　送る。 念波を　受けとった　相手は 特性が　たんじゅんに　なる。"
+  },
+  "covet": {
+    "name_en": "covet",
+    "name_ja": "ほしがる",
+    "power": 60,
+    "type": "normal",
+    "class": "physical",
+    "desc_ja": "かわいく　あまえながら 相手に　ちかづき 持っている　道具を　うばう。"
+  },
+  "electro-drift": {
+    "name_en": "electro-drift",
+    "name_ja": "イナズマドライブ",
+    "power": 100,
+    "type": "electric",
+    "class": "special",
+    "desc_ja": ""
+  },
+  "sandstorm": {
+    "name_en": "sandstorm",
+    "name_ja": "すなあらし",
+    "power": null,
+    "type": "rock",
+    "class": "status",
+    "desc_ja": "５ターンの　あいだ　砂あらしで いわ　じめん　はがねタイプ　以外の ポケモンに　ダメージを　与える。"
+  }
+}
